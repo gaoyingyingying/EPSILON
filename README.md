@@ -105,6 +105,20 @@ python terminal_server.py
 
 You can select the target agent by clicking on the colored dots and change its behavior using `W-A-S-D` buttons.
 
+## Reproduction Toolkit (EUDM/MPDM)
+
+For reproducible experiments (paper-related workflow), we provide unified scripts and launch files:
+
+* Document: `docs/REPRODUCTION_2003_02746_ZH.md`
+* Unified stack launch (single playground for planner + agents + simulator):
+  * `app/planning_integrated/launch/repro_stack_eudm.launch`
+  * `app/planning_integrated/launch/repro_stack_mpdm.launch`
+* One-click scripts:
+  * `scripts/build_workspace.sh`
+  * `scripts/run_stack.sh`
+  * `scripts/compare_methods.sh`
+  * `scripts/eval_metrics.py`
+
 ## Acknowledgements
 We would like to express sincere thanks to the authors of the following tools and packages:
 * Lock-free queue: [moodycamel](https://github.com/cameron314/concurrentqueue)
