@@ -1,0 +1,782 @@
+[rosmaster.main][INFO] 2026-04-24 22:21:30,412: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2026-04-24 22:21:30,412: Starting ROS Master Node
+[xmlrpc][INFO] 2026-04-24 22:21:30,413: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2026-04-24 22:21:30,413: Started XML-RPC server [http://ying-N8:11311/]
+[xmlrpc][INFO] 2026-04-24 22:21:30,413: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2026-04-24 22:21:30,413: Master initialized: port[11311], uri[http://ying-N8:11311/]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,481: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,482: +PARAM [/roslaunch/uris/host_ying_n8__44657] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,527: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,527: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,527: +PARAM [/test_ssc_with_mpdm_0/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/test_ssc_with_mpdm_0/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/test_ssc_with_mpdm_0/ssc_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/test_ssc_with_mpdm_0/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/test_ssc_with_mpdm_0/use_sim_state] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_1/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_1/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_1/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_1/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_1/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_2/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_2/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,528: +PARAM [/onlane_ai_agent_2/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,529: +PARAM [/onlane_ai_agent_2/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,529: +PARAM [/onlane_ai_agent_2/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,529: +PARAM [/onlane_ai_agent_3/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,529: +PARAM [/onlane_ai_agent_3/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +PARAM [/onlane_ai_agent_3/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +PARAM [/onlane_ai_agent_3/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +PARAM [/onlane_ai_agent_3/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +PARAM [/onlane_ai_agent_4/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +SERVICE [/rosout/get_loggers] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,530: +PARAM [/onlane_ai_agent_4/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,531: +PARAM [/onlane_ai_agent_4/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,531: +SERVICE [/rosout/set_logger_level] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,531: +PARAM [/onlane_ai_agent_4/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,531: +PARAM [/onlane_ai_agent_4/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,532: +PARAM [/onlane_ai_agent_5/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,532: +PARAM [/onlane_ai_agent_5/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,532: +PARAM [/onlane_ai_agent_5/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,532: +PUB [/rosout_agg] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,532: +PARAM [/onlane_ai_agent_5/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,533: +PARAM [/onlane_ai_agent_5/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,534: +PARAM [/onlane_ai_agent_6/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,534: +PARAM [/onlane_ai_agent_6/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,534: +PARAM [/onlane_ai_agent_6/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,535: +PARAM [/onlane_ai_agent_6/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,535: +PARAM [/onlane_ai_agent_6/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,535: +PARAM [/onlane_ai_agent_7/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,535: +PARAM [/onlane_ai_agent_7/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,536: +PARAM [/onlane_ai_agent_7/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,536: +SUB [/rosout] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,536: +PARAM [/onlane_ai_agent_7/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,536: +PARAM [/onlane_ai_agent_7/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_8/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_8/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_8/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_8/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_8/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_9/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_9/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_9/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_9/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,537: +PARAM [/onlane_ai_agent_9/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/onlane_ai_agent_10/ego_id] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/onlane_ai_agent_10/agent_config_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/onlane_ai_agent_10/desired_vel] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/onlane_ai_agent_10/autonomous_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/onlane_ai_agent_10/aggressiveness_level] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/joy_node/dev] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/phy_simulator_planning_node/vehicle_info_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/phy_simulator_planning_node/map_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,538: +PARAM [/phy_simulator_planning_node/lane_net_path] by /roslaunch
+[rosmaster.master][INFO] 2026-04-24 22:21:30,599: +PUB [/rosout] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,600: +SERVICE [/test_ssc_with_mpdm_0/get_loggers] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,601: +SERVICE [/test_ssc_with_mpdm_0/set_logger_level] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,605: +PUB [/rosout] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,606: +SERVICE [/onlane_ai_agent_1/get_loggers] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,606: +SERVICE [/onlane_ai_agent_1/set_logger_level] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,608: +PUB [/ctrl/agent_1] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,612: +PUB [/tf] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,613: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,620: +PUB [/vis/agent_1/ego_vehicle_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,629: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/']: sec=0.02, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,630: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,631: +PUB [/vis/agent_1/obstacle_map] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,637: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,644: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,639: +PUB [/rosout] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,646: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,651: +SERVICE [/onlane_ai_agent_2/get_loggers] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,651: +PUB [/vis/agent_1/surrounding_lane_net_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,652: +PUB [/vis/agent_1/local_lanes_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,652: +PUB [/vis/agent_1/ego_behavior_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,653: +PUB [/vis/agent_1/pred_traj_openloop_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,654: +PUB [/vis/agent_1/pred_initial_intention_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,654: +PUB [/vis/agent_1/surrounding_vehicle_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,655: +PUB [/vis/agent_1/speed_limit] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,656: +PUB [/rosout] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,659: +SUB [/arena_info_static] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,669: +PUB [/rosout] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,670: +SERVICE [/onlane_ai_agent_2/set_logger_level] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,677: +SERVICE [/onlane_ai_agent_3/get_loggers] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,678: +PUB [/tf] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,679: +SUB [/arena_info_dynamic] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,679: +SERVICE [/onlane_ai_agent_4/get_loggers] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,681: +PUB [/vis/agent_0/ego_vehicle_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,683: +SERVICE [/onlane_ai_agent_4/set_logger_level] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,684: +PUB [/vis/agent_0/obstacle_map] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,687: +SERVICE [/onlane_ai_agent_3/set_logger_level] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,690: +PUB [/vis/agent_0/surrounding_lane_net_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,690: +PUB [/ctrl/agent_2] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,691: +PUB [/rosout] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,693: +PUB [/vis/agent_0/local_lanes_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,695: +SERVICE [/onlane_ai_agent_5/get_loggers] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,698: +PUB [/vis/agent_0/ego_behavior_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,701: +SUB [/joy] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,706: +SERVICE [/onlane_ai_agent_5/set_logger_level] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,710: +PUB [/ctrl/agent_4] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,710: +PUB [/vis/agent_0/pred_traj_openloop_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,711: +PUB [/vis/agent_1/forward_trajs] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,713: +PUB [/vis/agent_0/pred_initial_intention_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,724: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,725: +PUB [/vis/agent_0/surrounding_vehicle_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,728: +PUB [/vis/agent_0/speed_limit] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,728: +PUB [/ctrl/agent_5] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,730: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,732: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,737: +PUB [/vis/agent_0/ssc/map_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,742: +PUB [/ctrl/agent_3] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,740: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,742: +PUB [/vis/agent_0/ssc/qp_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,743: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,746: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,750: +PUB [/rosout] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,751: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,753: +PUB [/vis/agent_0/ssc/ego_fs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,756: +PUB [/rosout] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,758: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,759: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,759: +PUB [/tf] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,762: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,763: +SERVICE [/onlane_ai_agent_7/get_loggers] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,763: +PUB [/vis/agent_0/ssc/forward_trajs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,764: +SERVICE [/onlane_ai_agent_7/set_logger_level] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,765: +PUB [/tf] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,765: +PUB [/tf] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,767: +SERVICE [/onlane_ai_agent_6/get_loggers] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,788: +PUB [/rosout] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,789: +PUB [/rosout] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,792: +PUB [/tf] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,793: +PUB [/vis/agent_0/ssc/sur_vehicle_trajs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,793: +PUB [/vis/agent_3/ego_vehicle_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,794: +PUB [/vis/agent_4/ego_vehicle_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,794: +PUB [/vis/agent_2/ego_vehicle_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,795: +PUB [/ctrl/agent_7] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,795: +SERVICE [/onlane_ai_agent_6/set_logger_level] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,795: +PUB [/vis/agent_0/ssc/corridor_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,796: +PUB [/vis/agent_3/obstacle_map] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,802: +SERVICE [/onlane_ai_agent_8/get_loggers] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,806: +PUB [/vis/agent_5/ego_vehicle_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,806: +SERVICE [/onlane_ai_agent_9/get_loggers] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,808: +PUB [/vis/agent_4/obstacle_map] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,808: +PUB [/vis/agent_3/surrounding_lane_net_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,808: +PUB [/vis/agent_2/obstacle_map] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,808: +PUB [/ctrl/agent_0] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,809: +PUB [/vis/agent_3/local_lanes_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,809: +PUB [/vis/agent_5/obstacle_map] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,810: +PUB [/test_ssc_with_mpdm_0/ssc_map] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,812: +PUB [/rosout] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,816: +PUB [/vis/agent_3/ego_behavior_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,819: +SERVICE [/phy_simulator_planning_node/get_loggers] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,825: +PUB [/vis/agent_5/surrounding_lane_net_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,827: +PUB [/rosout] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,828: +PUB [/vis/agent_0/ssc/exec_traj] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,828: +SERVICE [/onlane_ai_agent_8/set_logger_level] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,829: +PUB [/vis/agent_2/surrounding_lane_net_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,829: +PUB [/vis/agent_3/pred_traj_openloop_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,829: +PUB [/vis/agent_4/surrounding_lane_net_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,830: +PUB [/ctrl/agent_6] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,830: +SERVICE [/onlane_ai_agent_9/set_logger_level] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,831: +PUB [/vis/agent_3/pred_initial_intention_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,845: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,848: +SERVICE [/onlane_ai_agent_10/get_loggers] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,853: +SERVICE [/phy_simulator_planning_node/set_logger_level] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,856: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,859: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,861: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,861: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,858: +PUB [/vis/agent_2/local_lanes_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,863: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,865: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/', 'http://ying-N8:43327/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,866: +PUB [/vis/agent_4/local_lanes_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,866: +PUB [/vis/agent_5/local_lanes_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,867: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/', 'http://ying-N8:43327/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,870: +PUB [/tf] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,888: +PUB [/vis/agent_3/surrounding_vehicle_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,894: +SERVICE [/onlane_ai_agent_10/set_logger_level] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,897: +SUB [/joy] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,900: +PUB [/ctrl/agent_9] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,906: +PUB [/ctrl/agent_8] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,910: +PUB [/vis/agent_4/ego_behavior_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,912: +PUB [/vis/agent_2/ego_behavior_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,913: +PUB [/vis/agent_4/pred_traj_openloop_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,913: +PUB [/vis/agent_5/ego_behavior_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,914: +PUB [/vis/agent_7/ego_vehicle_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,915: +PUB [/tf] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,916: +PUB [/vis/agent_0/forward_trajs] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,917: +PUB [/vis/agent_6/ego_vehicle_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,917: +PUB [/vis/agent_3/speed_limit] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,917: +PUB [/vis/agent_4/pred_initial_intention_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,923: +PUB [/vis/agent_5/pred_traj_openloop_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,924: +PUB [/vis/agent_2/pred_traj_openloop_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,926: +PUB [/tf] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,926: +PUB [/ctrl/agent_10] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,927: +PUB [/vis/agent_6/obstacle_map] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,929: +PUB [/vis/agent_4/surrounding_vehicle_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,929: +PUB [/vis/agent_7/obstacle_map] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,930: +PUB [/tf] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,931: +PUB [/vis/agent_5/pred_initial_intention_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,931: +PUB [/vis/agent_2/pred_initial_intention_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,933: +PUB [/arena_info_static] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,933: +PUB [/vis/agent_9/ego_vehicle_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,933: +SUB [/arena_info_static] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,934: +PUB [/vis/agent_6/surrounding_lane_net_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,934: +SUB [/arena_info_static] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,936: +PUB [/vis/agent_4/speed_limit] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,937: +PUB [/vis/agent_7/surrounding_lane_net_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,939: +PUB [/vis/agent_8/ego_vehicle_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,941: +PUB [/vis/agent_5/surrounding_vehicle_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,941: +PUB [/tf] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,941: +PUB [/vis/agent_2/surrounding_vehicle_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,942: +PUB [/arena_info_dynamic] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,943: +PUB [/vis/agent_9/obstacle_map] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,944: +PUB [/vis/agent_6/local_lanes_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,944: +SUB [/arena_info_dynamic] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,945: +PUB [/vis/agent_7/local_lanes_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,945: +PUB [/vis/agent_8/obstacle_map] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,945: +SUB [/arena_info_static] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,946: +SUB [/arena_info_dynamic] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,947: +PUB [/vis/agent_10/ego_vehicle_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,949: +PUB [/vis/agent_5/speed_limit] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,950: +PUB [/vis/agent_2/speed_limit] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,952: +PUB [/phy_simulator_planning_node/vis/vehicle_set_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,953: +PUB [/vis/agent_9/surrounding_lane_net_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,953: publisherUpdate[/arena_info_static] -> http://ying-N8:38915/ ['http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,954: +PUB [/vis/agent_6/ego_behavior_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,955: +PUB [/vis/agent_7/ego_behavior_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,955: +PUB [/vis/agent_8/surrounding_lane_net_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,956: publisherUpdate[/arena_info_static] -> http://ying-N8:38915/ ['http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,957: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:38915/ ['http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:30,957: +PUB [/vis/agent_10/obstacle_map] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,957: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:38915/ ['http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:30,957: +SUB [/joy] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,958: +SUB [/arena_info_dynamic] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,958: +PUB [/phy_simulator_planning_node/vis/lane_net_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,959: +PUB [/vis/agent_9/local_lanes_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,960: +SUB [/arena_info_static] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,961: +SUB [/arena_info_static] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,962: +PUB [/vis/agent_7/pred_traj_openloop_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,963: +PUB [/vis/agent_6/pred_traj_openloop_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,964: +PUB [/vis/agent_8/local_lanes_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,965: +PUB [/vis/agent_10/surrounding_lane_net_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,966: +PUB [/vis/agent_3/forward_trajs] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,967: +PUB [/phy_simulator_planning_node/vis/obstacle_set_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,969: +PUB [/vis/agent_9/ego_behavior_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,969: +SUB [/joy] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,970: +PUB [/vis/agent_7/pred_initial_intention_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,971: +SUB [/arena_info_dynamic] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,972: +PUB [/vis/agent_6/pred_initial_intention_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,973: +PUB [/vis/agent_8/ego_behavior_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,973: +SUB [/arena_info_dynamic] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,974: +PUB [/vis/agent_10/local_lanes_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,976: +PUB [/vis/agent_9/pred_traj_openloop_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,977: +SUB [/ctrl/agent_10] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,978: +PUB [/vis/agent_7/surrounding_vehicle_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,979: +PUB [/vis/agent_4/forward_trajs] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,979: +PUB [/vis/agent_8/pred_traj_openloop_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,980: +PUB [/vis/agent_6/surrounding_vehicle_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,981: +SUB [/joy] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,981: +PUB [/vis/agent_10/ego_behavior_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,982: +PUB [/vis/agent_9/pred_initial_intention_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,982: +SUB [/joy] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,983: +PUB [/vis/agent_7/speed_limit] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,984: +PUB [/vis/agent_8/pred_initial_intention_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,984: +SUB [/ctrl/agent_9] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,985: +PUB [/vis/agent_6/speed_limit] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,987: +PUB [/vis/agent_5/forward_trajs] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,989: +PUB [/vis/agent_9/surrounding_vehicle_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,990: +PUB [/vis/agent_10/pred_traj_openloop_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,990: +PUB [/vis/agent_2/forward_trajs] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,991: +PUB [/vis/agent_8/surrounding_vehicle_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,991: +SUB [/arena_info_static] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,991: +SUB [/ctrl/agent_8] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,992: +SUB [/arena_info_static] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,993: +PUB [/vis/agent_9/speed_limit] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,995: +PUB [/vis/agent_10/pred_initial_intention_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,996: +PUB [/vis/agent_8/speed_limit] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:30,997: +SUB [/arena_info_dynamic] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,004: +PUB [/vis/agent_10/surrounding_vehicle_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,006: +SUB [/arena_info_static] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,009: +SUB [/arena_info_dynamic] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,009: +SUB [/ctrl/agent_7] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,009: +SUB [/arena_info_static] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,012: +SUB [/joy] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,014: +PUB [/vis/agent_10/speed_limit] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,020: +SUB [/arena_info_static] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,021: +PUB [/vis/agent_7/forward_trajs] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,022: +SUB [/ctrl/agent_6] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,024: +SUB [/joy] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,025: +SUB [/arena_info_dynamic] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,027: +SUB [/arena_info_dynamic] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,030: +PUB [/vis/agent_6/forward_trajs] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,034: +SUB [/arena_info_dynamic] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,037: +SUB [/ctrl/agent_5] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,038: +SUB [/joy] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,040: +SUB [/joy] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,042: +PUB [/vis/agent_8/forward_trajs] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,045: +SUB [/joy] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,046: +SUB [/ctrl/agent_4] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,047: +PUB [/vis/agent_9/forward_trajs] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,048: +PUB [/vis/agent_10/forward_trajs] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,049: +SUB [/ctrl/agent_3] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,051: +SUB [/ctrl/agent_2] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,054: +SUB [/ctrl/agent_1] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,057: +SUB [/ctrl/agent_0] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,060: +SUB [/initialpose] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:31,062: +SUB [/move_base_simple/goal] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,323: -PUB [/rosout] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,323: -PUB [/ctrl/agent_10] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,323: -PUB [/tf] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,324: -PUB [/vis/agent_10/ego_vehicle_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,324: -PUB [/vis/agent_10/obstacle_map] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,325: -PUB [/vis/agent_10/surrounding_lane_net_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,325: -PUB [/vis/agent_10/local_lanes_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,326: -PUB [/vis/agent_10/ego_behavior_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,326: -PUB [/vis/agent_10/pred_traj_openloop_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,326: -PUB [/vis/agent_10/pred_initial_intention_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,327: -PUB [/vis/agent_10/surrounding_vehicle_vis] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,327: -PUB [/vis/agent_10/speed_limit] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,327: -PUB [/vis/agent_10/forward_trajs] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,328: -SUB [/arena_info_static] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,328: -SUB [/arena_info_dynamic] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,328: -SUB [/joy] /onlane_ai_agent_10 http://ying-N8:43327/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,328: -SERVICE [/onlane_ai_agent_10/get_loggers] /onlane_ai_agent_10 rosrpc://ying-N8:45207
+[rosmaster.master][INFO] 2026-04-24 22:21:37,329: -SERVICE [/onlane_ai_agent_10/set_logger_level] /onlane_ai_agent_10 rosrpc://ying-N8:45207
+[rosmaster.master][INFO] 2026-04-24 22:21:37,351: -PUB [/rosout] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,352: -PUB [/ctrl/agent_6] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,352: -PUB [/tf] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,352: -PUB [/vis/agent_6/ego_vehicle_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,353: -PUB [/vis/agent_6/obstacle_map] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,353: -PUB [/vis/agent_6/surrounding_lane_net_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,353: -PUB [/vis/agent_6/local_lanes_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,354: -PUB [/vis/agent_6/ego_behavior_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,354: -PUB [/vis/agent_6/pred_traj_openloop_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,354: -PUB [/vis/agent_6/pred_initial_intention_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,355: -PUB [/rosout] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,355: -PUB [/vis/agent_6/surrounding_vehicle_vis] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,355: -PUB [/ctrl/agent_5] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,356: -PUB [/vis/agent_6/speed_limit] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,356: -PUB [/tf] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,356: -PUB [/rosout] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,357: -PUB [/vis/agent_6/forward_trajs] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,357: -PUB [/vis/agent_5/ego_vehicle_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,358: -SUB [/arena_info_static] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,358: -PUB [/arena_info_static] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,358: -PUB [/vis/agent_5/obstacle_map] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,358: -SUB [/arena_info_dynamic] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,359: -PUB [/vis/agent_5/surrounding_lane_net_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,359: -PUB [/arena_info_dynamic] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,359: -SUB [/joy] /onlane_ai_agent_6 http://ying-N8:37569/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,360: -PUB [/vis/agent_5/local_lanes_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,360: -SERVICE [/onlane_ai_agent_6/get_loggers] /onlane_ai_agent_6 rosrpc://ying-N8:60877
+[rosmaster.master][INFO] 2026-04-24 22:21:37,361: -PUB [/phy_simulator_planning_node/vis/vehicle_set_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,361: -PUB [/vis/agent_5/ego_behavior_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,361: -SERVICE [/onlane_ai_agent_6/set_logger_level] /onlane_ai_agent_6 rosrpc://ying-N8:60877
+[rosmaster.master][INFO] 2026-04-24 22:21:37,361: -PUB [/phy_simulator_planning_node/vis/lane_net_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,362: -PUB [/vis/agent_5/pred_traj_openloop_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,362: -PUB [/phy_simulator_planning_node/vis/obstacle_set_vis] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,362: -PUB [/vis/agent_5/pred_initial_intention_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,363: -SUB [/ctrl/agent_10] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,363: -PUB [/vis/agent_5/surrounding_vehicle_vis] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,363: -SUB [/ctrl/agent_9] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,364: -PUB [/vis/agent_5/speed_limit] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,364: -PUB [/rosout] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,364: -SUB [/ctrl/agent_8] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,365: -PUB [/vis/agent_5/forward_trajs] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,365: -PUB [/ctrl/agent_4] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,365: -SUB [/ctrl/agent_7] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,366: -PUB [/tf] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,366: -SUB [/arena_info_static] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,366: -SUB [/ctrl/agent_6] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,367: -PUB [/vis/agent_4/ego_vehicle_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,367: -SUB [/arena_info_dynamic] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,367: -PUB [/vis/agent_4/obstacle_map] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,368: -SUB [/ctrl/agent_5] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,368: -SUB [/joy] /onlane_ai_agent_5 http://ying-N8:46729/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,368: -PUB [/vis/agent_4/surrounding_lane_net_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,368: -SUB [/ctrl/agent_4] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,369: -SERVICE [/onlane_ai_agent_5/get_loggers] /onlane_ai_agent_5 rosrpc://ying-N8:40913
+[rosmaster.master][INFO] 2026-04-24 22:21:37,369: -PUB [/vis/agent_4/local_lanes_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,369: -SUB [/ctrl/agent_3] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,370: -SERVICE [/onlane_ai_agent_5/set_logger_level] /onlane_ai_agent_5 rosrpc://ying-N8:40913
+[rosmaster.master][INFO] 2026-04-24 22:21:37,370: -PUB [/vis/agent_4/ego_behavior_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,370: -SUB [/ctrl/agent_2] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,370: -PUB [/vis/agent_4/pred_traj_openloop_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,371: -SUB [/ctrl/agent_1] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,371: -PUB [/vis/agent_4/pred_initial_intention_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,371: -SUB [/ctrl/agent_0] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,371: -PUB [/vis/agent_4/surrounding_vehicle_vis] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,372: -SUB [/initialpose] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,372: -PUB [/vis/agent_4/speed_limit] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,372: -SUB [/move_base_simple/goal] /phy_simulator_planning_node http://ying-N8:34605/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,372: -PUB [/vis/agent_4/forward_trajs] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,372: -SERVICE [/phy_simulator_planning_node/get_loggers] /phy_simulator_planning_node rosrpc://ying-N8:56261
+[rosmaster.master][INFO] 2026-04-24 22:21:37,373: -SUB [/arena_info_static] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,373: -SERVICE [/phy_simulator_planning_node/set_logger_level] /phy_simulator_planning_node rosrpc://ying-N8:56261
+[rosmaster.master][INFO] 2026-04-24 22:21:37,373: -SUB [/arena_info_dynamic] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,373: -SUB [/joy] /onlane_ai_agent_4 http://ying-N8:35761/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,374: -SERVICE [/onlane_ai_agent_4/get_loggers] /onlane_ai_agent_4 rosrpc://ying-N8:45281
+[rosmaster.master][INFO] 2026-04-24 22:21:37,374: -SERVICE [/onlane_ai_agent_4/set_logger_level] /onlane_ai_agent_4 rosrpc://ying-N8:45281
+[rosmaster.master][INFO] 2026-04-24 22:21:37,374: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,375: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:37569/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,375: publisherUpdate[/ctrl/agent_10] -> http://ying-N8:34605/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,375: publisherUpdate[/ctrl/agent_10] -> http://ying-N8:34605/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,376: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,376: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,377: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:46729/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,377: publisherUpdate[/ctrl/agent_6] -> http://ying-N8:34605/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,377: publisherUpdate[/ctrl/agent_6] -> http://ying-N8:34605/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,377: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,377: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,378: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/', 'http://ying-N8:34605/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,378: publisherUpdate[/ctrl/agent_5] -> http://ying-N8:34605/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,378: publisherUpdate[/ctrl/agent_5] -> http://ying-N8:34605/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,378: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,378: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,379: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:35761/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,379: publisherUpdate[/arena_info_static] -> http://ying-N8:38915/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,379: publisherUpdate[/arena_info_static] -> http://ying-N8:38915/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,379: publisherUpdate[/arena_info_static] -> http://ying-N8:40533/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,380: publisherUpdate[/arena_info_static] -> http://ying-N8:40533/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,380: publisherUpdate[/arena_info_static] -> http://ying-N8:45481/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,380: publisherUpdate[/arena_info_static] -> http://ying-N8:45481/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,380: publisherUpdate[/arena_info_static] -> http://ying-N8:35761/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,381: publisherUpdate[/arena_info_static] -> http://ying-N8:35761/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,381: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,381: publisherUpdate[/arena_info_static] -> http://ying-N8:46729/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,382: publisherUpdate[/arena_info_static] -> http://ying-N8:46729/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,382: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,382: publisherUpdate[/arena_info_static] -> http://ying-N8:42301/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,382: publisherUpdate[/arena_info_static] -> http://ying-N8:42301/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,382: publisherUpdate[/arena_info_static] -> http://ying-N8:45353/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,383: publisherUpdate[/arena_info_static] -> http://ying-N8:45353/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,383: publisherUpdate[/arena_info_static] -> http://ying-N8:33927/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,383: publisherUpdate[/arena_info_static] -> http://ying-N8:33927/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,383: publisherUpdate[/arena_info_static] -> http://ying-N8:33125/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_static] -> http://ying-N8:33125/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:38915/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:38915/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:40533/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:45481/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,384: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:40533/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,385: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:35761/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,385: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:35761/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,385: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,385: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:46729/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,386: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:45481/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,386: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:46729/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.master][INFO] 2026-04-24 22:21:37,386: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:42301/ []
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,386: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,386: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:45353/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,387: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:42301/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,387: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:33927/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,387: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:45353/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,387: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:33125/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,387: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:33125/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,388: publisherUpdate[/arena_info_dynamic] -> http://ying-N8:33927/ []: sec=0.00, result=[0, 'Unknown Error', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,388: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,388: publisherUpdate[/ctrl/agent_4] -> http://ying-N8:34605/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,388: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45481/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,389: publisherUpdate[/ctrl/agent_4] -> http://ying-N8:34605/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-04-24 22:21:37,389: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-04-24 22:21:37,486: -PUB [/rosout] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,487: -PUB [/rosout] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,489: -PUB [/rosout] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,490: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,492: -PUB [/rosout] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,493: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:42301/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,494: -PUB [/rosout] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,494: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,496: -PUB [/ctrl/agent_3] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,499: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:45353/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,499: -PUB [/ctrl/agent_2] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,499: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,500: -PUB [/ctrl/agent_7] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,503: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:33125/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,504: -PUB [/ctrl/agent_9] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,504: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:33927/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,506: -PUB [/ctrl/agent_8] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,508: -PUB [/tf] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,510: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/', 'http://ying-N8:33927/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,511: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,512: -PUB [/tf] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,514: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/', 'http://ying-N8:38915/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,514: -PUB [/tf] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,516: -PUB [/tf] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,518: -PUB [/tf] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,519: -PUB [/vis/agent_3/ego_vehicle_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,520: -PUB [/vis/agent_2/ego_vehicle_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,522: -PUB [/vis/agent_7/ego_vehicle_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,523: -PUB [/vis/agent_9/ego_vehicle_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,524: -PUB [/vis/agent_8/ego_vehicle_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,526: -PUB [/vis/agent_3/obstacle_map] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,527: -PUB [/vis/agent_2/obstacle_map] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,529: -PUB [/vis/agent_7/obstacle_map] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,530: -PUB [/vis/agent_9/obstacle_map] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,532: -PUB [/vis/agent_8/obstacle_map] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,534: -PUB [/vis/agent_3/surrounding_lane_net_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,537: -PUB [/vis/agent_2/surrounding_lane_net_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,537: -PUB [/vis/agent_7/surrounding_lane_net_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,539: -PUB [/vis/agent_9/surrounding_lane_net_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,541: -PUB [/vis/agent_8/surrounding_lane_net_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,543: -PUB [/vis/agent_3/local_lanes_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,545: -PUB [/vis/agent_2/local_lanes_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,547: -PUB [/vis/agent_7/local_lanes_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,548: -PUB [/vis/agent_9/local_lanes_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,551: -PUB [/vis/agent_8/local_lanes_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,553: -PUB [/vis/agent_3/ego_behavior_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,553: -PUB [/vis/agent_2/ego_behavior_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,556: -PUB [/vis/agent_7/ego_behavior_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,559: -PUB [/vis/agent_9/ego_behavior_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,559: -PUB [/vis/agent_8/ego_behavior_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,561: -PUB [/vis/agent_3/pred_traj_openloop_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,562: -PUB [/vis/agent_2/pred_traj_openloop_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,564: -PUB [/vis/agent_7/pred_traj_openloop_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,565: -PUB [/vis/agent_9/pred_traj_openloop_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,567: -PUB [/vis/agent_8/pred_traj_openloop_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,569: -PUB [/vis/agent_3/pred_initial_intention_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,571: -PUB [/vis/agent_2/pred_initial_intention_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,572: -PUB [/vis/agent_7/pred_initial_intention_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,573: -PUB [/vis/agent_9/pred_initial_intention_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,575: -PUB [/vis/agent_8/pred_initial_intention_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,577: -PUB [/vis/agent_3/surrounding_vehicle_vis] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,578: -PUB [/vis/agent_2/surrounding_vehicle_vis] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,579: -PUB [/vis/agent_7/surrounding_vehicle_vis] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,581: -PUB [/vis/agent_9/surrounding_vehicle_vis] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,584: -PUB [/vis/agent_8/surrounding_vehicle_vis] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,586: -PUB [/vis/agent_3/speed_limit] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,588: -PUB [/vis/agent_2/speed_limit] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,589: -PUB [/vis/agent_7/speed_limit] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,591: -PUB [/vis/agent_9/speed_limit] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,593: -PUB [/rosout] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,595: -PUB [/vis/agent_8/speed_limit] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,596: -PUB [/vis/agent_3/forward_trajs] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,597: -PUB [/vis/agent_2/forward_trajs] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,599: -PUB [/vis/agent_7/forward_trajs] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,601: -PUB [/vis/agent_9/forward_trajs] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,603: -PUB [/ctrl/agent_1] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,605: -PUB [/vis/agent_8/forward_trajs] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,607: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/']
+[rosmaster.master][INFO] 2026-04-24 22:21:37,608: -SUB [/arena_info_static] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,610: publisherUpdate[/rosout] -> http://ying-N8:45167/ ['http://ying-N8:40533/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,611: -SUB [/arena_info_static] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,612: -SUB [/arena_info_static] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,614: -SUB [/arena_info_static] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,616: -PUB [/tf] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,618: -SUB [/arena_info_static] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,620: -SUB [/arena_info_dynamic] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,621: -SUB [/arena_info_dynamic] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,623: -SUB [/arena_info_dynamic] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,625: -SUB [/arena_info_dynamic] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,626: -PUB [/vis/agent_1/ego_vehicle_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,628: -SUB [/arena_info_dynamic] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,629: -SUB [/joy] /onlane_ai_agent_3 http://ying-N8:45481/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,630: -SUB [/joy] /onlane_ai_agent_2 http://ying-N8:42301/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,632: -SUB [/joy] /onlane_ai_agent_7 http://ying-N8:45353/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,634: -SUB [/joy] /onlane_ai_agent_9 http://ying-N8:33125/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,635: -PUB [/vis/agent_1/obstacle_map] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,637: -SUB [/joy] /onlane_ai_agent_8 http://ying-N8:33927/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,639: -SERVICE [/onlane_ai_agent_3/get_loggers] /onlane_ai_agent_3 rosrpc://ying-N8:33897
+[rosmaster.master][INFO] 2026-04-24 22:21:37,640: -SERVICE [/onlane_ai_agent_2/get_loggers] /onlane_ai_agent_2 rosrpc://ying-N8:60415
+[rosmaster.master][INFO] 2026-04-24 22:21:37,642: -SERVICE [/onlane_ai_agent_7/get_loggers] /onlane_ai_agent_7 rosrpc://ying-N8:50341
+[rosmaster.master][INFO] 2026-04-24 22:21:37,643: -SERVICE [/onlane_ai_agent_9/get_loggers] /onlane_ai_agent_9 rosrpc://ying-N8:44887
+[rosmaster.master][INFO] 2026-04-24 22:21:37,646: -PUB [/vis/agent_1/surrounding_lane_net_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,648: -SERVICE [/onlane_ai_agent_8/get_loggers] /onlane_ai_agent_8 rosrpc://ying-N8:55861
+[rosmaster.master][INFO] 2026-04-24 22:21:37,649: -SERVICE [/onlane_ai_agent_3/set_logger_level] /onlane_ai_agent_3 rosrpc://ying-N8:33897
+[rosmaster.master][INFO] 2026-04-24 22:21:37,651: -SERVICE [/onlane_ai_agent_2/set_logger_level] /onlane_ai_agent_2 rosrpc://ying-N8:60415
+[rosmaster.master][INFO] 2026-04-24 22:21:37,652: -SERVICE [/onlane_ai_agent_7/set_logger_level] /onlane_ai_agent_7 rosrpc://ying-N8:50341
+[rosmaster.master][INFO] 2026-04-24 22:21:37,653: -SERVICE [/onlane_ai_agent_9/set_logger_level] /onlane_ai_agent_9 rosrpc://ying-N8:44887
+[rosmaster.master][INFO] 2026-04-24 22:21:37,654: -PUB [/vis/agent_1/local_lanes_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,655: -SERVICE [/onlane_ai_agent_8/set_logger_level] /onlane_ai_agent_8 rosrpc://ying-N8:55861
+[rosmaster.master][INFO] 2026-04-24 22:21:37,656: -PUB [/vis/agent_1/ego_behavior_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,658: -PUB [/vis/agent_1/pred_traj_openloop_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,660: -PUB [/vis/agent_1/pred_initial_intention_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,662: -PUB [/vis/agent_1/surrounding_vehicle_vis] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,663: -PUB [/vis/agent_1/speed_limit] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,665: -PUB [/vis/agent_1/forward_trajs] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,667: -SUB [/arena_info_static] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,668: -SUB [/arena_info_dynamic] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,670: -SUB [/joy] /onlane_ai_agent_1 http://ying-N8:38915/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,672: -SERVICE [/onlane_ai_agent_1/get_loggers] /onlane_ai_agent_1 rosrpc://ying-N8:35143
+[rosmaster.master][INFO] 2026-04-24 22:21:37,673: -SERVICE [/onlane_ai_agent_1/set_logger_level] /onlane_ai_agent_1 rosrpc://ying-N8:35143
+[rosmaster.master][INFO] 2026-04-24 22:21:37,686: -PUB [/rosout] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,688: -PUB [/tf] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,689: -PUB [/vis/agent_0/ego_vehicle_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,691: -PUB [/vis/agent_0/obstacle_map] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,691: publisherUpdate[/rosout] -> http://ying-N8:45167/ []
+[rosmaster.master][INFO] 2026-04-24 22:21:37,693: -PUB [/vis/agent_0/surrounding_lane_net_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,695: publisherUpdate[/rosout] -> http://ying-N8:45167/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-04-24 22:21:37,696: -PUB [/vis/agent_0/local_lanes_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,699: -PUB [/vis/agent_0/ego_behavior_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,701: -PUB [/vis/agent_0/pred_traj_openloop_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,703: -PUB [/vis/agent_0/pred_initial_intention_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,705: -PUB [/vis/agent_0/surrounding_vehicle_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,707: -PUB [/vis/agent_0/speed_limit] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,709: -PUB [/vis/agent_0/ssc/map_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,710: -PUB [/vis/agent_0/ssc/qp_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,712: -PUB [/vis/agent_0/ssc/ego_fs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,713: -PUB [/vis/agent_0/ssc/forward_trajs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,715: -PUB [/vis/agent_0/ssc/sur_vehicle_trajs_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,716: -PUB [/vis/agent_0/ssc/corridor_vis] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,718: -PUB [/ctrl/agent_0] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,719: -PUB [/test_ssc_with_mpdm_0/ssc_map] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,720: -PUB [/vis/agent_0/ssc/exec_traj] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,722: -PUB [/vis/agent_0/forward_trajs] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,723: -SUB [/joy] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,725: -SUB [/arena_info_static] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,726: -SUB [/arena_info_dynamic] /test_ssc_with_mpdm_0 http://ying-N8:40533/
+[rosmaster.master][INFO] 2026-04-24 22:21:37,728: -SERVICE [/test_ssc_with_mpdm_0/get_loggers] /test_ssc_with_mpdm_0 rosrpc://ying-N8:55087
+[rosmaster.master][INFO] 2026-04-24 22:21:37,729: -SERVICE [/test_ssc_with_mpdm_0/set_logger_level] /test_ssc_with_mpdm_0 rosrpc://ying-N8:55087
+[rosmaster.master][INFO] 2026-04-24 22:21:38,095: -PUB [/rosout_agg] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:38,096: -SUB [/rosout] /rosout http://ying-N8:45167/
+[rosmaster.master][INFO] 2026-04-24 22:21:38,096: -SERVICE [/rosout/get_loggers] /rosout rosrpc://ying-N8:44819
+[rosmaster.master][INFO] 2026-04-24 22:21:38,096: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://ying-N8:44819
+[rosmaster.main][INFO] 2026-04-24 22:21:38,197: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2026-04-24 22:21:38,197: stopping master...
+[rospy.core][INFO] 2026-04-24 22:21:38,198: signal_shutdown [atexit]

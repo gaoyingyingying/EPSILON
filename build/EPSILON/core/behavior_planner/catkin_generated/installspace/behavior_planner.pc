@@ -1,0 +1,8 @@
+prefix=/home/ying/epsilon-reproduction/install
+
+Name: behavior_planner
+Description: Description of behavior_planner
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/home/ying/epsilon-reproduction/src/EPSILON/core/route_planner/inc
+Libs: -L${prefix}/lib -lbehavior_planner_lib -lbehavior_planner_ros
+Requires: 

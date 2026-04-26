@@ -1,0 +1,97 @@
+[31mRLException: run_id on parameter server does not match declared run_id: 7ca6782e-3fe0-11f1-ae88-e9cd399364ee vs 7c9958ba-3fe0-11f1-ae88-e9cd399364ee[0m
+[31mThe traceback for the exception was written to the log file[0m
+... logging to /home/ying/epsilon-reproduction/results/compare_ring_tiny_v1.0_20260424_212121/eudm/ros/7c9958ba-3fe0-11f1-ae88-e9cd399364ee/roslaunch-ying-N8-154098.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch
+[1mstarted roslaunch server http://ying-N8:38041/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy_node/dev: /dev/input/js0
+ * /onlane_ai_agent_1/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_1/aggressiveness_level: 4
+ * /onlane_ai_agent_1/autonomous_level: 2
+ * /onlane_ai_agent_1/desired_vel: 10.0
+ * /onlane_ai_agent_1/ego_id: 1
+ * /onlane_ai_agent_10/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_10/aggressiveness_level: 4
+ * /onlane_ai_agent_10/autonomous_level: 2
+ * /onlane_ai_agent_10/desired_vel: 10.0
+ * /onlane_ai_agent_10/ego_id: 10
+ * /onlane_ai_agent_2/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_2/aggressiveness_level: 4
+ * /onlane_ai_agent_2/autonomous_level: 2
+ * /onlane_ai_agent_2/desired_vel: 10.0
+ * /onlane_ai_agent_2/ego_id: 2
+ * /onlane_ai_agent_3/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_3/aggressiveness_level: 4
+ * /onlane_ai_agent_3/autonomous_level: 2
+ * /onlane_ai_agent_3/desired_vel: 10.0
+ * /onlane_ai_agent_3/ego_id: 3
+ * /onlane_ai_agent_4/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_4/aggressiveness_level: 4
+ * /onlane_ai_agent_4/autonomous_level: 2
+ * /onlane_ai_agent_4/desired_vel: 10.0
+ * /onlane_ai_agent_4/ego_id: 4
+ * /onlane_ai_agent_5/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_5/aggressiveness_level: 4
+ * /onlane_ai_agent_5/autonomous_level: 2
+ * /onlane_ai_agent_5/desired_vel: 10.0
+ * /onlane_ai_agent_5/ego_id: 5
+ * /onlane_ai_agent_6/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_6/aggressiveness_level: 4
+ * /onlane_ai_agent_6/autonomous_level: 2
+ * /onlane_ai_agent_6/desired_vel: 10.0
+ * /onlane_ai_agent_6/ego_id: 6
+ * /onlane_ai_agent_7/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_7/aggressiveness_level: 4
+ * /onlane_ai_agent_7/autonomous_level: 2
+ * /onlane_ai_agent_7/desired_vel: 10.0
+ * /onlane_ai_agent_7/ego_id: 7
+ * /onlane_ai_agent_8/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_8/aggressiveness_level: 4
+ * /onlane_ai_agent_8/autonomous_level: 2
+ * /onlane_ai_agent_8/desired_vel: 10.0
+ * /onlane_ai_agent_8/ego_id: 8
+ * /onlane_ai_agent_9/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_9/aggressiveness_level: 4
+ * /onlane_ai_agent_9/autonomous_level: 2
+ * /onlane_ai_agent_9/desired_vel: 10.0
+ * /onlane_ai_agent_9/ego_id: 9
+ * /phy_simulator_planning_node/lane_net_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/map_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/vehicle_info_path: /home/ying/epsilo...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /test_ssc_with_eudm_0/agent_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/bp_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/desired_vel: 20.0
+ * /test_ssc_with_eudm_0/ego_id: 0
+ * /test_ssc_with_eudm_0/ssc_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/use_sim_state: True
+
+NODES
+  /
+    joy_node (joy/joy_node)
+    onlane_ai_agent_1 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_10 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_2 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_3 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_4 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_5 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_6 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_7 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_8 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_9 (ai_agent_planner/onlane_ai_agent)
+    phy_simulator_planning_node (phy_simulator/phy_simulator_planning_node)
+    test_ssc_with_eudm_0 (planning_integrated/test_ssc_with_eudm)
+
+auto-starting new master
+[1mprocess[master]: started with pid [154142][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch http://localhost:11311
+[master] killing on exit

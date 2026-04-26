@@ -1,0 +1,99 @@
+[roslaunch][INFO] 2026-04-24 21:21:22,206: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-04-24 21:21:22,209: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-04-24 21:21:22,210: roslaunch starting with args ['/opt/ros/noetic/bin/roslaunch', 'planning_integrated', 'repro_stack_eudm.launch', 'playground:=highway_lite']
+[roslaunch][INFO] 2026-04-24 21:21:22,210: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SESSION_MANAGER': 'local/ying-N8:@/tmp/.ICE-unix/1801,unix/ying-N8:/tmp/.ICE-unix/1801', 'QT_ACCESSIBILITY': '1', 'COLORTERM': '', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'fcitx', 'PKG_CONFIG_PATH': '/home/ying/epsilon-reproduction/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'LANGUAGE': 'zh_CN:zh:en_US:en', 'QT4_IM_MODULE': 'fcitx', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'zh_CN.UTF-8', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ELECTRON_RUN_AS_NODE': '1', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'zh_CN.UTF-8', 'SSH_AGENT_PID': '1755', 'ROS_PACKAGE_PATH': '/home/ying/epsilon-reproduction/src:/opt/ros/noetic/share', 'GH_PAGER': 'cat', 'GTK_MODULES': 'gail:atk-bridge', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ying/epsilon-reproduction/devel/share/common-lisp', 'PWD': '/home/ying/epsilon-reproduction/src/EPSILON', 'LOGNAME': 'ying', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_CODE_CACHE_PATH': '/home/ying/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'ROS_LOG_DIR': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'HOME': '/home/ying', 'USERNAME': 'ying', 'IM_CONFIG_PHASE': '1', 'LANG': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-1f8125e5-1.11-main.sock', 'CMAKE_PREFIX_PATH': '/home/ying/epsilon-reproduction/devel:/opt/ros/noetic', 'INVOCATION_ID': '1386fe43f9da487aaa78483c7a6582e3', 'MANAGERPID': '1609', 'CHROME_DESKTOP': 'code.desktop', 'CLUTTER_IM_MODULE': 'fcitx', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ying/epsilon-reproduction/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'TERM': 'dumb', 'CODEX_THREAD_ID': '019db83e-5b44-72b1-a501-b17402a0e00e', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ying', 'GIT_PAGER': 'cat', 'DISPLAY': ':1', 'VSCODE_PID': '3544', 'SHLVL': '1', 'PAGER': 'cat', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'ROS_MASTER_URI': 'http://localhost:11311', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'QT_IM_MODULE': 'fcitx', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'VSCODE_CWD': '/home/ying', 'NO_COLOR': '1', 'FC_FONTATIONS': '1', 'LD_LIBRARY_PATH': '/home/ying/epsilon-reproduction/devel/lib:/opt/ros/noetic/lib', 'CODEX_CI': '1', 'LC_CTYPE': 'C.UTF-8', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'LC_ALL': 'C.UTF-8', 'JOURNAL_STREAM': '8:43727', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'BLAS': '/home/ying/workspace/myLib/BLAS-3.12.0/libfblas.a', 'PATH': '/opt/ros/noetic/bin:/home/ying/.codex/tmp/arg0/codex-arg0HfzSPU:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ying/.vscode/extensions/openai.chatgpt-26.417.40842-linux-x64/bin/linux-x86_64', 'GDMSESSION': 'ubuntu', 'GLOG_log_dir': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/glog', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'RUST_LOG': 'warn', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"zh-cn","availableLanguages":{}}', 'DEBUG': 'release', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3544', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'LC_NUMERIC': 'zh_CN.UTF-8', 'OLDPWD': '/home/ying/epsilon-reproduction/src', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros/7ca6782e-3fe0-11f1-ae88-e9cd399364ee/roslaunch-ying-N8-154101.log'})
+[roslaunch][INFO] 2026-04-24 21:21:22,210: starting in server mode
+[roslaunch.parent][INFO] 2026-04-24 21:21:22,210: starting roslaunch parent run
+[roslaunch][INFO] 2026-04-24 21:21:22,211: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-04-24 21:21:22,379: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2026-04-24 21:21:22,379: loading config file /home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch
+[roslaunch][INFO] 2026-04-24 21:21:22,415: Added node of type [planning_integrated/test_ssc_with_eudm] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,417: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,418: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,419: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,419: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,420: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,421: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,421: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,422: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,423: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,424: Added node of type [ai_agent_planner/onlane_ai_agent] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,425: Added node of type [joy/joy_node] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: Added node of type [phy_simulator/phy_simulator_planning_node] in namespace [/]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [planning_integrated/test_ssc_with_eudm]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [ai_agent_planner/onlane_ai_agent]
+[roslaunch][INFO] 2026-04-24 21:21:22,426: ... selected machine [] for node of type [joy/joy_node]
+[roslaunch][INFO] 2026-04-24 21:21:22,427: ... selected machine [] for node of type [phy_simulator/phy_simulator_planning_node]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,427: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,428: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,428: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-04-24 21:21:22,428: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-04-24 21:21:22,428: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-04-24 21:21:22,428: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-04-24 21:21:22,428: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-04-24 21:21:22,428: Started XML-RPC server [http://ying-N8:42597/]
+[xmlrpc][INFO] 2026-04-24 21:21:22,429: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-04-24 21:21:22,440: started roslaunch server http://ying-N8:42597/
+[roslaunch.parent][INFO] 2026-04-24 21:21:22,441: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-04-24 21:21:22,441: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,442: auto-starting new master
+[roslaunch][INFO] 2026-04-24 21:21:22,442: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11311, 3, None, False
+[roslaunch][INFO] 2026-04-24 21:21:22,442: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,443: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,443: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-04-24 21:21:22,443: process[master]: starting os process
+[roslaunch][INFO] 2026-04-24 21:21:22,443: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros/7ca6782e-3fe0-11f1-ae88-e9cd399364ee/master.log']]
+[roslaunch][INFO] 2026-04-24 21:21:22,443: process[master]: cwd will be [/home/ying/.ros]
+[roslaunch][INFO] 2026-04-24 21:21:22,447: process[master]: started with pid [154147]
+[roslaunch][INFO] 2026-04-24 21:21:22,447: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,548: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,648: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,749: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,850: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,852: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,855: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2026-04-24 21:21:22,857: setting /run_id to 7ca6782e-3fe0-11f1-ae88-e9cd399364ee
+[roslaunch][INFO] 2026-04-24 21:21:22,859: setting /roslaunch/uris/host_ying_n8__42597' to http://ying-N8:42597/
+[roslaunch][INFO] 2026-04-24 21:21:22,863: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2026-04-24 21:21:22,863: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-04-24 21:21:22,864: process[rosout-1]: env[{'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SESSION_MANAGER': 'local/ying-N8:@/tmp/.ICE-unix/1801,unix/ying-N8:/tmp/.ICE-unix/1801', 'QT_ACCESSIBILITY': '1', 'COLORTERM': '', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'fcitx', 'PKG_CONFIG_PATH': '/home/ying/epsilon-reproduction/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'LANGUAGE': 'zh_CN:zh:en_US:en', 'QT4_IM_MODULE': 'fcitx', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'zh_CN.UTF-8', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ELECTRON_RUN_AS_NODE': '1', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'zh_CN.UTF-8', 'SSH_AGENT_PID': '1755', 'ROS_PACKAGE_PATH': '/home/ying/epsilon-reproduction/src:/opt/ros/noetic/share', 'GH_PAGER': 'cat', 'GTK_MODULES': 'gail:atk-bridge', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ying/epsilon-reproduction/devel/share/common-lisp', 'PWD': '/home/ying/epsilon-reproduction/src/EPSILON', 'LOGNAME': 'ying', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_CODE_CACHE_PATH': '/home/ying/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'ROS_LOG_DIR': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'HOME': '/home/ying', 'USERNAME': 'ying', 'IM_CONFIG_PHASE': '1', 'LANG': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-1f8125e5-1.11-main.sock', 'CMAKE_PREFIX_PATH': '/home/ying/epsilon-reproduction/devel:/opt/ros/noetic', 'INVOCATION_ID': '1386fe43f9da487aaa78483c7a6582e3', 'MANAGERPID': '1609', 'CHROME_DESKTOP': 'code.desktop', 'CLUTTER_IM_MODULE': 'fcitx', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ying/epsilon-reproduction/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'TERM': 'dumb', 'CODEX_THREAD_ID': '019db83e-5b44-72b1-a501-b17402a0e00e', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ying', 'GIT_PAGER': 'cat', 'DISPLAY': ':1', 'VSCODE_PID': '3544', 'SHLVL': '1', 'PAGER': 'cat', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'ROS_MASTER_URI': 'http://localhost:11311', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'QT_IM_MODULE': 'fcitx', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'VSCODE_CWD': '/home/ying', 'NO_COLOR': '1', 'FC_FONTATIONS': '1', 'LD_LIBRARY_PATH': '/home/ying/epsilon-reproduction/devel/lib:/opt/ros/noetic/lib', 'CODEX_CI': '1', 'LC_CTYPE': 'C.UTF-8', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'LC_ALL': 'C.UTF-8', 'JOURNAL_STREAM': '8:43727', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'BLAS': '/home/ying/workspace/myLib/BLAS-3.12.0/libfblas.a', 'PATH': '/opt/ros/noetic/bin:/home/ying/.codex/tmp/arg0/codex-arg0HfzSPU:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ying/.vscode/extensions/openai.chatgpt-26.417.40842-linux-x64/bin/linux-x86_64', 'GDMSESSION': 'ubuntu', 'GLOG_log_dir': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/glog', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'RUST_LOG': 'warn', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"zh-cn","availableLanguages":{}}', 'DEBUG': 'release', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3544', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'LC_NUMERIC': 'zh_CN.UTF-8', 'OLDPWD': '/home/ying/epsilon-reproduction/src', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros/7ca6782e-3fe0-11f1-ae88-e9cd399364ee/roslaunch-ying-N8-154101.log'}]
+[roslaunch][INFO] 2026-04-24 21:21:22,939: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2026-04-24 21:21:22,939: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,939: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,939: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2026-04-24 21:21:22,939: ... registered process [rosout-1]
+[roslaunch][INFO] 2026-04-24 21:21:22,939: process[rosout-1]: starting os process
+[roslaunch][INFO] 2026-04-24 21:21:22,939: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros/7ca6782e-3fe0-11f1-ae88-e9cd399364ee/rosout-1.log']]
+[roslaunch][INFO] 2026-04-24 21:21:22,939: process[rosout-1]: cwd will be [/home/ying/.ros]
+[roslaunch][INFO] 2026-04-24 21:21:22,944: process[rosout-1]: started with pid [154190]
+[roslaunch][INFO] 2026-04-24 21:21:22,944: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2026-04-24 21:21:22,945: load_parameters starting ...
+[roslaunch][ERROR] 2026-04-24 21:21:22,946: load_parameters: unable to set parameters (last param was [None]): [Errno 111] Connection refused
+[roslaunch.pmon][INFO] 2026-04-24 21:21:22,948: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 139892467427072)>
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,034: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139892467427072)>
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,034: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139892467427072)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f3b49d27fd0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f3b49cc6070>]
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,036: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2026-04-24 21:21:23,036: [rosout-1] killing on exit
+[roslaunch][INFO] 2026-04-24 21:21:23,036: process[rosout-1]: killing os process with pid[154190] pgid[154190]
+[roslaunch][INFO] 2026-04-24 21:21:23,036: [rosout-1] sending SIGINT to pgid [154190]
+[roslaunch][INFO] 2026-04-24 21:21:23,036: [rosout-1] sent SIGINT to pgid [154190]
+[roslaunch][INFO] 2026-04-24 21:21:23,236: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,237: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2026-04-24 21:21:23,237: [master] killing on exit
+[roslaunch][INFO] 2026-04-24 21:21:23,237: process[master]: killing os process with pid[154147] pgid[154147]
+[roslaunch][INFO] 2026-04-24 21:21:23,237: [master] sending SIGINT to pgid [154147]
+[roslaunch][INFO] 2026-04-24 21:21:23,237: [master] sent SIGINT to pgid [154147]
+[roslaunch][INFO] 2026-04-24 21:21:23,437: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,437: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-04-24 21:21:23,437: ProcessMonitor exit: pmon has shutdown
+[rospy.core][INFO] 2026-04-24 21:21:23,438: signal_shutdown [atexit]

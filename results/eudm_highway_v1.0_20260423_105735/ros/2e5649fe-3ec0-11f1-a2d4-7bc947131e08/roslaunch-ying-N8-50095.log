@@ -1,0 +1,76 @@
+[roslaunch][INFO] 2026-04-23 10:57:35,757: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-04-23 10:57:35,760: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-04-23 10:57:35,761: roslaunch starting with args ['/opt/ros/noetic/bin/roslaunch', 'planning_integrated', 'repro_stack_eudm.launch', 'playground:=highway_v1.0']
+[roslaunch][INFO] 2026-04-23 10:57:35,761: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SESSION_MANAGER': 'local/ying-N8:@/tmp/.ICE-unix/1852,unix/ying-N8:/tmp/.ICE-unix/1852', 'QT_ACCESSIBILITY': '1', 'COLORTERM': '', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'fcitx', 'PKG_CONFIG_PATH': '/home/ying/epsilon-reproduction/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'LANGUAGE': 'zh_CN:zh:en_US:en', 'QT4_IM_MODULE': 'fcitx', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'zh_CN.UTF-8', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ELECTRON_RUN_AS_NODE': '1', 'XMODIFIERS': '@im=fcitx', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'zh_CN.UTF-8', 'SSH_AGENT_PID': '1806', 'ROS_PACKAGE_PATH': '/home/ying/epsilon-reproduction/src:/opt/ros/noetic/share', 'GH_PAGER': 'cat', 'GTK_MODULES': 'gail:atk-bridge', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/ying/epsilon-reproduction/devel/share/common-lisp', 'PWD': '/home/ying/epsilon-reproduction/src/EPSILON', 'XDG_SESSION_DESKTOP': 'ubuntu', 'LOGNAME': 'ying', 'XDG_SESSION_TYPE': 'x11', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_CODE_CACHE_PATH': '/home/ying/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'ROS_LOG_DIR': '/home/ying/epsilon-reproduction/results/eudm_highway_v1.0_20260423_105735/ros', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'HOME': '/home/ying', 'USERNAME': 'ying', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'zh_CN.UTF-8', 'LANG': 'zh_CN.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-1f8125e5-1.11-main.sock', 'CMAKE_PREFIX_PATH': '/home/ying/epsilon-reproduction/devel:/opt/ros/noetic', 'INVOCATION_ID': '236892e9519d4da88cbeddb2820bd392', 'MANAGERPID': '1660', 'CHROME_DESKTOP': 'code.desktop', 'CLUTTER_IM_MODULE': 'fcitx', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/ying/epsilon-reproduction/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'dumb', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'CODEX_THREAD_ID': '019db83e-5b44-72b1-a501-b17402a0e00e', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ying', 'GIT_PAGER': 'cat', 'DISPLAY': ':1', 'VSCODE_PID': '9743', 'SHLVL': '0', 'PAGER': 'cat', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'ROS_MASTER_URI': 'http://localhost:11311', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'QT_IM_MODULE': 'fcitx', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'VSCODE_CWD': '/home/ying', 'NO_COLOR': '1', 'FC_FONTATIONS': '1', 'LD_LIBRARY_PATH': '/home/ying/epsilon-reproduction/devel/lib:/opt/ros/noetic/lib', 'CODEX_CI': '1', 'LC_CTYPE': 'C.UTF-8', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'zh_CN.UTF-8', 'LC_ALL': 'C.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'JOURNAL_STREAM': '8:43716', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'BLAS': '/home/ying/workspace/myLib/BLAS-3.12.0/libfblas.a', 'PATH': '/opt/ros/noetic/bin:/home/ying/.codex/tmp/arg0/codex-arg0lNC5b5:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ying/.vscode/extensions/openai.chatgpt-26.417.40842-linux-x64/bin/linux-x86_64', 'GDMSESSION': 'ubuntu', 'GLOG_log_dir': '/home/ying/epsilon-reproduction/results/eudm_highway_v1.0_20260423_105735/glog', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"zh-cn","availableLanguages":{}}', 'RUST_LOG': 'warn', 'DEBUG': 'release', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '9743', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'LC_NUMERIC': 'zh_CN.UTF-8', 'OLDPWD': '/home/ying/epsilon-reproduction/src', '_': '/opt/ros/noetic/bin/roslaunch', 'ROS_LOG_FILENAME': '/home/ying/epsilon-reproduction/results/eudm_highway_v1.0_20260423_105735/ros/2e5649fe-3ec0-11f1-a2d4-7bc947131e08/roslaunch-ying-N8-50095.log'})
+[roslaunch][INFO] 2026-04-23 10:57:35,761: starting in server mode
+[roslaunch.parent][INFO] 2026-04-23 10:57:35,761: starting roslaunch parent run
+[roslaunch][INFO] 2026-04-23 10:57:35,761: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-04-23 10:57:35,905: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2026-04-23 10:57:35,905: loading config file /home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch
+[roslaunch][ERROR] 2026-04-23 10:57:35,937: RLException: while processing /home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/test_ssc_with_eudm_ros.launch:
+Invalid <arg> tag: cannot override arg 'playground', which has already been set. 
+
+Arg xml is <arg name="playground" value="highway_v1.0"/>
+[roslaunch][ERROR] 2026-04-23 10:57:35,937: The traceback for the exception was written to the log file
+[roslaunch][ERROR] 2026-04-23 10:57:35,938: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 303, in _arg_tag
+    context.add_arg(name, value=value, default=default, doc=doc)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/loader.py", line 249, in add_arg
+    raise LoadException("cannot override arg '%s', which has already been set"%name)
+roslaunch.loader.LoadException: cannot override arg 'playground', which has already been set
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 635, in _include_tag
+    self._recurse_load(ros_config, launch.childNodes, child_ns, \
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 660, in _recurse_load
+    self._arg_tag(tag, context, ros_config, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+    return f(*args, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 312, in _arg_tag
+    raise XmlParseException(
+roslaunch.xmlloader.XmlParseException: Invalid <arg> tag: cannot override arg 'playground', which has already been set. 
+
+Arg xml is <arg name="playground" value="highway_v1.0"/>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/config.py", line 461, in load_config_default
+    loader.load(f, config, argv=args, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 763, in load
+    self._load_launch(launch, ros_config, is_core=core, filename=filename, argv=argv, verbose=verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 735, in _load_launch
+    self._recurse_load(ros_config, launch.childNodes, self.root_context, None, is_core, verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 701, in _recurse_load
+    val = self._include_tag(tag, context, ros_config, default_machine, is_core, verbose)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+    return f(*args, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 646, in _include_tag
+    raise XmlParseException("while processing %s:\n%s"%(inc_filename, str(e)))
+roslaunch.xmlloader.XmlParseException: while processing /home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/test_ssc_with_eudm_ros.launch:
+Invalid <arg> tag: cannot override arg 'playground', which has already been set. 
+
+Arg xml is <arg name="playground" value="highway_v1.0"/>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+    p.start()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+    self._start_infrastructure()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 254, in _start_infrastructure
+    self._load_config()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 156, in _load_config
+    self.config = roslaunch.config.load_config_default(self.roslaunch_files, self.port,
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/config.py", line 463, in load_config_default
+    raise RLException(e)
+roslaunch.core.RLException: while processing /home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/test_ssc_with_eudm_ros.launch:
+Invalid <arg> tag: cannot override arg 'playground', which has already been set. 
+
+Arg xml is <arg name="playground" value="highway_v1.0"/>
+
+[rospy.core][INFO] 2026-04-23 10:57:35,938: signal_shutdown [atexit]

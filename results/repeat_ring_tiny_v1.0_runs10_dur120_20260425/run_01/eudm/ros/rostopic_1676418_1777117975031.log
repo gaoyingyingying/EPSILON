@@ -1,0 +1,19 @@
+[rospy.client][INFO] 2026-04-25 19:52:55,045: init_node, name[/rostopic_1676418_1777117975031], pid[1676418]
+[xmlrpc][INFO] 2026-04-25 19:52:55,045: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-04-25 19:52:55,045: Started XML-RPC server [http://y:45961/]
+[rospy.init][INFO] 2026-04-25 19:52:55,046: ROS Slave URI: [http://y:45961/]
+[rospy.impl.masterslave][INFO] 2026-04-25 19:52:55,046: _ready: http://y:45961/
+[rospy.registration][INFO] 2026-04-25 19:52:55,046: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-04-25 19:52:55,046: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-04-25 19:52:55,146: registered with master
+[rospy.rosout][INFO] 2026-04-25 19:52:55,146: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-04-25 19:52:55,147: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-04-25 19:52:55,148: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-04-25 19:52:55,158: topic[/arena_info_dynamic] adding connection to [http://y:40461/], count 0
+[rospy.internal][INFO] 2026-04-25 19:52:55,352: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2026-04-25 19:53:08,580: topic[/arena_info_dynamic] removing connection to http://y:40461/
+[rospy.internal][INFO] 2026-04-25 19:53:09,162: topic[/rosout] removing connection to /rosout
+[rospy.core][INFO] 2026-04-25 19:53:09,799: signal_shutdown [signal-15]
+[rospy.registration][WARNING] 2026-04-25 19:53:09,801: cannot unregister with master due to network issues
+[rospy.impl.masterslave][INFO] 2026-04-25 19:53:09,801: signal-15
+[rospy.core][INFO] 2026-04-25 19:53:10,401: signal_shutdown [atexit]

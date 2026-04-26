@@ -1,0 +1,139 @@
+[31mload_parameters: unable to set parameters (last param was [None]): [Errno 111] Connection refused[0m
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+    p.start()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 316, in start
+    self.runner.launch()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 676, in launch
+    self._setup()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 663, in _setup
+    self._load_parameters()
+  File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/launch.py", line 343, in _load_parameters
+    r = param_server_multi()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 879, in __call__
+    return MultiCallIterator(self.__server.system.multicall(marshalled_list))
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1165, in single_request
+    http_conn = self.send_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1278, in send_request
+    self.send_content(connection, request_body)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1308, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/usr/lib/python3.8/http/client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+... logging to /home/ying/epsilon-reproduction/results/compare_highway_lite_20260424_212121/eudm/ros/7ca6782e-3fe0-11f1-ae88-e9cd399364ee/roslaunch-ying-N8-154101.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch
+[1mstarted roslaunch server http://ying-N8:42597/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /joy_node/dev: /dev/input/js0
+ * /onlane_ai_agent_1/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_1/aggressiveness_level: 4
+ * /onlane_ai_agent_1/autonomous_level: 2
+ * /onlane_ai_agent_1/desired_vel: 10.0
+ * /onlane_ai_agent_1/ego_id: 1
+ * /onlane_ai_agent_10/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_10/aggressiveness_level: 4
+ * /onlane_ai_agent_10/autonomous_level: 2
+ * /onlane_ai_agent_10/desired_vel: 10.0
+ * /onlane_ai_agent_10/ego_id: 10
+ * /onlane_ai_agent_2/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_2/aggressiveness_level: 4
+ * /onlane_ai_agent_2/autonomous_level: 2
+ * /onlane_ai_agent_2/desired_vel: 10.0
+ * /onlane_ai_agent_2/ego_id: 2
+ * /onlane_ai_agent_3/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_3/aggressiveness_level: 4
+ * /onlane_ai_agent_3/autonomous_level: 2
+ * /onlane_ai_agent_3/desired_vel: 10.0
+ * /onlane_ai_agent_3/ego_id: 3
+ * /onlane_ai_agent_4/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_4/aggressiveness_level: 4
+ * /onlane_ai_agent_4/autonomous_level: 2
+ * /onlane_ai_agent_4/desired_vel: 10.0
+ * /onlane_ai_agent_4/ego_id: 4
+ * /onlane_ai_agent_5/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_5/aggressiveness_level: 4
+ * /onlane_ai_agent_5/autonomous_level: 2
+ * /onlane_ai_agent_5/desired_vel: 10.0
+ * /onlane_ai_agent_5/ego_id: 5
+ * /onlane_ai_agent_6/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_6/aggressiveness_level: 4
+ * /onlane_ai_agent_6/autonomous_level: 2
+ * /onlane_ai_agent_6/desired_vel: 10.0
+ * /onlane_ai_agent_6/ego_id: 6
+ * /onlane_ai_agent_7/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_7/aggressiveness_level: 4
+ * /onlane_ai_agent_7/autonomous_level: 2
+ * /onlane_ai_agent_7/desired_vel: 10.0
+ * /onlane_ai_agent_7/ego_id: 7
+ * /onlane_ai_agent_8/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_8/aggressiveness_level: 4
+ * /onlane_ai_agent_8/autonomous_level: 2
+ * /onlane_ai_agent_8/desired_vel: 10.0
+ * /onlane_ai_agent_8/ego_id: 8
+ * /onlane_ai_agent_9/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_9/aggressiveness_level: 4
+ * /onlane_ai_agent_9/autonomous_level: 2
+ * /onlane_ai_agent_9/desired_vel: 10.0
+ * /onlane_ai_agent_9/ego_id: 9
+ * /phy_simulator_planning_node/lane_net_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/map_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/vehicle_info_path: /home/ying/epsilo...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /test_ssc_with_eudm_0/agent_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/bp_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/desired_vel: 20.0
+ * /test_ssc_with_eudm_0/ego_id: 0
+ * /test_ssc_with_eudm_0/ssc_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/use_sim_state: True
+
+NODES
+  /
+    joy_node (joy/joy_node)
+    onlane_ai_agent_1 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_10 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_2 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_3 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_4 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_5 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_6 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_7 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_8 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_9 (ai_agent_planner/onlane_ai_agent)
+    phy_simulator_planning_node (phy_simulator/phy_simulator_planning_node)
+    test_ssc_with_eudm_0 (planning_integrated/test_ssc_with_eudm)
+
+auto-starting new master
+[1mprocess[master]: started with pid [154147][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch http://localhost:11311
+[1msetting /run_id to 7ca6782e-3fe0-11f1-ae88-e9cd399364ee[0m
+[1mprocess[rosout-1]: started with pid [154190][0m
+started core service [/rosout]
+[ERROR] [1777036882.953523201]: [registerService] Failed to contact master at [localhost:11311].  Retrying...
+[rosout-1] killing on exit
+[master] killing on exit
