@@ -1,0 +1,15 @@
+<launch>
+  <arg name="playground" default="highway_v1.0" />
+
+  <include file="$(find planning_integrated)/launch/test_ssc_with_mpdm_ros.launch">
+    <arg name="playground" value="$(arg playground)" />
+  </include>
+
+  <include file="$(find ai_agent_planner)/launch/onlane_ai_agent.launch">
+    <arg name="playground" value="$(arg playground)" />
+  </include>
+
+  <include file="$(find phy_simulator)/launch/phy_simulator_planning.launch">
+    <arg name="playground" value="$(arg playground)" />
+  </include>
+</launch>
