@@ -41,24 +41,29 @@ int SemanticMapUpdateCallback(
 int main(int argc, char** argv) {
   ros::init(argc, argv, "~");
   ros::NodeHandle nh("~");
+  ROS_INFO("[test_ssc_with_eudm] main started");
 
   int ego_id;
   if (!nh.getParam("ego_id", ego_id)) {
     ROS_ERROR("Failed to get param %d", ego_id);
     assert(false);
   }
+  ROS_INFO("[test_ssc_with_eudm] ego_id=%d", ego_id);
   std::string agent_config_path;
   if (!nh.getParam("agent_config_path", agent_config_path)) {
     ROS_ERROR("Failed to get param agent_config_path %s",
               agent_config_path.c_str());
     assert(false);
   }
+  ROS_INFO("[test_ssc_with_eudm] agent_config_path=%s",
+           agent_config_path.c_str());
 
   std::string bp_config_path;
   if (!nh.getParam("bp_config_path", bp_config_path)) {
     ROS_ERROR("Failed to get param bp_config_path %s", bp_config_path.c_str());
     assert(false);
   }
+  ROS_INFO("[test_ssc_with_eudm] bp_config_path=%s", bp_config_path.c_str());
 
   std::string ssc_config_path;
   if (!nh.getParam("ssc_config_path", ssc_config_path)) {
@@ -66,6 +71,7 @@ int main(int argc, char** argv) {
               ssc_config_path.c_str());
     assert(false);
   }
+  ROS_INFO("[test_ssc_with_eudm] ssc_config_path=%s", ssc_config_path.c_str());
 
   semantic_map_manager::SemanticMapManager semantic_map_manager(
       ego_id, agent_config_path);
@@ -78,16 +84,24 @@ int main(int argc, char** argv) {
   p_bp_server_ = new planning::EudmPlannerServer(nh, bp_work_rate, ego_id);
   p_bp_server_->set_user_desired_velocity(desired_vel);
   p_bp_server_->BindBehaviorUpdateCallback(BehaviorUpdateCallback);
+  ROS_INFO("[test_ssc_with_eudm] bp server constructed");
 
   p_ssc_server_ =
       new planning::SscPlannerServer(nh, ssc_planner_work_rate, ego_id);
+  ROS_INFO("[test_ssc_with_eudm] ssc server constructed");
 
+  ROS_INFO("[test_ssc_with_eudm] init bp server");
   p_bp_server_->Init(bp_config_path);
+  ROS_INFO("[test_ssc_with_eudm] init ssc server");
   p_ssc_server_->Init(ssc_config_path);
+  ROS_INFO("[test_ssc_with_eudm] init semantic map adapter");
   smm_ros_adapter.Init();
 
+  ROS_INFO("[test_ssc_with_eudm] start bp server");
   p_bp_server_->Start();
+  ROS_INFO("[test_ssc_with_eudm] start ssc server");
   p_ssc_server_->Start();
+  ROS_INFO("[test_ssc_with_eudm] init finished, entering spin loop");
 
   // TicToc timer;
   ros::Rate rate(100);

@@ -1,5 +1,7 @@
 #include "eudm_planner/eudm_planner.h"
 
+#include <cmath>
+
 #include <glog/logging.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 #include <google/protobuf/text_format.h>
@@ -188,6 +190,10 @@ ErrorType EudmPlanner::PrepareMultiThreadContainers(const int n_sequence) {
 
   final_cost_.clear();
   final_cost_.resize(n_sequence, 0.0);
+  legacy_final_cost_.clear();
+  legacy_final_cost_.resize(n_sequence, 0.0);
+  final_ai_cost_.clear();
+  final_ai_cost_.resize(n_sequence);
 
   progress_cost_.clear();
   progress_cost_.resize(n_sequence);
@@ -211,7 +217,10 @@ ErrorType EudmPlanner::PrepareMultiThreadContainers(const int n_sequence) {
 
 ErrorType EudmPlanner::GetSurroundingForwardSimAgents(
     const common::SemanticVehicleSet& surrounding_semantic_vehicles,
-    ForwardSimAgentSet* fsagents) const {
+    ForwardSimAgentSet* fsagents) {
+  intent_belief_debug_.clear();
+  const bool use_active_inference = cfg_.cost().has_active_inference() &&
+                                    cfg_.cost().active_inference().enable();
   for (const auto& psv : surrounding_semantic_vehicles.semantic_vehicles) {
     ForwardSimAgent fsagent;
 
@@ -233,8 +242,29 @@ ErrorType EudmPlanner::GetSurroundingForwardSimAgents(
     }
 
     // * lat
-    fsagent.lat_probs = psv.second.probs_lat_behaviors;
-    fsagent.lat_behavior = psv.second.lat_behavior;
+    if (!use_active_inference) {
+      fsagent.lat_probs = psv.second.probs_lat_behaviors;
+      fsagent.lat_behavior = psv.second.lat_behavior;
+    } else {
+      common::ProbDistOfLatBehaviors belief_probs;
+      UpdateIntentBelief(id, psv.second.probs_lat_behaviors, &belief_probs);
+      fsagent.lat_probs = belief_probs;
+      if (!belief_probs.GetMaxProbBehavior(&fsagent.lat_behavior)) {
+        fsagent.lat_behavior = psv.second.lat_behavior;
+      }
+      if (belief_probs.is_valid) {
+        std::ostringstream ss;
+        ss << "id=" << id << " pL="
+           << std::fixed << std::setprecision(2)
+           << belief_probs.probs.at(common::LateralBehavior::kLaneChangeLeft)
+           << " pK="
+           << belief_probs.probs.at(common::LateralBehavior::kLaneKeeping)
+           << " pR="
+           << belief_probs.probs.at(common::LateralBehavior::kLaneChangeRight)
+           << " H=" << ComputeLatBeliefEntropy(belief_probs);
+        intent_belief_debug_.push_back(ss.str());
+      }
+    }
 
     fsagent.lane = psv.second.lane;
     fsagent.stf = common::StateTransformer(fsagent.lane);
@@ -246,6 +276,76 @@ ErrorType EudmPlanner::GetSurroundingForwardSimAgents(
   }
 
   return kSuccess;
+}
+
+ErrorType EudmPlanner::UpdateIntentBelief(
+    const int agent_id, const common::ProbDistOfLatBehaviors& observed,
+    common::ProbDistOfLatBehaviors* belief) {
+  if (!belief) return kIllegalInput;
+
+  common::ProbDistOfLatBehaviors prior = observed;
+  bool has_valid_prior = false;
+  auto it = intent_belief_cache_.find(agent_id);
+  if (it != intent_belief_cache_.end() && it->second.is_valid) {
+    prior = it->second;
+    has_valid_prior = true;
+  }
+  if (!observed.is_valid && !has_valid_prior) {
+    *belief = observed;
+    return kSuccess;
+  }
+  if (!observed.is_valid && has_valid_prior) {
+    *belief = prior;
+    return kSuccess;
+  }
+
+  decimal_t alpha = 0.65;
+  if (cfg_.cost().has_active_inference()) {
+    alpha = std::min(std::max(cfg_.cost().active_inference().belief_smoothing(),
+                              0.0),
+                     1.0);
+  }
+
+  common::ProbDistOfLatBehaviors posterior;
+  posterior.is_valid = observed.is_valid;
+  decimal_t sum = 0.0;
+  const std::vector<LateralBehavior> kBehaviors = {
+      LateralBehavior::kLaneChangeLeft, LateralBehavior::kLaneKeeping,
+      LateralBehavior::kLaneChangeRight};
+  for (const auto& beh : kBehaviors) {
+    decimal_t p_obs = observed.probs.at(beh);
+    decimal_t p_prior = prior.probs.at(beh);
+    decimal_t p = alpha * p_prior + (1.0 - alpha) * p_obs;
+    p = std::max(0.0, p);
+    posterior.probs[beh] = p;
+    sum += p;
+  }
+
+  if (sum < kEPS) {
+    posterior.probs[LateralBehavior::kLaneChangeLeft] = 1.0 / 3.0;
+    posterior.probs[LateralBehavior::kLaneKeeping] = 1.0 / 3.0;
+    posterior.probs[LateralBehavior::kLaneChangeRight] = 1.0 / 3.0;
+  } else {
+    for (const auto& beh : kBehaviors) {
+      posterior.probs[beh] /= sum;
+    }
+  }
+  posterior.is_valid = true;
+  *belief = posterior;
+  intent_belief_cache_[agent_id] = posterior;
+  return kSuccess;
+}
+
+decimal_t EudmPlanner::ComputeLatBeliefEntropy(
+    const common::ProbDistOfLatBehaviors& belief) const {
+  if (!belief.is_valid) return 1.0;
+  decimal_t h = 0.0;
+  const decimal_t kLog3 = std::log(3.0);
+  for (const auto& p : belief.probs) {
+    decimal_t v = std::max(p.second, kEPS);
+    h += -v * std::log(v);
+  }
+  return h / kLog3;
 }
 
 ErrorType EudmPlanner::RunEudm() {
@@ -334,6 +434,7 @@ ErrorType EudmPlanner::RunEudm() {
         << "[Eudm][Fatal]fail to evaluate multi-thread sim results. Exit";
     return kWrongStatus;
   }
+  LogActiveInferenceDecisionSummary();
   return kSuccess;
 }
 
@@ -953,10 +1054,98 @@ ErrorType EudmPlanner::EvaluateSinglePolicyTrajs(
     const CostStructure& tail_cost, const std::vector<DcpAction>& action_seq,
     decimal_t* score) {
   decimal_t score_tmp = 0.0;
+  const bool use_ai = cfg_.cost().has_active_inference() &&
+                      cfg_.cost().active_inference().enable();
   for (const auto& c : progress_cost) {
-    score_tmp += c.ave();
+    if (use_ai) {
+      score_tmp += c.active_inference.total() * c.weight;
+    } else {
+      score_tmp += c.ave();
+    }
   }
-  *score = score_tmp + tail_cost.ave();
+  *score = score_tmp +
+           (use_ai ? tail_cost.active_inference.total() * tail_cost.weight
+                   : tail_cost.ave());
+  return kSuccess;
+}
+
+ErrorType EudmPlanner::EvaluateActiveInferenceSafetyCost(
+    const DcpAction& action, const ForwardSimEgoAgent& ego_fsagent,
+    const ForwardSimAgentSet& other_fsagent,
+    const vec_E<common::Vehicle>& ego_traj,
+    const std::unordered_map<int, vec_E<common::Vehicle>>& surround_trajs,
+    decimal_t* safety_cost) const {
+  if (!safety_cost) return kIllegalInput;
+  *safety_cost = 0.0;
+  if (ego_traj.empty()) return kSuccess;
+
+  const decimal_t ttc_th = cfg_.cost().has_active_inference()
+                               ? cfg_.cost().active_inference().ttc_threshold()
+                               : 2.5;
+  const decimal_t lon_safe = cfg_.cost().has_active_inference()
+                                 ? cfg_.cost()
+                                       .active_inference()
+                                       .min_longitudinal_distance()
+                                 : 10.0;
+  const decimal_t lat_safe = cfg_.cost().has_active_inference()
+                                 ? cfg_.cost()
+                                       .active_inference()
+                                       .min_lateral_distance()
+                                 : 2.5;
+
+  const common::State ego_now = ego_traj.front().state();
+  for (const auto& surround_pair : surround_trajs) {
+    const auto& other_traj = surround_pair.second;
+    if (other_traj.empty()) continue;
+
+    const common::State other_now = other_traj.front().state();
+    Vec2f rel_p = other_now.vec_position - ego_now.vec_position;
+    Vec2f ego_v(std::cos(ego_now.angle) * ego_now.velocity,
+                std::sin(ego_now.angle) * ego_now.velocity);
+    Vec2f other_v(std::cos(other_now.angle) * other_now.velocity,
+                  std::sin(other_now.angle) * other_now.velocity);
+    Vec2f rel_v = other_v - ego_v;
+    decimal_t rel_v_norm2 = rel_v.squaredNorm();
+    decimal_t ttc = kInf;
+    if (rel_v_norm2 > kEPS) {
+      decimal_t ttc_raw = -(rel_p.dot(rel_v)) / rel_v_norm2;
+      if (ttc_raw > 0.0) {
+        ttc = ttc_raw;
+      }
+    }
+    if (ttc < ttc_th) {
+      *safety_cost += (ttc_th - ttc) / std::max(ttc_th, 0.1);
+    }
+
+    decimal_t lon_dist =
+        std::fabs(other_now.vec_position[0] - ego_now.vec_position[0]);
+    decimal_t lat_dist =
+        std::fabs(other_now.vec_position[1] - ego_now.vec_position[1]);
+    if (lon_dist < lon_safe && lat_dist < lat_safe) {
+      *safety_cost +=
+          (1.0 - lon_dist / std::max(lon_safe, 0.1)) +
+          (1.0 - lat_dist / std::max(lat_safe, 0.1));
+    }
+
+    auto fsagent_it = other_fsagent.forward_sim_agents.find(surround_pair.first);
+    if (fsagent_it != other_fsagent.forward_sim_agents.end()) {
+      decimal_t p_cut_in = 0.0;
+      if (action.lat == DcpLatAction::kLaneChangeLeft) {
+        p_cut_in = fsagent_it->second.lat_probs.probs.at(
+            LateralBehavior::kLaneChangeRight);
+      } else if (action.lat == DcpLatAction::kLaneChangeRight) {
+        p_cut_in = fsagent_it->second.lat_probs.probs.at(
+            LateralBehavior::kLaneChangeLeft);
+      } else {
+        p_cut_in = fsagent_it->second.lat_probs.probs.at(
+            LateralBehavior::kLaneChangeLeft) +
+                   fsagent_it->second.lat_probs.probs.at(
+                       LateralBehavior::kLaneChangeRight);
+      }
+      decimal_t near_gain = 1.0 / (1.0 + rel_p.norm());
+      *safety_cost += near_gain * p_cut_in;
+    }
+  }
   return kSuccess;
 }
 
@@ -973,6 +1162,16 @@ ErrorType EudmPlanner::EvaluateMultiThreadSimResults(int* winner_id,
     auto action_seq = dcp_tree_ptr_->action_script()[i];
     EvaluateSinglePolicyTrajs(progress_cost_[i], tail_cost_[i], action_seq,
                               &cost);
+    decimal_t legacy_cost = 0.0;
+    for (const auto& c : progress_cost_[i]) {
+      legacy_cost += c.ave();
+      final_ai_cost_[i].risk += c.active_inference.risk * c.weight;
+      final_ai_cost_[i].uncertainty += c.active_inference.uncertainty * c.weight;
+      final_ai_cost_[i].efficiency += c.active_inference.efficiency * c.weight;
+      final_ai_cost_[i].comfort += c.active_inference.comfort * c.weight;
+    }
+    legacy_cost += tail_cost_[i].ave();
+    legacy_final_cost_[i] = legacy_cost;
     final_cost_[i] = cost;
     if (cost < min_cost) {
       min_cost = cost;
@@ -982,6 +1181,54 @@ ErrorType EudmPlanner::EvaluateMultiThreadSimResults(int* winner_id,
   *winner_cost = min_cost;
   *winner_id = best_id;
   return kSuccess;
+}
+
+void EudmPlanner::LogActiveInferenceDecisionSummary() const {
+  const bool use_ai = cfg_.cost().has_active_inference() &&
+                      cfg_.cost().active_inference().enable();
+  if (!use_ai) return;
+
+  if (!intent_belief_debug_.empty()) {
+    std::ostringstream belief_line;
+    belief_line << "[Eudm][AIR][belief]";
+    for (const auto& line : intent_belief_debug_) {
+      belief_line << " {" << line << "}";
+    }
+    LOG(WARNING) << belief_line.str();
+  }
+
+  std::vector<std::pair<decimal_t, int>> ranked;
+  for (int i = 0; i < static_cast<int>(sim_res_.size()); ++i) {
+    if (sim_res_[i] == 1) ranked.push_back(std::make_pair(final_cost_[i], i));
+  }
+  std::sort(ranked.begin(), ranked.end(),
+            [](const std::pair<decimal_t, int>& a,
+               const std::pair<decimal_t, int>& b) { return a.first < b.first; });
+
+  auto action_script = dcp_tree_ptr_->action_script();
+  int top_k = std::min(static_cast<int>(ranked.size()), 5);
+  for (int rank = 0; rank < top_k; ++rank) {
+    const int seq_id = ranked[rank].second;
+    std::ostringstream ss;
+    ss << "[Eudm][AIR][rank=" << rank << "] seq=" << seq_id << " [";
+    for (const auto& a : action_script[seq_id]) {
+      ss << DcpTree::RetLonActionName(a.lon);
+    }
+    ss << "|";
+    for (const auto& a : action_script[seq_id]) {
+      ss << DcpTree::RetLatActionName(a.lat);
+    }
+    ss << "] G=" << std::fixed << std::setprecision(3) << final_cost_[seq_id]
+       << " {risk=" << final_ai_cost_[seq_id].risk
+       << ", unc=" << final_ai_cost_[seq_id].uncertainty
+       << ", eff=" << final_ai_cost_[seq_id].efficiency
+       << ", comfort=" << final_ai_cost_[seq_id].comfort
+       << "} legacy=" << legacy_final_cost_[seq_id];
+    if (seq_id == winner_id_) {
+      ss << " <- winner";
+    }
+    LOG(WARNING) << ss.str();
+  }
 }
 
 ErrorType EudmPlanner::EvaluateSafetyStatus(
@@ -1222,6 +1469,56 @@ ErrorType EudmPlanner::CostFunction(
       }
     }
   }
+
+  if (cfg_.cost().has_active_inference() &&
+      cfg_.cost().active_inference().enable()) {
+    decimal_t ai_safety_cost = 0.0;
+    EvaluateActiveInferenceSafetyCost(action, ego_fsagent, other_fsagent,
+                                      ego_traj, surround_trajs,
+                                      &ai_safety_cost);
+
+    decimal_t uncertainty_cost = 0.0;
+    for (const auto& p_agent : other_fsagent.forward_sim_agents) {
+      const auto& belief = p_agent.second.lat_probs;
+      decimal_t entropy = ComputeLatBeliefEntropy(belief);
+      decimal_t dist =
+          (p_agent.second.vehicle.state().vec_position -
+           ego_fsagent.vehicle.state().vec_position)
+              .norm();
+      decimal_t near_gain = 1.0 / (1.0 + dist);
+      uncertainty_cost += near_gain * entropy *
+                          cfg_.cost().active_inference().belief_entropy_weight();
+    }
+
+    decimal_t comfort_cost = 0.0;
+    if (seq_lat_behavior == LateralBehavior::kLaneChangeLeft ||
+        seq_lat_behavior == LateralBehavior::kLaneChangeRight) {
+      comfort_cost +=
+          cfg_.cost().active_inference().lane_change_comfort_penalty();
+      if (is_cancel_behavior) {
+        comfort_cost +=
+            0.5 * cfg_.cost().active_inference().lane_change_comfort_penalty();
+      }
+    }
+    if (ego_lon_behavior_this_layer == LongitudinalBehavior::kAccelerate) {
+      comfort_cost += cfg_.cost().active_inference().lon_acc_penalty();
+    } else if (ego_lon_behavior_this_layer ==
+               LongitudinalBehavior::kDecelerate) {
+      comfort_cost += cfg_.cost().active_inference().lon_dec_penalty();
+    }
+
+    cost_tmp.active_inference.risk =
+        cfg_.cost().active_inference().risk_unit_cost() * ai_safety_cost;
+    cost_tmp.active_inference.uncertainty =
+        cfg_.cost().active_inference().uncertainty_unit_cost() *
+        uncertainty_cost;
+    cost_tmp.active_inference.efficiency =
+        cfg_.cost().active_inference().efficiency_unit_cost() *
+        cost_tmp.efficiency.ave();
+    cost_tmp.active_inference.comfort =
+        cfg_.cost().active_inference().comfort_unit_cost() * comfort_cost;
+  }
+
   cost_tmp.weight = duration;
   *cost = cost_tmp;
   return kSuccess;

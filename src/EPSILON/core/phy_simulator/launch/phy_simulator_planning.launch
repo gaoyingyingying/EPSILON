@@ -1,8 +1,11 @@
 <launch>
   <arg name="arena_info_static_topic" value="/arena_info_static" />
   <arg name="arena_info_dynamic_topic" value="/arena_info_dynamic" />
+  <arg name="use_joy" default="false" />
 
-  <include file="$(find phy_simulator)/launch/joy_ctrl.launch"/>
+  <group if="$(arg use_joy)">
+    <include file="$(find phy_simulator)/launch/joy_ctrl.launch"/>
+  </group>
 
   <arg name="playground" default="highway_v1.0" />
 

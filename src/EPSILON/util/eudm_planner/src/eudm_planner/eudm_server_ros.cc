@@ -123,10 +123,24 @@ void EudmPlannerServer::PlanCycleCallback() {
   double stamp =
       std::floor(smm_.time_stamp() / replan_duration) * replan_duration;
 
-  if (bp_manager_.Run(stamp, map_ptr, task_) == kSuccess) {
+  const auto run_status = bp_manager_.Run(stamp, map_ptr, task_);
+  if (run_status == kSuccess) {
     common::SemanticBehavior behavior;
     bp_manager_.ConstructBehavior(&behavior);
+    behavior.actual_desired_velocity = task_.user_desired_vel;
     smm_.set_ego_behavior(behavior);
+    ROS_INFO_THROTTLE(1.0,
+                      "[EudmServer] planner active, desired_vel=%.2f m/s",
+                      task_.user_desired_vel);
+  } else {
+    // Fallback: keep previous valid semantic behavior to avoid no-control stop.
+    auto fallback = smm_.ego_behavior();
+    fallback.actual_desired_velocity = task_.user_desired_vel;
+    smm_.set_ego_behavior(fallback);
+    ROS_WARN_THROTTLE(
+        1.0,
+        "[EudmServer] planner run failed at stamp %.3f, keep previous behavior",
+        stamp);
   }
 
   if (has_callback_binded_) {

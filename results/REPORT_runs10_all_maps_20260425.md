@@ -54,3 +54,28 @@
   - `/home/ying/epsilon-reproduction/results/repeat_highway_lite_runs10_dur120_20260425`
   - `/home/ying/epsilon-reproduction/results/repeat_ring_small_v1.0_runs10_dur120_20260425`
   - `/home/ying/epsilon-reproduction/results/repeat_ring_tiny_v1.0_runs10_dur120_20260425`
+
+## 8. 更新：主动推理调参复验（2026-04-27）
+
+### 8.1 复验口径
+- 地图：`highway_lite`
+- 方法：`EUDM(主动推理 p6 参数)`、`MPDM`
+- 运行口径：`10×120s`（与原报告一致）
+- 结果目录：`/home/ying/epsilon-reproduction/results/repeat_highway_lite_runs10_dur120_20260427_ai_p6`
+
+### 8.2 新结果（mean +- std）
+| Map | Method | Safety (unsafe ratio, ↓) | Efficiency (Ave. Vel m/s, ↑) | Comfort UD (/km, ↓) | Comfort LCC (/km, ↓) |
+|---|---|---:|---:|---:|---:|
+| highway_lite | EUDM (AI p6) | 0.089556 +- 0.025326 | 13.126155 +- 0.526484 | 0.000000 +- 0.000000 | 0.448701 +- 0.706626 |
+| highway_lite | MPDM | 0.043543 +- 0.005921 | 15.597559 +- 0.085034 | 1.499471 +- 0.317347 | 1.446561 +- 0.342726 |
+
+### 8.3 相对原 `highway_lite` EUDM 基线（2026-04-25）的变化
+- 安全性：`unsafe_ratio` 从 `0.099219` 降到 `0.089556`（改善）。
+- 效率：`average_velocity_mps` 从 `12.908948` 升到 `13.126155`（改善）。
+- 舒适性：
+  - `ud_per_km` 维持 `0.0`；
+  - `lcc_per_km` 从 `7.125091` 降到 `0.448701`（显著改善）。
+
+### 8.4 说明
+- 该更新仅替换了 `highway_lite` 场景下的 EUDM 参数结果，其他三张地图仍沿用 2026-04-25 的基线统计。
+- 如需将“主动推理 p6”固化为整篇论文统一口径，建议继续对 `highway_v1.0`、`ring_small_v1.0`、`ring_tiny_v1.0` 按同样 `10×120s` 跑完并重做多地图总表。

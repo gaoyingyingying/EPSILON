@@ -123,6 +123,15 @@ class EudmPlanner : public Planner {
     SafetyCost safety;
     // * navigation
     NavigationCost navigation;
+    struct ActiveInferenceCost {
+      decimal_t risk = 0.0;
+      decimal_t uncertainty = 0.0;
+      decimal_t efficiency = 0.0;
+      decimal_t comfort = 0.0;
+      decimal_t total() const {
+        return risk + uncertainty + efficiency + comfort;
+      }
+    } active_inference;
     decimal_t weight = 1.0;
     decimal_t ave() const {
       return (efficiency.ave() + safety.ave() + navigation.ave()) * weight;
@@ -249,7 +258,7 @@ class EudmPlanner : public Planner {
 
   ErrorType GetSurroundingForwardSimAgents(
       const common::SemanticVehicleSet& surrounding_semantic_vehicles,
-      ForwardSimAgentSet* forward_sim_agents) const;
+      ForwardSimAgentSet* forward_sim_agents);
 
   // * simulation control loop
   ErrorType SimulateActionSequence(
@@ -300,6 +309,22 @@ class EudmPlanner : public Planner {
       const std::vector<CostStructure>& progress_cost,
       const CostStructure& tail_cost, const std::vector<DcpAction>& action_seq,
       decimal_t* score);
+
+  ErrorType EvaluateActiveInferenceSafetyCost(
+      const DcpAction& action, const ForwardSimEgoAgent& ego_fsagent,
+      const ForwardSimAgentSet& other_fsagent,
+      const vec_E<common::Vehicle>& ego_traj,
+      const std::unordered_map<int, vec_E<common::Vehicle>>& surround_trajs,
+      decimal_t* safety_cost) const;
+
+  ErrorType UpdateIntentBelief(
+      const int agent_id, const common::ProbDistOfLatBehaviors& observed,
+      common::ProbDistOfLatBehaviors* belief);
+
+  decimal_t ComputeLatBeliefEntropy(
+      const common::ProbDistOfLatBehaviors& belief) const;
+
+  void LogActiveInferenceDecisionSummary() const;
 
   ErrorType EvaluateMultiThreadSimResults(int* winner_id,
                                           decimal_t* winner_cost);
@@ -357,6 +382,8 @@ class EudmPlanner : public Planner {
   common::RssChecker::RssConfig rss_config_;
   common::RssChecker::RssConfig rss_config_strict_as_front_;
   common::RssChecker::RssConfig rss_config_strict_as_rear_;
+  std::unordered_map<int, common::ProbDistOfLatBehaviors> intent_belief_cache_;
+  std::vector<std::string> intent_belief_debug_;
 
   OnLaneForwardSimulation::Param ego_sim_param_;
   OnLaneForwardSimulation::Param agent_sim_param_;
@@ -373,6 +400,8 @@ class EudmPlanner : public Planner {
   std::vector<int> risky_res_;
   std::vector<std::string> sim_info_;
   std::vector<decimal_t> final_cost_;
+  std::vector<decimal_t> legacy_final_cost_;
+  std::vector<CostStructure::ActiveInferenceCost> final_ai_cost_;
   std::vector<std::vector<CostStructure>> progress_cost_;
   std::vector<CostStructure> tail_cost_;
   vec_E<vec_E<common::Vehicle>> forward_trajs_;
