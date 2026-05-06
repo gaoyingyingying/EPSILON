@@ -1,0 +1,84 @@
+{
+  "scenarios": [
+    {
+      "name": "highway_lite_lt_close_cut_in",
+      "base": "highway_lite",
+      "type": "近距离强制切入 / 相邻车道低概率横向冲突",
+      "risk": "前方相邻车道车辆在很小纵向间隙内形成切入压力，主车需要提前减速或放弃激进换道。",
+      "verify": "验证主动推理是否能在 unsafe_ratio 上升前识别未来横向占用风险，并保持速度损失可控。",
+      "ai_desired_vel": 11.5,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 5
+    },
+    {
+      "name": "highway_lite_lt_stalled_lead",
+      "base": "highway_lite",
+      "type": "前方慢车/疑似故障车 / 低速障碍队尾",
+      "risk": "主车路径前方出现低速长车，后续车辆仍保持较高期望速度，形成追尾与绕行权衡。",
+      "verify": "验证系统能否提前降低速度并选择安全绕行，而不是在近距离才急减速。",
+      "ai_desired_vel": 10.0,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 4
+    },
+    {
+      "name": "highway_v1.0_lt_fast_rear_approach",
+      "base": "highway_v1.0",
+      "type": "后方高速逼近 / 换道盲区风险",
+      "risk": "主车附近存在快速接近的后车，单纯当前最优换道可能在未来短时窗内产生后向冲突。",
+      "verify": "验证决策是否能把后向高速目标纳入未来风险代价，避免把自己切入快速后车前方。",
+      "ai_desired_vel": 13.5,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 5
+    },
+    {
+      "name": "highway_v1.0_lt_merge_squeeze",
+      "base": "highway_v1.0",
+      "type": "合流夹挤 / 主路与匝道车辆同时争抢间隙",
+      "risk": "主车、前车与侧前方车辆构成三车夹挤，风险在当前帧不一定最大，但未来汇合点冲突显著。",
+      "verify": "验证主动推理是否能提前牺牲少量效率换取合流间隙，降低横纵向复合冲突。",
+      "ai_desired_vel": 12.0,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 5
+    },
+    {
+      "name": "ring_small_lt_dense_weave",
+      "base": "ring_small_v1.0",
+      "type": "环路密集交织 / 连续换道诱发风险",
+      "risk": "环路局部密度升高，多车速度差较小但空间余量不足，容易出现反复换道和舒适性劣化。",
+      "verify": "验证方法是否能减少无收益换道，在安全、效率、LCC 之间形成稳定折中。",
+      "ai_desired_vel": 9.0,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 5
+    },
+    {
+      "name": "ring_small_lt_slow_truck_block",
+      "base": "ring_small_v1.0",
+      "type": "弯道慢速长车遮挡 / 队列压缩",
+      "risk": "低速长车在弯道前方造成遮挡与队列压缩，主车需要判断跟驰、等待或换道绕行的长期代价。",
+      "verify": "验证提前减速和换道时机，重点观察 unsafe_ratio 与 LCC 的同步变化。",
+      "ai_desired_vel": 8.0,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 4
+    },
+    {
+      "name": "ring_tiny_lt_low_friction_cluster",
+      "base": "ring_tiny_v1.0",
+      "type": "小环高密度低附着 / 操控裕度不足",
+      "risk": "车辆横纵向能力被限制，环路空间又很小，激进行为会更快转化为不舒适或不安全状态。",
+      "verify": "验证主动推理在高难低裕度场景中是否能降低高方差，尤其关注 unsafe_ratio 标准差。",
+      "ai_desired_vel": 7.0,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 4
+    },
+    {
+      "name": "ring_tiny_lt_conflict_release",
+      "base": "ring_tiny_v1.0",
+      "type": "拥堵释放 / 低速密集车辆突然形成通行窗口",
+      "risk": "多车低速密集排布下，局部间隙短暂出现，系统需要判断抢行收益是否值得承担未来冲突。",
+      "verify": "验证方法是否选择保守但稳定的释放策略，避免在短窗口中产生高 LCC 或 unsafe_ratio 尖峰。",
+      "ai_desired_vel": 6.5,
+      "ai_autonomous_level": 2,
+      "ai_aggressiveness_level": 5
+    }
+  ]
+}

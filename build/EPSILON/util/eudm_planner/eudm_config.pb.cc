@@ -103,6 +103,7 @@ PROTOBUF_CONSTEXPR CostAssessCfg::CostAssessCfg(
   , /*decltype(_impl_.safety_)*/nullptr
   , /*decltype(_impl_.user_)*/nullptr
   , /*decltype(_impl_.navigation_)*/nullptr
+  , /*decltype(_impl_.active_inference_)*/nullptr
   , /*decltype(_impl_.discount_factor_)*/0} {}
 struct CostAssessCfgDefaultTypeInternal {
   PROTOBUF_CONSTEXPR CostAssessCfgDefaultTypeInternal()
@@ -113,6 +114,32 @@ struct CostAssessCfgDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CostAssessCfgDefaultTypeInternal _CostAssessCfg_default_instance_;
+PROTOBUF_CONSTEXPR ActiveInferenceAssessDetail::ActiveInferenceAssessDetail(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.enable_)*/false
+  , /*decltype(_impl_.risk_unit_cost_)*/1
+  , /*decltype(_impl_.uncertainty_unit_cost_)*/1
+  , /*decltype(_impl_.efficiency_unit_cost_)*/1
+  , /*decltype(_impl_.comfort_unit_cost_)*/1
+  , /*decltype(_impl_.ttc_threshold_)*/2.5
+  , /*decltype(_impl_.min_longitudinal_distance_)*/10
+  , /*decltype(_impl_.min_lateral_distance_)*/2.5
+  , /*decltype(_impl_.belief_smoothing_)*/0.65
+  , /*decltype(_impl_.lane_change_comfort_penalty_)*/0.6
+  , /*decltype(_impl_.lon_acc_penalty_)*/0.35
+  , /*decltype(_impl_.lon_dec_penalty_)*/0.5
+  , /*decltype(_impl_.belief_entropy_weight_)*/1} {}
+struct ActiveInferenceAssessDetailDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ActiveInferenceAssessDetailDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ActiveInferenceAssessDetailDefaultTypeInternal() {}
+  union {
+    ActiveInferenceAssessDetail _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ActiveInferenceAssessDetailDefaultTypeInternal _ActiveInferenceAssessDetail_default_instance_;
 PROTOBUF_CONSTEXPR SimDurationDetail::SimDurationDetail(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_._has_bits_)*/{}
@@ -423,7 +450,7 @@ struct ConfigDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ConfigDefaultTypeInternal _Config_default_instance_;
 }  // namespace eudm
 }  // namespace planning
-static ::_pb::Metadata file_level_metadata_eudm_5fconfig_2eproto[22];
+static ::_pb::Metadata file_level_metadata_eudm_5fconfig_2eproto[23];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_eudm_5fconfig_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_eudm_5fconfig_2eproto = nullptr;
 
@@ -505,11 +532,45 @@ const uint32_t TableStruct_eudm_5fconfig_2eproto::offsets[] PROTOBUF_SECTION_VAR
   PROTOBUF_FIELD_OFFSET(::planning::eudm::CostAssessCfg, _impl_.user_),
   PROTOBUF_FIELD_OFFSET(::planning::eudm::CostAssessCfg, _impl_.navigation_),
   PROTOBUF_FIELD_OFFSET(::planning::eudm::CostAssessCfg, _impl_.discount_factor_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::CostAssessCfg, _impl_.active_inference_),
+  0,
+  1,
+  2,
+  3,
+  5,
+  4,
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.enable_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.risk_unit_cost_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.uncertainty_unit_cost_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.efficiency_unit_cost_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.comfort_unit_cost_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.ttc_threshold_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.min_longitudinal_distance_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.min_lateral_distance_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.belief_smoothing_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.lane_change_comfort_penalty_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.lon_acc_penalty_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.lon_dec_penalty_),
+  PROTOBUF_FIELD_OFFSET(::planning::eudm::ActiveInferenceAssessDetail, _impl_.belief_entropy_weight_),
   0,
   1,
   2,
   3,
   4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
   PROTOBUF_FIELD_OFFSET(::planning::eudm::SimDurationDetail, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::planning::eudm::SimDurationDetail, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -792,24 +853,25 @@ static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protode
   { 20, 33, -1, sizeof(::planning::eudm::SafetyAssessDetail)},
   { 40, 48, -1, sizeof(::planning::eudm::UserIntentionAssessDetail)},
   { 50, 61, -1, sizeof(::planning::eudm::NavigationAssessDetail)},
-  { 66, 77, -1, sizeof(::planning::eudm::CostAssessCfg)},
-  { 82, 92, -1, sizeof(::planning::eudm::SimDurationDetail)},
-  { 96, 107, -1, sizeof(::planning::eudm::LonSimLimit)},
-  { 112, 121, -1, sizeof(::planning::eudm::LonSimIdm)},
-  { 124, 132, -1, sizeof(::planning::eudm::LonSimDetail)},
-  { 134, 145, -1, sizeof(::planning::eudm::LatSimLimit)},
-  { 150, 159, -1, sizeof(::planning::eudm::LatSimPurePursuit)},
-  { 162, 170, -1, sizeof(::planning::eudm::LatSimDetail)},
-  { 172, 185, -1, sizeof(::planning::eudm::EvasiveSimDetail)},
-  { 192, 204, -1, sizeof(::planning::eudm::ForwardSimDetail)},
-  { 210, 220, -1, sizeof(::planning::eudm::SimRefLine)},
-  { 224, 236, -1, sizeof(::planning::eudm::SimCfg)},
-  { 242, 260, -1, sizeof(::planning::eudm::ActiveLaneChangeCfg)},
-  { 272, 282, -1, sizeof(::planning::eudm::FunctionCfg)},
-  { 286, 300, -1, sizeof(::planning::eudm::RssCfg)},
-  { 308, 316, -1, sizeof(::planning::eudm::StrictCheckCfg)},
-  { 318, 331, -1, sizeof(::planning::eudm::SafetyCfg)},
-  { 338, 351, -1, sizeof(::planning::eudm::Config)},
+  { 66, 78, -1, sizeof(::planning::eudm::CostAssessCfg)},
+  { 84, 103, -1, sizeof(::planning::eudm::ActiveInferenceAssessDetail)},
+  { 116, 126, -1, sizeof(::planning::eudm::SimDurationDetail)},
+  { 130, 141, -1, sizeof(::planning::eudm::LonSimLimit)},
+  { 146, 155, -1, sizeof(::planning::eudm::LonSimIdm)},
+  { 158, 166, -1, sizeof(::planning::eudm::LonSimDetail)},
+  { 168, 179, -1, sizeof(::planning::eudm::LatSimLimit)},
+  { 184, 193, -1, sizeof(::planning::eudm::LatSimPurePursuit)},
+  { 196, 204, -1, sizeof(::planning::eudm::LatSimDetail)},
+  { 206, 219, -1, sizeof(::planning::eudm::EvasiveSimDetail)},
+  { 226, 238, -1, sizeof(::planning::eudm::ForwardSimDetail)},
+  { 244, 254, -1, sizeof(::planning::eudm::SimRefLine)},
+  { 258, 270, -1, sizeof(::planning::eudm::SimCfg)},
+  { 276, 294, -1, sizeof(::planning::eudm::ActiveLaneChangeCfg)},
+  { 306, 316, -1, sizeof(::planning::eudm::FunctionCfg)},
+  { 320, 334, -1, sizeof(::planning::eudm::RssCfg)},
+  { 342, 350, -1, sizeof(::planning::eudm::StrictCheckCfg)},
+  { 352, 365, -1, sizeof(::planning::eudm::SafetyCfg)},
+  { 372, 385, -1, sizeof(::planning::eudm::Config)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -818,6 +880,7 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::planning::eudm::_UserIntentionAssessDetail_default_instance_._instance,
   &::planning::eudm::_NavigationAssessDetail_default_instance_._instance,
   &::planning::eudm::_CostAssessCfg_default_instance_._instance,
+  &::planning::eudm::_ActiveInferenceAssessDetail_default_instance_._instance,
   &::planning::eudm::_SimDurationDetail_default_instance_._instance,
   &::planning::eudm::_LonSimLimit_default_instance_._instance,
   &::planning::eudm::_LonSimIdm_default_instance_._instance,
@@ -861,13 +924,26 @@ const char descriptor_table_protodef_eudm_5fconfig_2eproto[] PROTOBUF_SECTION_VA
   "ane_change_unit_cost_vel_lb\030\003 \002(\001\022.\n&lan"
   "e_change_left_recommendation_reward\030\004 \002("
   "\001\022/\n\'lane_change_right_recommendation_re"
-  "ward\030\005 \002(\001\"\210\002\n\rCostAssessCfg\0228\n\teffcienc"
+  "ward\030\005 \002(\001\"\316\002\n\rCostAssessCfg\0228\n\teffcienc"
   "y\030\001 \002(\0132%.planning.eudm.EfficiencyAssess"
   "Detail\0221\n\006safety\030\002 \002(\0132!.planning.eudm.S"
   "afetyAssessDetail\0226\n\004user\030\003 \002(\0132(.planni"
   "ng.eudm.UserIntentionAssessDetail\0229\n\nnav"
   "igation\030\004 \002(\0132%.planning.eudm.Navigation"
-  "AssessDetail\022\027\n\017discount_factor\030\005 \002(\001\"Y\n"
+  "AssessDetail\022\027\n\017discount_factor\030\005 \002(\001\022D\n"
+  "\020active_inference\030\006 \001(\0132*.planning.eudm."
+  "ActiveInferenceAssessDetail\"\277\003\n\033ActiveIn"
+  "ferenceAssessDetail\022\025\n\006enable\030\001 \001(\010:\005fal"
+  "se\022\031\n\016risk_unit_cost\030\002 \001(\001:\0011\022 \n\025uncerta"
+  "inty_unit_cost\030\003 \001(\001:\0011\022\037\n\024efficiency_un"
+  "it_cost\030\004 \001(\001:\0011\022\034\n\021comfort_unit_cost\030\005 "
+  "\001(\001:\0011\022\032\n\rttc_threshold\030\006 \001(\001:\0032.5\022%\n\031mi"
+  "n_longitudinal_distance\030\007 \001(\001:\00210\022!\n\024min"
+  "_lateral_distance\030\010 \001(\001:\0032.5\022\036\n\020belief_s"
+  "moothing\030\t \001(\001:\0040.65\022(\n\033lane_change_comf"
+  "ort_penalty\030\n \001(\001:\0030.6\022\035\n\017lon_acc_penalt"
+  "y\030\013 \001(\001:\0040.35\022\034\n\017lon_dec_penalty\030\014 \001(\001:\003"
+  "0.5\022 \n\025belief_entropy_weight\030\r \001(\001:\0011\"Y\n"
   "\021SimDurationDetail\022\r\n\005layer\030\001 \002(\001\022\022\n\nlas"
   "t_layer\030\002 \002(\001\022\014\n\004step\030\003 \002(\001\022\023\n\013tree_heig"
   "ht\030\004 \002(\005\"h\n\013LonSimLimit\022\013\n\003acc\030\001 \002(\001\022\020\n\010"
@@ -945,9 +1021,9 @@ const char descriptor_table_protodef_eudm_5fconfig_2eproto[] PROTOBUF_SECTION_VA
   ;
 static ::_pbi::once_flag descriptor_table_eudm_5fconfig_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_eudm_5fconfig_2eproto = {
-    false, false, 4128, descriptor_table_protodef_eudm_5fconfig_2eproto,
+    false, false, 4648, descriptor_table_protodef_eudm_5fconfig_2eproto,
     "eudm_config.proto",
-    &descriptor_table_eudm_5fconfig_2eproto_once, nullptr, 0, 22,
+    &descriptor_table_eudm_5fconfig_2eproto_once, nullptr, 0, 23,
     schemas, file_default_instances, TableStruct_eudm_5fconfig_2eproto::offsets,
     file_level_metadata_eudm_5fconfig_2eproto, file_level_enum_descriptors_eudm_5fconfig_2eproto,
     file_level_service_descriptors_eudm_5fconfig_2eproto,
@@ -2402,10 +2478,14 @@ class CostAssessCfg::_Internal {
     (*has_bits)[0] |= 8u;
   }
   static void set_has_discount_factor(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static const ::planning::eudm::ActiveInferenceAssessDetail& active_inference(const CostAssessCfg* msg);
+  static void set_has_active_inference(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
   static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
+    return ((has_bits[0] & 0x0000002f) ^ 0x0000002f) != 0;
   }
 };
 
@@ -2425,6 +2505,10 @@ const ::planning::eudm::NavigationAssessDetail&
 CostAssessCfg::_Internal::navigation(const CostAssessCfg* msg) {
   return *msg->_impl_.navigation_;
 }
+const ::planning::eudm::ActiveInferenceAssessDetail&
+CostAssessCfg::_Internal::active_inference(const CostAssessCfg* msg) {
+  return *msg->_impl_.active_inference_;
+}
 CostAssessCfg::CostAssessCfg(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
@@ -2441,6 +2525,7 @@ CostAssessCfg::CostAssessCfg(const CostAssessCfg& from)
     , decltype(_impl_.safety_){nullptr}
     , decltype(_impl_.user_){nullptr}
     , decltype(_impl_.navigation_){nullptr}
+    , decltype(_impl_.active_inference_){nullptr}
     , decltype(_impl_.discount_factor_){}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
@@ -2455,6 +2540,9 @@ CostAssessCfg::CostAssessCfg(const CostAssessCfg& from)
   }
   if (from._internal_has_navigation()) {
     _this->_impl_.navigation_ = new ::planning::eudm::NavigationAssessDetail(*from._impl_.navigation_);
+  }
+  if (from._internal_has_active_inference()) {
+    _this->_impl_.active_inference_ = new ::planning::eudm::ActiveInferenceAssessDetail(*from._impl_.active_inference_);
   }
   _this->_impl_.discount_factor_ = from._impl_.discount_factor_;
   // @@protoc_insertion_point(copy_constructor:planning.eudm.CostAssessCfg)
@@ -2471,6 +2559,7 @@ inline void CostAssessCfg::SharedCtor(
     , decltype(_impl_.safety_){nullptr}
     , decltype(_impl_.user_){nullptr}
     , decltype(_impl_.navigation_){nullptr}
+    , decltype(_impl_.active_inference_){nullptr}
     , decltype(_impl_.discount_factor_){0}
   };
 }
@@ -2490,6 +2579,7 @@ inline void CostAssessCfg::SharedDtor() {
   if (this != internal_default_instance()) delete _impl_.safety_;
   if (this != internal_default_instance()) delete _impl_.user_;
   if (this != internal_default_instance()) delete _impl_.navigation_;
+  if (this != internal_default_instance()) delete _impl_.active_inference_;
 }
 
 void CostAssessCfg::SetCachedSize(int size) const {
@@ -2503,7 +2593,7 @@ void CostAssessCfg::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _impl_._has_bits_[0];
-  if (cached_has_bits & 0x0000000fu) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       GOOGLE_DCHECK(_impl_.effciency_ != nullptr);
       _impl_.effciency_->Clear();
@@ -2519,6 +2609,10 @@ void CostAssessCfg::Clear() {
     if (cached_has_bits & 0x00000008u) {
       GOOGLE_DCHECK(_impl_.navigation_ != nullptr);
       _impl_.navigation_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(_impl_.active_inference_ != nullptr);
+      _impl_.active_inference_->Clear();
     }
   }
   _impl_.discount_factor_ = 0;
@@ -2571,6 +2665,14 @@ const char* CostAssessCfg::_InternalParse(const char* ptr, ::_pbi::ParseContext*
           _Internal::set_has_discount_factor(&has_bits);
           _impl_.discount_factor_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .planning.eudm.ActiveInferenceAssessDetail active_inference = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
+          ptr = ctx->ParseMessage(_internal_mutable_active_inference(), ptr);
+          CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
@@ -2634,9 +2736,16 @@ uint8_t* CostAssessCfg::_InternalSerialize(
   }
 
   // required double discount_factor = 5;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_discount_factor(), target);
+  }
+
+  // optional .planning.eudm.ActiveInferenceAssessDetail active_inference = 6;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(6, _Internal::active_inference(this),
+        _Internal::active_inference(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2690,7 +2799,7 @@ size_t CostAssessCfg::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:planning.eudm.CostAssessCfg)
   size_t total_size = 0;
 
-  if (((_impl_._has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000002f) ^ 0x0000002f) == 0) {  // All required fields are present.
     // required .planning.eudm.EfficiencyAssessDetail effciency = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -2721,6 +2830,14 @@ size_t CostAssessCfg::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // optional .planning.eudm.ActiveInferenceAssessDetail active_inference = 6;
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000010u) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *_impl_.active_inference_);
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
@@ -2740,7 +2857,7 @@ void CostAssessCfg::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
   (void) cached_has_bits;
 
   cached_has_bits = from._impl_._has_bits_[0];
-  if (cached_has_bits & 0x0000001fu) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       _this->_internal_mutable_effciency()->::planning::eudm::EfficiencyAssessDetail::MergeFrom(
           from._internal_effciency());
@@ -2758,6 +2875,10 @@ void CostAssessCfg::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
           from._internal_navigation());
     }
     if (cached_has_bits & 0x00000010u) {
+      _this->_internal_mutable_active_inference()->::planning::eudm::ActiveInferenceAssessDetail::MergeFrom(
+          from._internal_active_inference());
+    }
+    if (cached_has_bits & 0x00000020u) {
       _this->_impl_.discount_factor_ = from._impl_.discount_factor_;
     }
     _this->_impl_._has_bits_[0] |= cached_has_bits;
@@ -2805,6 +2926,575 @@ void CostAssessCfg::InternalSwap(CostAssessCfg* other) {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
       file_level_metadata_eudm_5fconfig_2eproto[4]);
+}
+
+// ===================================================================
+
+class ActiveInferenceAssessDetail::_Internal {
+ public:
+  using HasBits = decltype(std::declval<ActiveInferenceAssessDetail>()._impl_._has_bits_);
+  static void set_has_enable(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_risk_unit_cost(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_uncertainty_unit_cost(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_efficiency_unit_cost(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_comfort_unit_cost(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_ttc_threshold(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_min_longitudinal_distance(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_min_lateral_distance(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static void set_has_belief_smoothing(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static void set_has_lane_change_comfort_penalty(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
+  static void set_has_lon_acc_penalty(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
+  }
+  static void set_has_lon_dec_penalty(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
+  }
+  static void set_has_belief_entropy_weight(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
+  }
+};
+
+ActiveInferenceAssessDetail::ActiveInferenceAssessDetail(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:planning.eudm.ActiveInferenceAssessDetail)
+}
+ActiveInferenceAssessDetail::ActiveInferenceAssessDetail(const ActiveInferenceAssessDetail& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ActiveInferenceAssessDetail* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.enable_){}
+    , decltype(_impl_.risk_unit_cost_){}
+    , decltype(_impl_.uncertainty_unit_cost_){}
+    , decltype(_impl_.efficiency_unit_cost_){}
+    , decltype(_impl_.comfort_unit_cost_){}
+    , decltype(_impl_.ttc_threshold_){}
+    , decltype(_impl_.min_longitudinal_distance_){}
+    , decltype(_impl_.min_lateral_distance_){}
+    , decltype(_impl_.belief_smoothing_){}
+    , decltype(_impl_.lane_change_comfort_penalty_){}
+    , decltype(_impl_.lon_acc_penalty_){}
+    , decltype(_impl_.lon_dec_penalty_){}
+    , decltype(_impl_.belief_entropy_weight_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&_impl_.enable_, &from._impl_.enable_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.belief_entropy_weight_) -
+    reinterpret_cast<char*>(&_impl_.enable_)) + sizeof(_impl_.belief_entropy_weight_));
+  // @@protoc_insertion_point(copy_constructor:planning.eudm.ActiveInferenceAssessDetail)
+}
+
+inline void ActiveInferenceAssessDetail::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.enable_){false}
+    , decltype(_impl_.risk_unit_cost_){1}
+    , decltype(_impl_.uncertainty_unit_cost_){1}
+    , decltype(_impl_.efficiency_unit_cost_){1}
+    , decltype(_impl_.comfort_unit_cost_){1}
+    , decltype(_impl_.ttc_threshold_){2.5}
+    , decltype(_impl_.min_longitudinal_distance_){10}
+    , decltype(_impl_.min_lateral_distance_){2.5}
+    , decltype(_impl_.belief_smoothing_){0.65}
+    , decltype(_impl_.lane_change_comfort_penalty_){0.6}
+    , decltype(_impl_.lon_acc_penalty_){0.35}
+    , decltype(_impl_.lon_dec_penalty_){0.5}
+    , decltype(_impl_.belief_entropy_weight_){1}
+  };
+}
+
+ActiveInferenceAssessDetail::~ActiveInferenceAssessDetail() {
+  // @@protoc_insertion_point(destructor:planning.eudm.ActiveInferenceAssessDetail)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void ActiveInferenceAssessDetail::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+}
+
+void ActiveInferenceAssessDetail::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void ActiveInferenceAssessDetail::Clear() {
+// @@protoc_insertion_point(message_clear_start:planning.eudm.ActiveInferenceAssessDetail)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    _impl_.enable_ = false;
+    _impl_.risk_unit_cost_ = 1;
+    _impl_.uncertainty_unit_cost_ = 1;
+    _impl_.efficiency_unit_cost_ = 1;
+    _impl_.comfort_unit_cost_ = 1;
+    _impl_.ttc_threshold_ = 2.5;
+    _impl_.min_longitudinal_distance_ = 10;
+    _impl_.min_lateral_distance_ = 2.5;
+  }
+  if (cached_has_bits & 0x00001f00u) {
+    _impl_.belief_smoothing_ = 0.65;
+    _impl_.lane_change_comfort_penalty_ = 0.6;
+    _impl_.lon_acc_penalty_ = 0.35;
+    _impl_.lon_dec_penalty_ = 0.5;
+    _impl_.belief_entropy_weight_ = 1;
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ActiveInferenceAssessDetail::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional bool enable = 1 [default = false];
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_enable(&has_bits);
+          _impl_.enable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double risk_unit_cost = 2 [default = 1];
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
+          _Internal::set_has_risk_unit_cost(&has_bits);
+          _impl_.risk_unit_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double uncertainty_unit_cost = 3 [default = 1];
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 25)) {
+          _Internal::set_has_uncertainty_unit_cost(&has_bits);
+          _impl_.uncertainty_unit_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double efficiency_unit_cost = 4 [default = 1];
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
+          _Internal::set_has_efficiency_unit_cost(&has_bits);
+          _impl_.efficiency_unit_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double comfort_unit_cost = 5 [default = 1];
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
+          _Internal::set_has_comfort_unit_cost(&has_bits);
+          _impl_.comfort_unit_cost_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double ttc_threshold = 6 [default = 2.5];
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 49)) {
+          _Internal::set_has_ttc_threshold(&has_bits);
+          _impl_.ttc_threshold_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double min_longitudinal_distance = 7 [default = 10];
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
+          _Internal::set_has_min_longitudinal_distance(&has_bits);
+          _impl_.min_longitudinal_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double min_lateral_distance = 8 [default = 2.5];
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 65)) {
+          _Internal::set_has_min_lateral_distance(&has_bits);
+          _impl_.min_lateral_distance_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double belief_smoothing = 9 [default = 0.65];
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 73)) {
+          _Internal::set_has_belief_smoothing(&has_bits);
+          _impl_.belief_smoothing_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double lane_change_comfort_penalty = 10 [default = 0.6];
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 81)) {
+          _Internal::set_has_lane_change_comfort_penalty(&has_bits);
+          _impl_.lane_change_comfort_penalty_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double lon_acc_penalty = 11 [default = 0.35];
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 89)) {
+          _Internal::set_has_lon_acc_penalty(&has_bits);
+          _impl_.lon_acc_penalty_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double lon_dec_penalty = 12 [default = 0.5];
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 97)) {
+          _Internal::set_has_lon_dec_penalty(&has_bits);
+          _impl_.lon_dec_penalty_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional double belief_entropy_weight = 13 [default = 1];
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 105)) {
+          _Internal::set_has_belief_entropy_weight(&has_bits);
+          _impl_.belief_entropy_weight_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* ActiveInferenceAssessDetail::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:planning.eudm.ActiveInferenceAssessDetail)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional bool enable = 1 [default = false];
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(1, this->_internal_enable(), target);
+  }
+
+  // optional double risk_unit_cost = 2 [default = 1];
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_risk_unit_cost(), target);
+  }
+
+  // optional double uncertainty_unit_cost = 3 [default = 1];
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(3, this->_internal_uncertainty_unit_cost(), target);
+  }
+
+  // optional double efficiency_unit_cost = 4 [default = 1];
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(4, this->_internal_efficiency_unit_cost(), target);
+  }
+
+  // optional double comfort_unit_cost = 5 [default = 1];
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_comfort_unit_cost(), target);
+  }
+
+  // optional double ttc_threshold = 6 [default = 2.5];
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(6, this->_internal_ttc_threshold(), target);
+  }
+
+  // optional double min_longitudinal_distance = 7 [default = 10];
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_min_longitudinal_distance(), target);
+  }
+
+  // optional double min_lateral_distance = 8 [default = 2.5];
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(8, this->_internal_min_lateral_distance(), target);
+  }
+
+  // optional double belief_smoothing = 9 [default = 0.65];
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(9, this->_internal_belief_smoothing(), target);
+  }
+
+  // optional double lane_change_comfort_penalty = 10 [default = 0.6];
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(10, this->_internal_lane_change_comfort_penalty(), target);
+  }
+
+  // optional double lon_acc_penalty = 11 [default = 0.35];
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(11, this->_internal_lon_acc_penalty(), target);
+  }
+
+  // optional double lon_dec_penalty = 12 [default = 0.5];
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(12, this->_internal_lon_dec_penalty(), target);
+  }
+
+  // optional double belief_entropy_weight = 13 [default = 1];
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(13, this->_internal_belief_entropy_weight(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:planning.eudm.ActiveInferenceAssessDetail)
+  return target;
+}
+
+size_t ActiveInferenceAssessDetail::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:planning.eudm.ActiveInferenceAssessDetail)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional bool enable = 1 [default = false];
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 + 1;
+    }
+
+    // optional double risk_unit_cost = 2 [default = 1];
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double uncertainty_unit_cost = 3 [default = 1];
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double efficiency_unit_cost = 4 [default = 1];
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double comfort_unit_cost = 5 [default = 1];
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double ttc_threshold = 6 [default = 2.5];
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double min_longitudinal_distance = 7 [default = 10];
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double min_lateral_distance = 8 [default = 2.5];
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 1 + 8;
+    }
+
+  }
+  if (cached_has_bits & 0x00001f00u) {
+    // optional double belief_smoothing = 9 [default = 0.65];
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double lane_change_comfort_penalty = 10 [default = 0.6];
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double lon_acc_penalty = 11 [default = 0.35];
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double lon_dec_penalty = 12 [default = 0.5];
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 1 + 8;
+    }
+
+    // optional double belief_entropy_weight = 13 [default = 1];
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 1 + 8;
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ActiveInferenceAssessDetail::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    ActiveInferenceAssessDetail::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ActiveInferenceAssessDetail::GetClassData() const { return &_class_data_; }
+
+
+void ActiveInferenceAssessDetail::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ActiveInferenceAssessDetail*>(&to_msg);
+  auto& from = static_cast<const ActiveInferenceAssessDetail&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:planning.eudm.ActiveInferenceAssessDetail)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.enable_ = from._impl_.enable_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.risk_unit_cost_ = from._impl_.risk_unit_cost_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.uncertainty_unit_cost_ = from._impl_.uncertainty_unit_cost_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.efficiency_unit_cost_ = from._impl_.efficiency_unit_cost_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.comfort_unit_cost_ = from._impl_.comfort_unit_cost_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.ttc_threshold_ = from._impl_.ttc_threshold_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.min_longitudinal_distance_ = from._impl_.min_longitudinal_distance_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.min_lateral_distance_ = from._impl_.min_lateral_distance_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00001f00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.belief_smoothing_ = from._impl_.belief_smoothing_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.lane_change_comfort_penalty_ = from._impl_.lane_change_comfort_penalty_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.lon_acc_penalty_ = from._impl_.lon_acc_penalty_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.lon_dec_penalty_ = from._impl_.lon_dec_penalty_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.belief_entropy_weight_ = from._impl_.belief_entropy_weight_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ActiveInferenceAssessDetail::CopyFrom(const ActiveInferenceAssessDetail& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:planning.eudm.ActiveInferenceAssessDetail)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ActiveInferenceAssessDetail::IsInitialized() const {
+  return true;
+}
+
+void ActiveInferenceAssessDetail::InternalSwap(ActiveInferenceAssessDetail* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.enable_, other->_impl_.enable_);
+  swap(_impl_.risk_unit_cost_, other->_impl_.risk_unit_cost_);
+  swap(_impl_.uncertainty_unit_cost_, other->_impl_.uncertainty_unit_cost_);
+  swap(_impl_.efficiency_unit_cost_, other->_impl_.efficiency_unit_cost_);
+  swap(_impl_.comfort_unit_cost_, other->_impl_.comfort_unit_cost_);
+  swap(_impl_.ttc_threshold_, other->_impl_.ttc_threshold_);
+  swap(_impl_.min_longitudinal_distance_, other->_impl_.min_longitudinal_distance_);
+  swap(_impl_.min_lateral_distance_, other->_impl_.min_lateral_distance_);
+  swap(_impl_.belief_smoothing_, other->_impl_.belief_smoothing_);
+  swap(_impl_.lane_change_comfort_penalty_, other->_impl_.lane_change_comfort_penalty_);
+  swap(_impl_.lon_acc_penalty_, other->_impl_.lon_acc_penalty_);
+  swap(_impl_.lon_dec_penalty_, other->_impl_.lon_dec_penalty_);
+  swap(_impl_.belief_entropy_weight_, other->_impl_.belief_entropy_weight_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ActiveInferenceAssessDetail::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
+      file_level_metadata_eudm_5fconfig_2eproto[5]);
 }
 
 // ===================================================================
@@ -3120,7 +3810,7 @@ void SimDurationDetail::InternalSwap(SimDurationDetail* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SimDurationDetail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[5]);
+      file_level_metadata_eudm_5fconfig_2eproto[6]);
 }
 
 // ===================================================================
@@ -3467,7 +4157,7 @@ void LonSimLimit::InternalSwap(LonSimLimit* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LonSimLimit::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[6]);
+      file_level_metadata_eudm_5fconfig_2eproto[7]);
 }
 
 // ===================================================================
@@ -3752,7 +4442,7 @@ void LonSimIdm::InternalSwap(LonSimIdm* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LonSimIdm::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[7]);
+      file_level_metadata_eudm_5fconfig_2eproto[8]);
 }
 
 // ===================================================================
@@ -4041,7 +4731,7 @@ void LonSimDetail::InternalSwap(LonSimDetail* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LonSimDetail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[8]);
+      file_level_metadata_eudm_5fconfig_2eproto[9]);
 }
 
 // ===================================================================
@@ -4388,7 +5078,7 @@ void LatSimLimit::InternalSwap(LatSimLimit* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LatSimLimit::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[9]);
+      file_level_metadata_eudm_5fconfig_2eproto[10]);
 }
 
 // ===================================================================
@@ -4673,7 +5363,7 @@ void LatSimPurePursuit::InternalSwap(LatSimPurePursuit* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LatSimPurePursuit::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[10]);
+      file_level_metadata_eudm_5fconfig_2eproto[11]);
 }
 
 // ===================================================================
@@ -4962,7 +5652,7 @@ void LatSimDetail::InternalSwap(LatSimDetail* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata LatSimDetail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[11]);
+      file_level_metadata_eudm_5fconfig_2eproto[12]);
 }
 
 // ===================================================================
@@ -5371,7 +6061,7 @@ void EvasiveSimDetail::InternalSwap(EvasiveSimDetail* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata EvasiveSimDetail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[12]);
+      file_level_metadata_eudm_5fconfig_2eproto[13]);
 }
 
 // ===================================================================
@@ -5814,7 +6504,7 @@ void ForwardSimDetail::InternalSwap(ForwardSimDetail* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata ForwardSimDetail::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[13]);
+      file_level_metadata_eudm_5fconfig_2eproto[14]);
 }
 
 // ===================================================================
@@ -6130,7 +6820,7 @@ void SimRefLine::InternalSwap(SimRefLine* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SimRefLine::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[14]);
+      file_level_metadata_eudm_5fconfig_2eproto[15]);
 }
 
 // ===================================================================
@@ -6594,7 +7284,7 @@ void SimCfg::InternalSwap(SimCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SimCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[15]);
+      file_level_metadata_eudm_5fconfig_2eproto[16]);
 }
 
 // ===================================================================
@@ -7166,7 +7856,7 @@ void ActiveLaneChangeCfg::InternalSwap(ActiveLaneChangeCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata ActiveLaneChangeCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[16]);
+      file_level_metadata_eudm_5fconfig_2eproto[17]);
 }
 
 // ===================================================================
@@ -7503,7 +8193,7 @@ void FunctionCfg::InternalSwap(FunctionCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata FunctionCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[17]);
+      file_level_metadata_eudm_5fconfig_2eproto[18]);
 }
 
 // ===================================================================
@@ -7943,7 +8633,7 @@ void RssCfg::InternalSwap(RssCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata RssCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[18]);
+      file_level_metadata_eudm_5fconfig_2eproto[19]);
 }
 
 // ===================================================================
@@ -8197,7 +8887,7 @@ void StrictCheckCfg::InternalSwap(StrictCheckCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata StrictCheckCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[19]);
+      file_level_metadata_eudm_5fconfig_2eproto[20]);
 }
 
 // ===================================================================
@@ -8690,7 +9380,7 @@ void SafetyCfg::InternalSwap(SafetyCfg* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata SafetyCfg::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[20]);
+      file_level_metadata_eudm_5fconfig_2eproto[21]);
 }
 
 // ===================================================================
@@ -9271,7 +9961,7 @@ void Config::InternalSwap(Config* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata Config::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_eudm_5fconfig_2eproto_getter, &descriptor_table_eudm_5fconfig_2eproto_once,
-      file_level_metadata_eudm_5fconfig_2eproto[21]);
+      file_level_metadata_eudm_5fconfig_2eproto[22]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
@@ -9297,6 +9987,10 @@ Arena::CreateMaybeMessage< ::planning::eudm::NavigationAssessDetail >(Arena* are
 template<> PROTOBUF_NOINLINE ::planning::eudm::CostAssessCfg*
 Arena::CreateMaybeMessage< ::planning::eudm::CostAssessCfg >(Arena* arena) {
   return Arena::CreateMessageInternal< ::planning::eudm::CostAssessCfg >(arena);
+}
+template<> PROTOBUF_NOINLINE ::planning::eudm::ActiveInferenceAssessDetail*
+Arena::CreateMaybeMessage< ::planning::eudm::ActiveInferenceAssessDetail >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::planning::eudm::ActiveInferenceAssessDetail >(arena);
 }
 template<> PROTOBUF_NOINLINE ::planning::eudm::SimDurationDetail*
 Arena::CreateMaybeMessage< ::planning::eudm::SimDurationDetail >(Arena* arena) {

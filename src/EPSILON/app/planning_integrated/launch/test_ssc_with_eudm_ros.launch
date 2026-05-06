@@ -5,6 +5,7 @@
   <arg name="ctrl_topic" value="/ctrl/agent_0" />
 
   <arg name="playground" default="highway_v1.0" />
+  <arg name="bp_config_path" default="$(find eudm_planner)/config/eudm_config.pb.txt" />
   <!-- <arg name="playground" value = "ring_tiny_v1.0" /> -->
   <!-- <arg name="playground" value = "ring_small_v1.0" /> -->
 
@@ -14,7 +15,7 @@
         output="screen">
     <param name="ego_id" type="int" value="0" />
     <param name="agent_config_path" type="string" value="$(find playgrounds)/$(arg playground)/agent_config.json" />
-    <param name="bp_config_path" type="string" value="$(find eudm_planner)/config/eudm_config.pb.txt" />
+    <param name="bp_config_path" type="string" value="$(arg bp_config_path)" />
     <param name="ssc_config_path" type="string" value="$(find ssc_planner)/config/ssc_config.pb.txt" />
     <param name="desired_vel" value="20.0"/>
     <param name="use_sim_state" value="true"/>

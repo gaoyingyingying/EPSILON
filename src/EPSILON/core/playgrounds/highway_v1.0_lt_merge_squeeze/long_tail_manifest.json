@@ -1,0 +1,10 @@
+{
+  "name": "highway_v1.0_lt_merge_squeeze",
+  "base": "highway_v1.0",
+  "type": "合流夹挤 / 主路与匝道车辆同时争抢间隙",
+  "risk": "主车、前车与侧前方车辆构成三车夹挤，风险在当前帧不一定最大，但未来汇合点冲突显著。",
+  "verify": "验证主动推理是否能提前牺牲少量效率换取合流间隙，降低横纵向复合冲突。",
+  "ai_desired_vel": 12.0,
+  "ai_autonomous_level": 2,
+  "ai_aggressiveness_level": 5
+}

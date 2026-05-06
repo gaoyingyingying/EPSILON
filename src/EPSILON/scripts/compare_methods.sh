@@ -5,10 +5,13 @@ PLAYGROUND="highway_v1.0"
 DURATION=60
 WORKSPACE="/home/ying/epsilon-reproduction"
 OUT_ROOT=""
+AI_DESIRED_VEL=10.0
+AI_AUTONOMOUS_LEVEL=2
+AI_AGGRESSIVENESS_LEVEL=4
 
 usage() {
   cat <<USAGE
-Usage: $0 [--playground NAME] [--duration SEC] [--workspace PATH] [--out-root PATH]
+Usage: $0 [--playground NAME] [--duration SEC] [--workspace PATH] [--out-root PATH] [--ai-desired-vel MPS] [--ai-autonomous-level N] [--ai-aggressiveness-level N]
 USAGE
 }
 
@@ -22,6 +25,12 @@ while [[ $# -gt 0 ]]; do
       WORKSPACE="$2"; shift 2 ;;
     --out-root)
       OUT_ROOT="$2"; shift 2 ;;
+    --ai-desired-vel)
+      AI_DESIRED_VEL="$2"; shift 2 ;;
+    --ai-autonomous-level)
+      AI_AUTONOMOUS_LEVEL="$2"; shift 2 ;;
+    --ai-aggressiveness-level)
+      AI_AGGRESSIVENESS_LEVEL="$2"; shift 2 ;;
     -h|--help)
       usage; exit 0 ;;
     *)
@@ -38,8 +47,8 @@ mkdir -p "$OUT_ROOT"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-"$SCRIPT_DIR/run_stack.sh" --method eudm --playground "$PLAYGROUND" --duration "$DURATION" --workspace "$WORKSPACE" --out-dir "$OUT_ROOT/eudm"
-"$SCRIPT_DIR/run_stack.sh" --method mpdm --playground "$PLAYGROUND" --duration "$DURATION" --workspace "$WORKSPACE" --out-dir "$OUT_ROOT/mpdm"
+"$SCRIPT_DIR/run_stack.sh" --method eudm --playground "$PLAYGROUND" --duration "$DURATION" --workspace "$WORKSPACE" --out-dir "$OUT_ROOT/eudm" --ai-desired-vel "$AI_DESIRED_VEL" --ai-autonomous-level "$AI_AUTONOMOUS_LEVEL" --ai-aggressiveness-level "$AI_AGGRESSIVENESS_LEVEL"
+"$SCRIPT_DIR/run_stack.sh" --method mpdm --playground "$PLAYGROUND" --duration "$DURATION" --workspace "$WORKSPACE" --out-dir "$OUT_ROOT/mpdm" --ai-desired-vel "$AI_DESIRED_VEL" --ai-autonomous-level "$AI_AUTONOMOUS_LEVEL" --ai-aggressiveness-level "$AI_AGGRESSIVENESS_LEVEL"
 
 python3 - <<PY
 import json

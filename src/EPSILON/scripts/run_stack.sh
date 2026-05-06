@@ -7,10 +7,14 @@ DURATION=60
 WORKSPACE="/home/ying/epsilon-reproduction"
 OUT_DIR=""
 EGO_ID=0
+AI_DESIRED_VEL=10.0
+AI_AUTONOMOUS_LEVEL=2
+AI_AGGRESSIVENESS_LEVEL=4
+EUDM_BP_CONFIG_PATH=""
 
 usage() {
   cat <<USAGE
-Usage: $0 [--method eudm|mpdm] [--playground NAME] [--duration SEC] [--workspace PATH] [--out-dir PATH] [--ego-id ID]
+Usage: $0 [--method eudm|mpdm] [--playground NAME] [--duration SEC] [--workspace PATH] [--out-dir PATH] [--ego-id ID] [--ai-desired-vel MPS] [--ai-autonomous-level N] [--ai-aggressiveness-level N] [--eudm-bp-config PATH]
 USAGE
 }
 
@@ -28,6 +32,14 @@ while [[ $# -gt 0 ]]; do
       OUT_DIR="$2"; shift 2 ;;
     --ego-id)
       EGO_ID="$2"; shift 2 ;;
+    --ai-desired-vel)
+      AI_DESIRED_VEL="$2"; shift 2 ;;
+    --ai-autonomous-level)
+      AI_AUTONOMOUS_LEVEL="$2"; shift 2 ;;
+    --ai-aggressiveness-level)
+      AI_AGGRESSIVENESS_LEVEL="$2"; shift 2 ;;
+    --eudm-bp-config)
+      EUDM_BP_CONFIG_PATH="$2"; shift 2 ;;
     -h|--help)
       usage; exit 0 ;;
     *)
@@ -70,7 +82,17 @@ cleanup() {
 }
 trap cleanup EXIT
 
-roslaunch planning_integrated "$LAUNCH_FILE" playground:="$PLAYGROUND" >"$LAUNCH_LOG" 2>&1 &
+LAUNCH_ARGS=(
+  "playground:=$PLAYGROUND"
+  "ai_desired_vel:=$AI_DESIRED_VEL"
+  "ai_autonomous_level:=$AI_AUTONOMOUS_LEVEL"
+  "ai_aggressiveness_level:=$AI_AGGRESSIVENESS_LEVEL"
+)
+if [[ "$METHOD" == "eudm" && -n "$EUDM_BP_CONFIG_PATH" ]]; then
+  LAUNCH_ARGS+=("bp_config_path:=$EUDM_BP_CONFIG_PATH")
+fi
+
+roslaunch planning_integrated "$LAUNCH_FILE" "${LAUNCH_ARGS[@]}" >"$LAUNCH_LOG" 2>&1 &
 LAUNCH_PID=$!
 
 sleep 8

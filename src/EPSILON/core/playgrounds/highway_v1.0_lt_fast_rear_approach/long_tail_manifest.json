@@ -1,0 +1,10 @@
+{
+  "name": "highway_v1.0_lt_fast_rear_approach",
+  "base": "highway_v1.0",
+  "type": "后方高速逼近 / 换道盲区风险",
+  "risk": "主车附近存在快速接近的后车，单纯当前最优换道可能在未来短时窗内产生后向冲突。",
+  "verify": "验证决策是否能把后向高速目标纳入未来风险代价，避免把自己切入快速后车前方。",
+  "ai_desired_vel": 13.5,
+  "ai_autonomous_level": 2,
+  "ai_aggressiveness_level": 5
+}

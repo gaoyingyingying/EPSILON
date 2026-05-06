@@ -1,0 +1,10 @@
+{
+  "name": "ring_small_lt_slow_truck_block",
+  "base": "ring_small_v1.0",
+  "type": "弯道慢速长车遮挡 / 队列压缩",
+  "risk": "低速长车在弯道前方造成遮挡与队列压缩，主车需要判断跟驰、等待或换道绕行的长期代价。",
+  "verify": "验证提前减速和换道时机，重点观察 unsafe_ratio 与 LCC 的同步变化。",
+  "ai_desired_vel": 8.0,
+  "ai_autonomous_level": 2,
+  "ai_aggressiveness_level": 4
+}

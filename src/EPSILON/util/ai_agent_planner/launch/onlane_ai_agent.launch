@@ -3,9 +3,9 @@
   <arg name="arena_info_static_topic" value="/arena_info_static" />
   <arg name="arena_info_dynamic_topic" value="/arena_info_dynamic" />
 
-  <arg name="global_desired_vel" value = "10.0" />
-  <arg name="global_autonomous_level" value = "2" />
-  <arg name="global_aggressiveness_level" value = "4" />
+  <arg name="global_desired_vel" default="10.0" />
+  <arg name="global_autonomous_level" default="2" />
+  <arg name="global_aggressiveness_level" default="4" />
 
   <arg name="playground" default="highway_lite" />
 

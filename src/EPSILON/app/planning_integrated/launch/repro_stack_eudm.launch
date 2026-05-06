@@ -1,12 +1,20 @@
 <launch>
   <arg name="playground" default="highway_v1.0" />
+  <arg name="ai_desired_vel" default="10.0" />
+  <arg name="ai_autonomous_level" default="2" />
+  <arg name="ai_aggressiveness_level" default="4" />
+  <arg name="bp_config_path" default="$(find eudm_planner)/config/eudm_config.pb.txt" />
 
   <include file="$(find planning_integrated)/launch/test_ssc_with_eudm_ros.launch">
     <arg name="playground" value="$(arg playground)" />
+    <arg name="bp_config_path" value="$(arg bp_config_path)" />
   </include>
 
   <include file="$(find ai_agent_planner)/launch/onlane_ai_agent.launch">
     <arg name="playground" value="$(arg playground)" />
+    <arg name="global_desired_vel" value="$(arg ai_desired_vel)" />
+    <arg name="global_autonomous_level" value="$(arg ai_autonomous_level)" />
+    <arg name="global_aggressiveness_level" value="$(arg ai_aggressiveness_level)" />
   </include>
 
   <include file="$(find phy_simulator)/launch/phy_simulator_planning.launch">

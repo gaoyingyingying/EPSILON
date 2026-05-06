@@ -46,6 +46,9 @@ struct TableStruct_eudm_5fconfig_2eproto {
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_eudm_5fconfig_2eproto;
 namespace planning {
 namespace eudm {
+class ActiveInferenceAssessDetail;
+struct ActiveInferenceAssessDetailDefaultTypeInternal;
+extern ActiveInferenceAssessDetailDefaultTypeInternal _ActiveInferenceAssessDetail_default_instance_;
 class ActiveLaneChangeCfg;
 struct ActiveLaneChangeCfgDefaultTypeInternal;
 extern ActiveLaneChangeCfgDefaultTypeInternal _ActiveLaneChangeCfg_default_instance_;
@@ -115,6 +118,7 @@ extern UserIntentionAssessDetailDefaultTypeInternal _UserIntentionAssessDetail_d
 }  // namespace eudm
 }  // namespace planning
 PROTOBUF_NAMESPACE_OPEN
+template<> ::planning::eudm::ActiveInferenceAssessDetail* Arena::CreateMaybeMessage<::planning::eudm::ActiveInferenceAssessDetail>(Arena*);
 template<> ::planning::eudm::ActiveLaneChangeCfg* Arena::CreateMaybeMessage<::planning::eudm::ActiveLaneChangeCfg>(Arena*);
 template<> ::planning::eudm::Config* Arena::CreateMaybeMessage<::planning::eudm::Config>(Arena*);
 template<> ::planning::eudm::CostAssessCfg* Arena::CreateMaybeMessage<::planning::eudm::CostAssessCfg>(Arena*);
@@ -1182,6 +1186,7 @@ class CostAssessCfg final :
     kSafetyFieldNumber = 2,
     kUserFieldNumber = 3,
     kNavigationFieldNumber = 4,
+    kActiveInferenceFieldNumber = 6,
     kDiscountFactorFieldNumber = 5,
   };
   // required .planning.eudm.EfficiencyAssessDetail effciency = 1;
@@ -1256,6 +1261,24 @@ class CostAssessCfg final :
       ::planning::eudm::NavigationAssessDetail* navigation);
   ::planning::eudm::NavigationAssessDetail* unsafe_arena_release_navigation();
 
+  // optional .planning.eudm.ActiveInferenceAssessDetail active_inference = 6;
+  bool has_active_inference() const;
+  private:
+  bool _internal_has_active_inference() const;
+  public:
+  void clear_active_inference();
+  const ::planning::eudm::ActiveInferenceAssessDetail& active_inference() const;
+  PROTOBUF_NODISCARD ::planning::eudm::ActiveInferenceAssessDetail* release_active_inference();
+  ::planning::eudm::ActiveInferenceAssessDetail* mutable_active_inference();
+  void set_allocated_active_inference(::planning::eudm::ActiveInferenceAssessDetail* active_inference);
+  private:
+  const ::planning::eudm::ActiveInferenceAssessDetail& _internal_active_inference() const;
+  ::planning::eudm::ActiveInferenceAssessDetail* _internal_mutable_active_inference();
+  public:
+  void unsafe_arena_set_allocated_active_inference(
+      ::planning::eudm::ActiveInferenceAssessDetail* active_inference);
+  ::planning::eudm::ActiveInferenceAssessDetail* unsafe_arena_release_active_inference();
+
   // required double discount_factor = 5;
   bool has_discount_factor() const;
   private:
@@ -1286,7 +1309,348 @@ class CostAssessCfg final :
     ::planning::eudm::SafetyAssessDetail* safety_;
     ::planning::eudm::UserIntentionAssessDetail* user_;
     ::planning::eudm::NavigationAssessDetail* navigation_;
+    ::planning::eudm::ActiveInferenceAssessDetail* active_inference_;
     double discount_factor_;
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_eudm_5fconfig_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ActiveInferenceAssessDetail final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:planning.eudm.ActiveInferenceAssessDetail) */ {
+ public:
+  inline ActiveInferenceAssessDetail() : ActiveInferenceAssessDetail(nullptr) {}
+  ~ActiveInferenceAssessDetail() override;
+  explicit PROTOBUF_CONSTEXPR ActiveInferenceAssessDetail(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  ActiveInferenceAssessDetail(const ActiveInferenceAssessDetail& from);
+  ActiveInferenceAssessDetail(ActiveInferenceAssessDetail&& from) noexcept
+    : ActiveInferenceAssessDetail() {
+    *this = ::std::move(from);
+  }
+
+  inline ActiveInferenceAssessDetail& operator=(const ActiveInferenceAssessDetail& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ActiveInferenceAssessDetail& operator=(ActiveInferenceAssessDetail&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance);
+  }
+  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ActiveInferenceAssessDetail& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ActiveInferenceAssessDetail* internal_default_instance() {
+    return reinterpret_cast<const ActiveInferenceAssessDetail*>(
+               &_ActiveInferenceAssessDetail_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  friend void swap(ActiveInferenceAssessDetail& a, ActiveInferenceAssessDetail& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ActiveInferenceAssessDetail* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ActiveInferenceAssessDetail* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ActiveInferenceAssessDetail* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<ActiveInferenceAssessDetail>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const ActiveInferenceAssessDetail& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const ActiveInferenceAssessDetail& from) {
+    ActiveInferenceAssessDetail::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ActiveInferenceAssessDetail* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "planning.eudm.ActiveInferenceAssessDetail";
+  }
+  protected:
+  explicit ActiveInferenceAssessDetail(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kEnableFieldNumber = 1,
+    kRiskUnitCostFieldNumber = 2,
+    kUncertaintyUnitCostFieldNumber = 3,
+    kEfficiencyUnitCostFieldNumber = 4,
+    kComfortUnitCostFieldNumber = 5,
+    kTtcThresholdFieldNumber = 6,
+    kMinLongitudinalDistanceFieldNumber = 7,
+    kMinLateralDistanceFieldNumber = 8,
+    kBeliefSmoothingFieldNumber = 9,
+    kLaneChangeComfortPenaltyFieldNumber = 10,
+    kLonAccPenaltyFieldNumber = 11,
+    kLonDecPenaltyFieldNumber = 12,
+    kBeliefEntropyWeightFieldNumber = 13,
+  };
+  // optional bool enable = 1 [default = false];
+  bool has_enable() const;
+  private:
+  bool _internal_has_enable() const;
+  public:
+  void clear_enable();
+  bool enable() const;
+  void set_enable(bool value);
+  private:
+  bool _internal_enable() const;
+  void _internal_set_enable(bool value);
+  public:
+
+  // optional double risk_unit_cost = 2 [default = 1];
+  bool has_risk_unit_cost() const;
+  private:
+  bool _internal_has_risk_unit_cost() const;
+  public:
+  void clear_risk_unit_cost();
+  double risk_unit_cost() const;
+  void set_risk_unit_cost(double value);
+  private:
+  double _internal_risk_unit_cost() const;
+  void _internal_set_risk_unit_cost(double value);
+  public:
+
+  // optional double uncertainty_unit_cost = 3 [default = 1];
+  bool has_uncertainty_unit_cost() const;
+  private:
+  bool _internal_has_uncertainty_unit_cost() const;
+  public:
+  void clear_uncertainty_unit_cost();
+  double uncertainty_unit_cost() const;
+  void set_uncertainty_unit_cost(double value);
+  private:
+  double _internal_uncertainty_unit_cost() const;
+  void _internal_set_uncertainty_unit_cost(double value);
+  public:
+
+  // optional double efficiency_unit_cost = 4 [default = 1];
+  bool has_efficiency_unit_cost() const;
+  private:
+  bool _internal_has_efficiency_unit_cost() const;
+  public:
+  void clear_efficiency_unit_cost();
+  double efficiency_unit_cost() const;
+  void set_efficiency_unit_cost(double value);
+  private:
+  double _internal_efficiency_unit_cost() const;
+  void _internal_set_efficiency_unit_cost(double value);
+  public:
+
+  // optional double comfort_unit_cost = 5 [default = 1];
+  bool has_comfort_unit_cost() const;
+  private:
+  bool _internal_has_comfort_unit_cost() const;
+  public:
+  void clear_comfort_unit_cost();
+  double comfort_unit_cost() const;
+  void set_comfort_unit_cost(double value);
+  private:
+  double _internal_comfort_unit_cost() const;
+  void _internal_set_comfort_unit_cost(double value);
+  public:
+
+  // optional double ttc_threshold = 6 [default = 2.5];
+  bool has_ttc_threshold() const;
+  private:
+  bool _internal_has_ttc_threshold() const;
+  public:
+  void clear_ttc_threshold();
+  double ttc_threshold() const;
+  void set_ttc_threshold(double value);
+  private:
+  double _internal_ttc_threshold() const;
+  void _internal_set_ttc_threshold(double value);
+  public:
+
+  // optional double min_longitudinal_distance = 7 [default = 10];
+  bool has_min_longitudinal_distance() const;
+  private:
+  bool _internal_has_min_longitudinal_distance() const;
+  public:
+  void clear_min_longitudinal_distance();
+  double min_longitudinal_distance() const;
+  void set_min_longitudinal_distance(double value);
+  private:
+  double _internal_min_longitudinal_distance() const;
+  void _internal_set_min_longitudinal_distance(double value);
+  public:
+
+  // optional double min_lateral_distance = 8 [default = 2.5];
+  bool has_min_lateral_distance() const;
+  private:
+  bool _internal_has_min_lateral_distance() const;
+  public:
+  void clear_min_lateral_distance();
+  double min_lateral_distance() const;
+  void set_min_lateral_distance(double value);
+  private:
+  double _internal_min_lateral_distance() const;
+  void _internal_set_min_lateral_distance(double value);
+  public:
+
+  // optional double belief_smoothing = 9 [default = 0.65];
+  bool has_belief_smoothing() const;
+  private:
+  bool _internal_has_belief_smoothing() const;
+  public:
+  void clear_belief_smoothing();
+  double belief_smoothing() const;
+  void set_belief_smoothing(double value);
+  private:
+  double _internal_belief_smoothing() const;
+  void _internal_set_belief_smoothing(double value);
+  public:
+
+  // optional double lane_change_comfort_penalty = 10 [default = 0.6];
+  bool has_lane_change_comfort_penalty() const;
+  private:
+  bool _internal_has_lane_change_comfort_penalty() const;
+  public:
+  void clear_lane_change_comfort_penalty();
+  double lane_change_comfort_penalty() const;
+  void set_lane_change_comfort_penalty(double value);
+  private:
+  double _internal_lane_change_comfort_penalty() const;
+  void _internal_set_lane_change_comfort_penalty(double value);
+  public:
+
+  // optional double lon_acc_penalty = 11 [default = 0.35];
+  bool has_lon_acc_penalty() const;
+  private:
+  bool _internal_has_lon_acc_penalty() const;
+  public:
+  void clear_lon_acc_penalty();
+  double lon_acc_penalty() const;
+  void set_lon_acc_penalty(double value);
+  private:
+  double _internal_lon_acc_penalty() const;
+  void _internal_set_lon_acc_penalty(double value);
+  public:
+
+  // optional double lon_dec_penalty = 12 [default = 0.5];
+  bool has_lon_dec_penalty() const;
+  private:
+  bool _internal_has_lon_dec_penalty() const;
+  public:
+  void clear_lon_dec_penalty();
+  double lon_dec_penalty() const;
+  void set_lon_dec_penalty(double value);
+  private:
+  double _internal_lon_dec_penalty() const;
+  void _internal_set_lon_dec_penalty(double value);
+  public:
+
+  // optional double belief_entropy_weight = 13 [default = 1];
+  bool has_belief_entropy_weight() const;
+  private:
+  bool _internal_has_belief_entropy_weight() const;
+  public:
+  void clear_belief_entropy_weight();
+  double belief_entropy_weight() const;
+  void set_belief_entropy_weight(double value);
+  private:
+  double _internal_belief_entropy_weight() const;
+  void _internal_set_belief_entropy_weight(double value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:planning.eudm.ActiveInferenceAssessDetail)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    ::PROTOBUF_NAMESPACE_ID::internal::HasBits<1> _has_bits_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    bool enable_;
+    double risk_unit_cost_;
+    double uncertainty_unit_cost_;
+    double efficiency_unit_cost_;
+    double comfort_unit_cost_;
+    double ttc_threshold_;
+    double min_longitudinal_distance_;
+    double min_lateral_distance_;
+    double belief_smoothing_;
+    double lane_change_comfort_penalty_;
+    double lon_acc_penalty_;
+    double lon_dec_penalty_;
+    double belief_entropy_weight_;
   };
   union { Impl_ _impl_; };
   friend struct ::TableStruct_eudm_5fconfig_2eproto;
@@ -1348,7 +1712,7 @@ class SimDurationDetail final :
                &_SimDurationDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(SimDurationDetail& a, SimDurationDetail& b) {
     a.Swap(&b);
@@ -1556,7 +1920,7 @@ class LonSimLimit final :
                &_LonSimLimit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(LonSimLimit& a, LonSimLimit& b) {
     a.Swap(&b);
@@ -1779,7 +2143,7 @@ class LonSimIdm final :
                &_LonSimIdm_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(LonSimIdm& a, LonSimIdm& b) {
     a.Swap(&b);
@@ -1972,7 +2336,7 @@ class LonSimDetail final :
                &_LonSimDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(LonSimDetail& a, LonSimDetail& b) {
     a.Swap(&b);
@@ -2160,7 +2524,7 @@ class LatSimLimit final :
                &_LatSimLimit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(LatSimLimit& a, LatSimLimit& b) {
     a.Swap(&b);
@@ -2383,7 +2747,7 @@ class LatSimPurePursuit final :
                &_LatSimPurePursuit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(LatSimPurePursuit& a, LatSimPurePursuit& b) {
     a.Swap(&b);
@@ -2576,7 +2940,7 @@ class LatSimDetail final :
                &_LatSimDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(LatSimDetail& a, LatSimDetail& b) {
     a.Swap(&b);
@@ -2764,7 +3128,7 @@ class EvasiveSimDetail final :
                &_EvasiveSimDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(EvasiveSimDetail& a, EvasiveSimDetail& b) {
     a.Swap(&b);
@@ -3017,7 +3381,7 @@ class ForwardSimDetail final :
                &_ForwardSimDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(ForwardSimDetail& a, ForwardSimDetail& b) {
     a.Swap(&b);
@@ -3270,7 +3634,7 @@ class SimRefLine final :
                &_SimRefLine_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(SimRefLine& a, SimRefLine& b) {
     a.Swap(&b);
@@ -3478,7 +3842,7 @@ class SimCfg final :
                &_SimCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(SimCfg& a, SimCfg& b) {
     a.Swap(&b);
@@ -3736,7 +4100,7 @@ class ActiveLaneChangeCfg final :
                &_ActiveLaneChangeCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(ActiveLaneChangeCfg& a, ActiveLaneChangeCfg& b) {
     a.Swap(&b);
@@ -4064,7 +4428,7 @@ class FunctionCfg final :
                &_FunctionCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(FunctionCfg& a, FunctionCfg& b) {
     a.Swap(&b);
@@ -4277,7 +4641,7 @@ class RssCfg final :
                &_RssCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(RssCfg& a, RssCfg& b) {
     a.Swap(&b);
@@ -4545,7 +4909,7 @@ class StrictCheckCfg final :
                &_StrictCheckCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(StrictCheckCfg& a, StrictCheckCfg& b) {
     a.Swap(&b);
@@ -4723,7 +5087,7 @@ class SafetyCfg final :
                &_SafetyCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(SafetyCfg& a, SafetyCfg& b) {
     a.Swap(&b);
@@ -4996,7 +5360,7 @@ class Config final :
                &_Config_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(Config& a, Config& b) {
     a.Swap(&b);
@@ -6204,7 +6568,7 @@ inline void CostAssessCfg::set_allocated_navigation(::planning::eudm::Navigation
 
 // required double discount_factor = 5;
 inline bool CostAssessCfg::_internal_has_discount_factor() const {
-  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
   return value;
 }
 inline bool CostAssessCfg::has_discount_factor() const {
@@ -6212,7 +6576,7 @@ inline bool CostAssessCfg::has_discount_factor() const {
 }
 inline void CostAssessCfg::clear_discount_factor() {
   _impl_.discount_factor_ = 0;
-  _impl_._has_bits_[0] &= ~0x00000010u;
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 inline double CostAssessCfg::_internal_discount_factor() const {
   return _impl_.discount_factor_;
@@ -6222,12 +6586,470 @@ inline double CostAssessCfg::discount_factor() const {
   return _internal_discount_factor();
 }
 inline void CostAssessCfg::_internal_set_discount_factor(double value) {
-  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_._has_bits_[0] |= 0x00000020u;
   _impl_.discount_factor_ = value;
 }
 inline void CostAssessCfg::set_discount_factor(double value) {
   _internal_set_discount_factor(value);
   // @@protoc_insertion_point(field_set:planning.eudm.CostAssessCfg.discount_factor)
+}
+
+// optional .planning.eudm.ActiveInferenceAssessDetail active_inference = 6;
+inline bool CostAssessCfg::_internal_has_active_inference() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  PROTOBUF_ASSUME(!value || _impl_.active_inference_ != nullptr);
+  return value;
+}
+inline bool CostAssessCfg::has_active_inference() const {
+  return _internal_has_active_inference();
+}
+inline void CostAssessCfg::clear_active_inference() {
+  if (_impl_.active_inference_ != nullptr) _impl_.active_inference_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline const ::planning::eudm::ActiveInferenceAssessDetail& CostAssessCfg::_internal_active_inference() const {
+  const ::planning::eudm::ActiveInferenceAssessDetail* p = _impl_.active_inference_;
+  return p != nullptr ? *p : reinterpret_cast<const ::planning::eudm::ActiveInferenceAssessDetail&>(
+      ::planning::eudm::_ActiveInferenceAssessDetail_default_instance_);
+}
+inline const ::planning::eudm::ActiveInferenceAssessDetail& CostAssessCfg::active_inference() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.CostAssessCfg.active_inference)
+  return _internal_active_inference();
+}
+inline void CostAssessCfg::unsafe_arena_set_allocated_active_inference(
+    ::planning::eudm::ActiveInferenceAssessDetail* active_inference) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.active_inference_);
+  }
+  _impl_.active_inference_ = active_inference;
+  if (active_inference) {
+    _impl_._has_bits_[0] |= 0x00000010u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000010u;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:planning.eudm.CostAssessCfg.active_inference)
+}
+inline ::planning::eudm::ActiveInferenceAssessDetail* CostAssessCfg::release_active_inference() {
+  _impl_._has_bits_[0] &= ~0x00000010u;
+  ::planning::eudm::ActiveInferenceAssessDetail* temp = _impl_.active_inference_;
+  _impl_.active_inference_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::planning::eudm::ActiveInferenceAssessDetail* CostAssessCfg::unsafe_arena_release_active_inference() {
+  // @@protoc_insertion_point(field_release:planning.eudm.CostAssessCfg.active_inference)
+  _impl_._has_bits_[0] &= ~0x00000010u;
+  ::planning::eudm::ActiveInferenceAssessDetail* temp = _impl_.active_inference_;
+  _impl_.active_inference_ = nullptr;
+  return temp;
+}
+inline ::planning::eudm::ActiveInferenceAssessDetail* CostAssessCfg::_internal_mutable_active_inference() {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  if (_impl_.active_inference_ == nullptr) {
+    auto* p = CreateMaybeMessage<::planning::eudm::ActiveInferenceAssessDetail>(GetArenaForAllocation());
+    _impl_.active_inference_ = p;
+  }
+  return _impl_.active_inference_;
+}
+inline ::planning::eudm::ActiveInferenceAssessDetail* CostAssessCfg::mutable_active_inference() {
+  ::planning::eudm::ActiveInferenceAssessDetail* _msg = _internal_mutable_active_inference();
+  // @@protoc_insertion_point(field_mutable:planning.eudm.CostAssessCfg.active_inference)
+  return _msg;
+}
+inline void CostAssessCfg::set_allocated_active_inference(::planning::eudm::ActiveInferenceAssessDetail* active_inference) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete _impl_.active_inference_;
+  }
+  if (active_inference) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(active_inference);
+    if (message_arena != submessage_arena) {
+      active_inference = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, active_inference, submessage_arena);
+    }
+    _impl_._has_bits_[0] |= 0x00000010u;
+  } else {
+    _impl_._has_bits_[0] &= ~0x00000010u;
+  }
+  _impl_.active_inference_ = active_inference;
+  // @@protoc_insertion_point(field_set_allocated:planning.eudm.CostAssessCfg.active_inference)
+}
+
+// -------------------------------------------------------------------
+
+// ActiveInferenceAssessDetail
+
+// optional bool enable = 1 [default = false];
+inline bool ActiveInferenceAssessDetail::_internal_has_enable() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000001u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_enable() const {
+  return _internal_has_enable();
+}
+inline void ActiveInferenceAssessDetail::clear_enable() {
+  _impl_.enable_ = false;
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+inline bool ActiveInferenceAssessDetail::_internal_enable() const {
+  return _impl_.enable_;
+}
+inline bool ActiveInferenceAssessDetail::enable() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.enable)
+  return _internal_enable();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_enable(bool value) {
+  _impl_._has_bits_[0] |= 0x00000001u;
+  _impl_.enable_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_enable(bool value) {
+  _internal_set_enable(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.enable)
+}
+
+// optional double risk_unit_cost = 2 [default = 1];
+inline bool ActiveInferenceAssessDetail::_internal_has_risk_unit_cost() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000002u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_risk_unit_cost() const {
+  return _internal_has_risk_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::clear_risk_unit_cost() {
+  _impl_.risk_unit_cost_ = 1;
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+inline double ActiveInferenceAssessDetail::_internal_risk_unit_cost() const {
+  return _impl_.risk_unit_cost_;
+}
+inline double ActiveInferenceAssessDetail::risk_unit_cost() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.risk_unit_cost)
+  return _internal_risk_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_risk_unit_cost(double value) {
+  _impl_._has_bits_[0] |= 0x00000002u;
+  _impl_.risk_unit_cost_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_risk_unit_cost(double value) {
+  _internal_set_risk_unit_cost(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.risk_unit_cost)
+}
+
+// optional double uncertainty_unit_cost = 3 [default = 1];
+inline bool ActiveInferenceAssessDetail::_internal_has_uncertainty_unit_cost() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000004u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_uncertainty_unit_cost() const {
+  return _internal_has_uncertainty_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::clear_uncertainty_unit_cost() {
+  _impl_.uncertainty_unit_cost_ = 1;
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+inline double ActiveInferenceAssessDetail::_internal_uncertainty_unit_cost() const {
+  return _impl_.uncertainty_unit_cost_;
+}
+inline double ActiveInferenceAssessDetail::uncertainty_unit_cost() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.uncertainty_unit_cost)
+  return _internal_uncertainty_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_uncertainty_unit_cost(double value) {
+  _impl_._has_bits_[0] |= 0x00000004u;
+  _impl_.uncertainty_unit_cost_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_uncertainty_unit_cost(double value) {
+  _internal_set_uncertainty_unit_cost(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.uncertainty_unit_cost)
+}
+
+// optional double efficiency_unit_cost = 4 [default = 1];
+inline bool ActiveInferenceAssessDetail::_internal_has_efficiency_unit_cost() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000008u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_efficiency_unit_cost() const {
+  return _internal_has_efficiency_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::clear_efficiency_unit_cost() {
+  _impl_.efficiency_unit_cost_ = 1;
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+inline double ActiveInferenceAssessDetail::_internal_efficiency_unit_cost() const {
+  return _impl_.efficiency_unit_cost_;
+}
+inline double ActiveInferenceAssessDetail::efficiency_unit_cost() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.efficiency_unit_cost)
+  return _internal_efficiency_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_efficiency_unit_cost(double value) {
+  _impl_._has_bits_[0] |= 0x00000008u;
+  _impl_.efficiency_unit_cost_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_efficiency_unit_cost(double value) {
+  _internal_set_efficiency_unit_cost(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.efficiency_unit_cost)
+}
+
+// optional double comfort_unit_cost = 5 [default = 1];
+inline bool ActiveInferenceAssessDetail::_internal_has_comfort_unit_cost() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000010u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_comfort_unit_cost() const {
+  return _internal_has_comfort_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::clear_comfort_unit_cost() {
+  _impl_.comfort_unit_cost_ = 1;
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+inline double ActiveInferenceAssessDetail::_internal_comfort_unit_cost() const {
+  return _impl_.comfort_unit_cost_;
+}
+inline double ActiveInferenceAssessDetail::comfort_unit_cost() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.comfort_unit_cost)
+  return _internal_comfort_unit_cost();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_comfort_unit_cost(double value) {
+  _impl_._has_bits_[0] |= 0x00000010u;
+  _impl_.comfort_unit_cost_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_comfort_unit_cost(double value) {
+  _internal_set_comfort_unit_cost(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.comfort_unit_cost)
+}
+
+// optional double ttc_threshold = 6 [default = 2.5];
+inline bool ActiveInferenceAssessDetail::_internal_has_ttc_threshold() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000020u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_ttc_threshold() const {
+  return _internal_has_ttc_threshold();
+}
+inline void ActiveInferenceAssessDetail::clear_ttc_threshold() {
+  _impl_.ttc_threshold_ = 2.5;
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+inline double ActiveInferenceAssessDetail::_internal_ttc_threshold() const {
+  return _impl_.ttc_threshold_;
+}
+inline double ActiveInferenceAssessDetail::ttc_threshold() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.ttc_threshold)
+  return _internal_ttc_threshold();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_ttc_threshold(double value) {
+  _impl_._has_bits_[0] |= 0x00000020u;
+  _impl_.ttc_threshold_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_ttc_threshold(double value) {
+  _internal_set_ttc_threshold(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.ttc_threshold)
+}
+
+// optional double min_longitudinal_distance = 7 [default = 10];
+inline bool ActiveInferenceAssessDetail::_internal_has_min_longitudinal_distance() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000040u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_min_longitudinal_distance() const {
+  return _internal_has_min_longitudinal_distance();
+}
+inline void ActiveInferenceAssessDetail::clear_min_longitudinal_distance() {
+  _impl_.min_longitudinal_distance_ = 10;
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+inline double ActiveInferenceAssessDetail::_internal_min_longitudinal_distance() const {
+  return _impl_.min_longitudinal_distance_;
+}
+inline double ActiveInferenceAssessDetail::min_longitudinal_distance() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.min_longitudinal_distance)
+  return _internal_min_longitudinal_distance();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_min_longitudinal_distance(double value) {
+  _impl_._has_bits_[0] |= 0x00000040u;
+  _impl_.min_longitudinal_distance_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_min_longitudinal_distance(double value) {
+  _internal_set_min_longitudinal_distance(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.min_longitudinal_distance)
+}
+
+// optional double min_lateral_distance = 8 [default = 2.5];
+inline bool ActiveInferenceAssessDetail::_internal_has_min_lateral_distance() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000080u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_min_lateral_distance() const {
+  return _internal_has_min_lateral_distance();
+}
+inline void ActiveInferenceAssessDetail::clear_min_lateral_distance() {
+  _impl_.min_lateral_distance_ = 2.5;
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+inline double ActiveInferenceAssessDetail::_internal_min_lateral_distance() const {
+  return _impl_.min_lateral_distance_;
+}
+inline double ActiveInferenceAssessDetail::min_lateral_distance() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.min_lateral_distance)
+  return _internal_min_lateral_distance();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_min_lateral_distance(double value) {
+  _impl_._has_bits_[0] |= 0x00000080u;
+  _impl_.min_lateral_distance_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_min_lateral_distance(double value) {
+  _internal_set_min_lateral_distance(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.min_lateral_distance)
+}
+
+// optional double belief_smoothing = 9 [default = 0.65];
+inline bool ActiveInferenceAssessDetail::_internal_has_belief_smoothing() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000100u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_belief_smoothing() const {
+  return _internal_has_belief_smoothing();
+}
+inline void ActiveInferenceAssessDetail::clear_belief_smoothing() {
+  _impl_.belief_smoothing_ = 0.65;
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+inline double ActiveInferenceAssessDetail::_internal_belief_smoothing() const {
+  return _impl_.belief_smoothing_;
+}
+inline double ActiveInferenceAssessDetail::belief_smoothing() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.belief_smoothing)
+  return _internal_belief_smoothing();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_belief_smoothing(double value) {
+  _impl_._has_bits_[0] |= 0x00000100u;
+  _impl_.belief_smoothing_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_belief_smoothing(double value) {
+  _internal_set_belief_smoothing(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.belief_smoothing)
+}
+
+// optional double lane_change_comfort_penalty = 10 [default = 0.6];
+inline bool ActiveInferenceAssessDetail::_internal_has_lane_change_comfort_penalty() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000200u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_lane_change_comfort_penalty() const {
+  return _internal_has_lane_change_comfort_penalty();
+}
+inline void ActiveInferenceAssessDetail::clear_lane_change_comfort_penalty() {
+  _impl_.lane_change_comfort_penalty_ = 0.6;
+  _impl_._has_bits_[0] &= ~0x00000200u;
+}
+inline double ActiveInferenceAssessDetail::_internal_lane_change_comfort_penalty() const {
+  return _impl_.lane_change_comfort_penalty_;
+}
+inline double ActiveInferenceAssessDetail::lane_change_comfort_penalty() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.lane_change_comfort_penalty)
+  return _internal_lane_change_comfort_penalty();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_lane_change_comfort_penalty(double value) {
+  _impl_._has_bits_[0] |= 0x00000200u;
+  _impl_.lane_change_comfort_penalty_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_lane_change_comfort_penalty(double value) {
+  _internal_set_lane_change_comfort_penalty(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.lane_change_comfort_penalty)
+}
+
+// optional double lon_acc_penalty = 11 [default = 0.35];
+inline bool ActiveInferenceAssessDetail::_internal_has_lon_acc_penalty() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000400u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_lon_acc_penalty() const {
+  return _internal_has_lon_acc_penalty();
+}
+inline void ActiveInferenceAssessDetail::clear_lon_acc_penalty() {
+  _impl_.lon_acc_penalty_ = 0.35;
+  _impl_._has_bits_[0] &= ~0x00000400u;
+}
+inline double ActiveInferenceAssessDetail::_internal_lon_acc_penalty() const {
+  return _impl_.lon_acc_penalty_;
+}
+inline double ActiveInferenceAssessDetail::lon_acc_penalty() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.lon_acc_penalty)
+  return _internal_lon_acc_penalty();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_lon_acc_penalty(double value) {
+  _impl_._has_bits_[0] |= 0x00000400u;
+  _impl_.lon_acc_penalty_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_lon_acc_penalty(double value) {
+  _internal_set_lon_acc_penalty(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.lon_acc_penalty)
+}
+
+// optional double lon_dec_penalty = 12 [default = 0.5];
+inline bool ActiveInferenceAssessDetail::_internal_has_lon_dec_penalty() const {
+  bool value = (_impl_._has_bits_[0] & 0x00000800u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_lon_dec_penalty() const {
+  return _internal_has_lon_dec_penalty();
+}
+inline void ActiveInferenceAssessDetail::clear_lon_dec_penalty() {
+  _impl_.lon_dec_penalty_ = 0.5;
+  _impl_._has_bits_[0] &= ~0x00000800u;
+}
+inline double ActiveInferenceAssessDetail::_internal_lon_dec_penalty() const {
+  return _impl_.lon_dec_penalty_;
+}
+inline double ActiveInferenceAssessDetail::lon_dec_penalty() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.lon_dec_penalty)
+  return _internal_lon_dec_penalty();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_lon_dec_penalty(double value) {
+  _impl_._has_bits_[0] |= 0x00000800u;
+  _impl_.lon_dec_penalty_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_lon_dec_penalty(double value) {
+  _internal_set_lon_dec_penalty(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.lon_dec_penalty)
+}
+
+// optional double belief_entropy_weight = 13 [default = 1];
+inline bool ActiveInferenceAssessDetail::_internal_has_belief_entropy_weight() const {
+  bool value = (_impl_._has_bits_[0] & 0x00001000u) != 0;
+  return value;
+}
+inline bool ActiveInferenceAssessDetail::has_belief_entropy_weight() const {
+  return _internal_has_belief_entropy_weight();
+}
+inline void ActiveInferenceAssessDetail::clear_belief_entropy_weight() {
+  _impl_.belief_entropy_weight_ = 1;
+  _impl_._has_bits_[0] &= ~0x00001000u;
+}
+inline double ActiveInferenceAssessDetail::_internal_belief_entropy_weight() const {
+  return _impl_.belief_entropy_weight_;
+}
+inline double ActiveInferenceAssessDetail::belief_entropy_weight() const {
+  // @@protoc_insertion_point(field_get:planning.eudm.ActiveInferenceAssessDetail.belief_entropy_weight)
+  return _internal_belief_entropy_weight();
+}
+inline void ActiveInferenceAssessDetail::_internal_set_belief_entropy_weight(double value) {
+  _impl_._has_bits_[0] |= 0x00001000u;
+  _impl_.belief_entropy_weight_ = value;
+}
+inline void ActiveInferenceAssessDetail::set_belief_entropy_weight(double value) {
+  _internal_set_belief_entropy_weight(value);
+  // @@protoc_insertion_point(field_set:planning.eudm.ActiveInferenceAssessDetail.belief_entropy_weight)
 }
 
 // -------------------------------------------------------------------
@@ -10097,6 +10919,8 @@ inline void Config::set_allocated_safety(::planning::eudm::SafetyCfg* safety) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

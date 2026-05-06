@@ -1,0 +1,10 @@
+{
+  "name": "highway_lite_lt_stalled_lead",
+  "base": "highway_lite",
+  "type": "前方慢车/疑似故障车 / 低速障碍队尾",
+  "risk": "主车路径前方出现低速长车，后续车辆仍保持较高期望速度，形成追尾与绕行权衡。",
+  "verify": "验证系统能否提前降低速度并选择安全绕行，而不是在近距离才急减速。",
+  "ai_desired_vel": 10.0,
+  "ai_autonomous_level": 2,
+  "ai_aggressiveness_level": 4
+}

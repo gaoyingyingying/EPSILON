@@ -1,0 +1,10 @@
+{
+  "name": "highway_lite_lt_close_cut_in",
+  "base": "highway_lite",
+  "type": "近距离强制切入 / 相邻车道低概率横向冲突",
+  "risk": "前方相邻车道车辆在很小纵向间隙内形成切入压力，主车需要提前减速或放弃激进换道。",
+  "verify": "验证主动推理是否能在 unsafe_ratio 上升前识别未来横向占用风险，并保持速度损失可控。",
+  "ai_desired_vel": 11.5,
+  "ai_autonomous_level": 2,
+  "ai_aggressiveness_level": 5
+}
