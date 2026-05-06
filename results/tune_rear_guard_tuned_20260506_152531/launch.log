@@ -1,0 +1,2464 @@
+[OnlaneAi]2 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 2
+ego_tf_name_ = ego_vehicle_vis_2
+[INFO] [1778052332.415699403]: [test_ssc_with_eudm] main started
+[INFO] [1778052332.420778699]: [test_ssc_with_eudm] ego_id=0
+[INFO] [1778052332.421252705]: [test_ssc_with_eudm] agent_config_path=/home/ying/epsilon-reproduction/src/EPSILON/core/playgrounds/highway_v1.0_lt_fast_rear_approach/agent_config.json
+[INFO] [1778052332.425649961]: [test_ssc_with_eudm] bp_config_path=/home/ying/epsilon-reproduction/src/EPSILON/util/eudm_planner/config/eudm_config_rear_guard.pb.txt
+[INFO] [1778052332.426300224]: [test_ssc_with_eudm] ssc_config_path=/home/ying/epsilon-reproduction/src/EPSILON/util/ssc_planner/config/ssc_config.pb.txt
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:1000
+ -- height:1000
+ -- resolution:0.200000
+ -- w_metric:200.000000
+ -- h_metric:200.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 1
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+[INFO] [1778052332.430778336]: [test_ssc_with_eudm] bp server constructed
+node_id_ = 0
+ego_tf_name_ = ego_vehicle_vis_0
+[OnlaneAi]3 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 3
+ego_tf_name_ = ego_vehicle_vis_3
+node_id_ = 0
+[WARN] [1778052332.492516295]: Shutdown request received.
+[WARN] [1778052332.493635871]: Reason given for shutdown: [[/test_ssc_with_eudm_0] Reason: new node registered with same name]
+[WARN] [1778052332.517383949]: Shutdown request received.
+[WARN] [1778052332.519139767]: Shutdown request received.
+[OnlaneAi]1 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 1
+ego_tf_name_ = ego_vehicle_vis_1
+[OnlaneAi]6 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 6
+ego_tf_name_ = ego_vehicle_vis_6
+[WARN] [1778052332.532816831]: Reason given for shutdown: [[/onlane_ai_agent_2] Reason: new node registered with same name]
+[WARN] [1778052332.537078014]: Reason given for shutdown: [[/onlane_ai_agent_1] Reason: new node registered with same name]
+[PhySimulation] Constructing...
+[PhySimulation] Parsing simulation info...
+
+[ArenaLoader] Loading vehicle set
+Vehicle Set Info:
+
+ -- ID. 10:
+
+Vehicle:
+ -- ID:	10
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (1234.510000, -3602.750000).
+ -- angle: 2.429440.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 9:
+
+Vehicle:
+ -- ID:	9
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (1228.360000, -3602.490000).
+ -- angle: 2.306190.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 8:
+
+Vehicle:
+ -- ID:	8
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (1208.090000, -3566.420000).
+ -- angle: 2.424280.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 7:
+
+Vehicle:
+ -- ID:	7
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (4.900000, -48.600000).
+ -- angle: -0.980000.
+ -- curvature: 0.000000.
+ -- velocity: 15.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 6:
+
+Vehicle:
+ -- ID:	6
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (1206.060000, -3569.200000).
+ -- angle: 2.356150.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 5:
+
+Vehicle:
+ -- ID:	5
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (638.011000, -2857.180000).
+ -- angle: 2.196470.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 4:
+
+Vehicle:
+ -- ID:	4
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (50.838000, -111.648000).
+ -- angle: -1.003310.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 3:
+
+Vehicle:
+ -- ID:	3
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (34.000000, -94.800000).
+ -- angle: -0.990000.
+ -- curvature: 0.000000.
+ -- velocity: 6.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 2:
+
+Vehicle:
+ -- ID:	2
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (22.500000, -69.200000).
+ -- angle: -0.980000.
+ -- curvature: -0.000711.
+ -- velocity: 7.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 1:
+
+Vehicle:
+ -- ID:	1
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (80.708000, -154.913000).
+ -- angle: -1.088000.
+ -- curvature: 0.000000.
+ -- velocity: 0.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+ -- ID. 0:
+
+Vehicle:
+ -- ID:	0
+ -- Subclass:	car
+VehicleParam:
+ -- width:	 1.900000.
+ -- length:	 4.880000.
+ -- wheel_base:	 2.850000.
+ -- front_suspension:	 0.930000.
+ -- rear_suspension:	 1.100000.
+ -- d_cr:	 1.340000.
+ -- max_steering_angle:	 0.785398.
+ -- max_longitudinal_acc:	 2.000000.
+ -- max_lateral_acc:	 2.000000.
+State:
+ -- time_stamp: 0.000000.
+ -- vec_position: (9.035720, -54.623900).
+ -- angle: -0.972778.
+ -- curvature: 0.000000.
+ -- velocity: 8.000000.
+ -- acceleration: 0.000000.
+ -- steer: 0.000000.
+
+
+[ArenaLoader] Loading map info
+Obstacle id 1.
+Obstacle id 2.
+Obstacle id 3.
+Obstacle id 4.
+Obstacle id 5.
+Obstacle id 6.
+Obstacle id 7.
+Obstacle id 8.
+Obstacle id 9.
+Obstacle id 10.
+Obstacle id 11.
+Obstacle id 12.
+Obstacle id 13.
+Obstacle id 14.
+Obstacle id 15.
+Obstacle id 16.
+Obstacle id 17.
+Obstacle id 18.
+Obstacle id 19.
+Obstacle id 20.
+Obstacle id 21.
+Obstacle id 22.
+Obstacle id 23.
+Obstacle id 24.
+Obstacle id 25.
+Obstacle id 26.
+Obstacle id 27.
+Obstacle id 28.
+Obstacle id 29.
+Obstacle id 30.
+Obstacle id 33.
+Obstacle id 31.
+Obstacle id 32.
+Obstacle id 34.
+Obstacle id 50.
+Obstacle id 35.
+Obstacle id 36.
+Obstacle id 37.
+Obstacle id 38.
+Obstacle id 39.
+Obstacle id 40.
+Obstacle id 41.
+Obstacle id 42.
+Obstacle id 43.
+Obstacle id 44.
+Obstacle id 45.
+Obstacle id 46.
+Obstacle id 47.
+Obstacle id 48.
+Obstacle id 49.
+Obstacle id 51.
+Obstacle id 52.
+Obstacle id 53.
+Obstacle id 54.
+Obstacle id 55.
+Obstacle id 56.
+Obstacle id 57.
+Obstacle id 58.
+Obstacle id 59.
+Obstacle id 60.
+Obstacle id 61.
+Obstacle id 100.
+id: 61
+Polygon:
+ -- num of pts: 15
+id: 60
+Polygon:
+ -- num of pts: 24
+id: 29
+Polygon:
+ -- num of pts: 19
+id: 28
+Polygon:
+ -- num of pts: 11
+id: 27
+Polygon:
+ -- num of pts: 17
+id: 26
+Polygon:
+ -- num of pts: 19
+id: 25
+Polygon:
+ -- num of pts: 21
+id: 24
+Polygon:
+ -- num of pts: 11
+id: 23
+Polygon:
+ -- num of pts: 11
+id: 22
+Polygon:
+ -- num of pts: 11
+id: 21
+Polygon:
+ -- num of pts: 11
+id: 20
+Polygon:
+ -- num of pts: 11
+id: 19
+Polygon:
+ -- num of pts: 13
+id: 18
+Polygon:
+ -- num of pts: 18
+id: 17
+Polygon:
+ -- num of pts: 8
+id: 16
+Polygon:
+ -- num of pts: 16
+id: 15
+Polygon:
+ -- num of pts: 12
+id: 14
+Polygon:
+ -- num of pts: 15
+id: 1
+Polygon:
+ -- num of pts: 39
+id: 2
+Polygon:
+ -- num of pts: 29
+id: 3
+Polygon:
+ -- num of pts: 24
+id: 4
+Polygon:
+ -- num of pts: 23
+id: 5
+Polygon:
+ -- num of pts: 14
+id: 6
+Polygon:
+ -- num of pts: 18
+id: 7
+Polygon:
+ -- num of pts: 13
+id: 8
+Polygon:
+ -- num of pts: 10
+id: 9
+Polygon:
+ -- num of pts: 24
+id: 10
+Polygon:
+ -- num of pts: 17
+id: 11
+Polygon:
+ -- num of pts: 12
+id: 12
+Polygon:
+ -- num of pts: 12
+id: 13
+Polygon:
+ -- num of pts: 16
+id: 30
+Polygon:
+ -- num of pts: 28
+id: 33
+Polygon:
+ -- num of pts: 17
+id: 31
+Polygon:
+ -- num of pts: 23
+id: 32
+Polygon:
+ -- num of pts: 26
+id: 34
+Polygon:
+ -- num of pts: 16
+id: 50
+Polygon:
+ -- num of pts: 17
+id: 35
+Polygon:
+ -- num of pts: 15
+id: 36
+Polygon:
+ -- num of pts: 17
+id: 37
+[OnlaneAi]5 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 5
+ego_tf_name_ = ego_vehicle_vis_5
+Polygon:
+ -- num of pts: 14
+id: 38
+Polygon:
+ -- num of pts: 12
+id: 39
+Polygon:
+ -- num of pts: 13
+id: 40
+Polygon:
+ -- num of pts: 16
+id: 41
+Polygon:
+ -- num of pts: 19
+id: 42
+Polygon:
+ -- num of pts: 19
+id: 43
+Polygon:
+ -- num of pts: 16
+id: 44
+Polygon:
+ -- num of pts: 14
+id: 45
+Polygon:
+ -- num of pts: 16
+id: 46
+Polygon:
+ -- num of pts: 16
+id: 47
+Polygon:
+ -- num of pts: 16
+id: 48
+Polygon:
+ -- num of pts: 15
+id: 49
+Polygon:
+ -- num of pts: 24
+id: 51
+Polygon:
+ -- num of pts: 24
+id: 52
+Polygon:
+ -- num of pts: 7
+id: 53
+Polygon:
+ -- num of pts: 5
+id: 54
+Polygon:
+ -- num of pts: 11
+id: 55
+Polygon:
+ -- num of pts: 24
+id: 56
+Polygon:
+ -- num of pts: 14
+id: 57
+Polygon:
+ -- num of pts: 22
+id: 58
+Polygon:
+ -- num of pts: 22
+id: 59
+Polygon:
+ -- num of pts: 11
+
+[ArenaLoader] Loading lane net info
+-Lane id 1.
+-Lane id 2.
+-Lane id 3.
+-Lane id 4.
+-Lane id 5.
+-Lane id 6.
+-Lane id 7.
+-Lane id 8.
+-Lane id 9.
+-Lane id 10.
+-Lane id 11.
+-Lane id 12.
+-Lane id 13.
+-Lane id 14.
+-Lane id 15.
+-Lane id 16.
+-Lane id 17.
+-Lane id 18.
+-Lane id 19.
+-Lane id 20.
+-Lane id 21.
+-Lane id 22.
+-Lane id 23.
+-Lane id 24.
+-Lane id 25.
+-Lane id 26.
+-Lane id 27.
+-Lane id 28.
+-Lane id 29.
+-Lane id 30.
+-Lane id 31.
+-Lane id 32.
+-Lane id 33.
+-Lane id 34.
+-Lane id 35.
+-Lane id 36.
+-Lane id 37.
+-Lane id 38.
+-Lane id 39.
+-Lane id 40.
+-Lane id 41.
+-Lane id 42.
+-Lane id 43.
+-Lane id 44.
+-Lane id 45.
+-Lane id 46.
+-Lane id 47.
+-Lane id 48.
+-Lane id 49.
+-Lane id 50.
+-Lane id 51.
+-Lane id 52.
+-Lane id 53.
+-Lane id 54.
+-Lane id 101.
+-Lane id 102.
+-Lane id 103.
+-Lane id 104.
+-Lane id 105.
+-Lane id 106.
+-Lane id 107.
+-Lane id 108.
+-Lane id 109.
+-Lane id 110.
+-Lane id 111.
+-Lane id 112.
+-Lane id 113.
+-Lane id 114.
+-Lane id 115.
+-Lane id 116.
+-Lane id 117.
+-Lane id 118.
+-Lane id 119.
+-Lane id 120.
+-Lane id 121.
+-Lane id 122.
+-Lane id 123.
+-Lane id 124.
+-Lane id 125.
+-Lane id 126.
+-Lane id 127.
+-Lane id 128.
+-Lane id 129.
+-Lane id 130.
+-Lane id 131.
+-Lane id 132.
+-Lane id 133.
+-Lane id 134.
+-Lane id 135.
+-Lane id 136.
+-Lane id 137.
+-Lane id 138.
+-Lane id 139.
+-Lane id 140.
+-Lane id 141.
+-Lane id 142.
+-Lane id 143.
+-Lane id 144.
+-Lane id 145.
+-Lane id 146.
+-Lane id 147.
+-Lane id 148.
+-Lane id 149.
+-Lane id 150.
+-Lane id 151.
+-Lane id 201.
+-Lane id 202.
+LaneNet:
+ -- Number of lanes:	107
+Lane 202:
+ -- dir:	1
+ -- child_id:	[ 105 ]
+ -- father_id:	[ 201 ]
+ -- length:	181.958999
+ -- l_lane_id:	104
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (515.936207, -2619.129916)
+ -- final_point: (443.710361, -2452.185239)
+ -- point number:	17
+Lane 201:
+ -- dir:	1
+ -- child_id:	[ 202 ]
+ -- father_id:	[]
+ -- length:	279.365532
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (644.348826, -2866.161488)
+ -- final_point: (515.936207, -2619.129916)
+ -- point number:	33
+Lane 127:
+ -- dir:	1
+ -- child_id:	[ 137 ]
+ -- father_id:	[ 126 ]
+ -- length:	299.245883
+ -- l_lane_id:	136
+ -- l_change_avbl:	1
+ -- r_lane_id:	118
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (403.921688, -719.768211)
+ -- final_point: (250.686565, -463.360406)
+ -- point number:	25
+Lane 126:
+ -- dir:	1
+ -- child_id:	[ 127 ]
+ -- father_id:	[ 125 ]
+ -- length:	469.125909
+ -- l_lane_id:	135
+ -- l_change_avbl:	1
+ -- r_lane_id:	117
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (634.818218, -1127.534154)
+ -- final_point: (403.921688, -719.768211)
+ -- point number:	29
+Lane 125:
+ -- dir:	1
+ -- child_id:	[ 126 ]
+ -- father_id:	[ 124 ]
+ -- length:	506.307975
+ -- l_lane_id:	134
+ -- l_change_avbl:	1
+ -- r_lane_id:	116
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (651.090099, -1615.092234)
+ -- final_point: (634.818218, -1127.534154)
+ -- point number:	63
+Lane 124:
+ -- dir:	1
+ -- child_id:	[ 125 ]
+ -- father_id:	[ 123 ]
+ -- length:	458.821789
+ -- l_lane_id:	133
+ -- l_change_avbl:	1
+ -- r_lane_id:	115
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (388.981423, -1988.663163)
+ -- final_point: (651.090099, -1615.092234)
+ -- point number:	53
+Lane 123:
+ -- dir:	1
+ -- child_id:	[ 124 ]
+ -- father_id:	[ 122 ]
+ -- length:	482.879273
+ -- l_lane_id:	132
+ -- l_change_avbl:	1
+ -- r_lane_id:	114
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (436.858105, -2454.202988)
+ -- final_point: (388.981423, -1988.663163)
+ -- point number:	51
+Lane 122:
+ -- dir:	1
+ -- child_id:	[ 123 ]
+ -- father_id:	[ 121 ]
+ -- length:	525.873774
+ -- l_lane_id:	131
+ -- l_change_avbl:	1
+ -- r_lane_id:	113
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (655.552602, -2930.071510)
+ -- final_point: (436.858105, -2454.202988)
+ -- point number:	39
+Lane 121:
+ -- dir:	1
+ -- child_id:	[ 122 ]
+ -- father_id:	[ 120 ]
+ -- length:	677.690990
+ -- l_lane_id:	130
+ -- l_change_avbl:	1
+ -- r_lane_id:	112
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1083.103477, -3449.273336)
+ -- final_point: (655.552602, -2930.071510)
+ -- point number:	69
+Lane 120:
+ -- dir:	1
+ -- child_id:	[ 121 ]
+ -- father_id:	[ 119 ]
+ -- length:	137.669165
+ -- l_lane_id:	129
+ -- l_change_avbl:	1
+ -- r_lane_id:	111
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1178.939235, -3547.952041)
+ -- final_point: (1083.103477, -3449.273336)
+ -- point number:	13
+Lane 119:
+ -- dir:	1
+ -- child_id:	[ 120 ]
+ -- father_id:	[]
+ -- length:	131.431305
+ -- l_lane_id:	128
+ -- l_change_avbl:	1
+ -- r_lane_id:	110
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1272.271817, -3640.420908)
+ -- final_point: (1178.939235, -3547.952041)
+ -- point number:	9
+Lane 118:
+ -- dir:	1
+ -- child_id:	[ 138 ]
+ -- father_id:	[ 117 ]
+ -- length:	298.632035
+ -- l_lane_id:	127
+ -- l_change_avbl:	1
+ -- r_lane_id:	109
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (406.951843, -717.785733)
+ -- final_point: (254.116706, -461.849340)
+ -- point number:	25
+Lane 117:
+ -- dir:	1
+ -- child_id:	[ 118 ]
+ -- father_id:	[ 116 ]
+ -- length:	469.443142
+ -- l_lane_id:	126
+ -- l_change_avbl:	1
+ -- r_lane_id:	108
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (637.986366, -1125.837203)
+ -- final_point: (406.951843, -717.785733)
+ -- point number:	29
+Lane 116:
+ -- dir:	1
+ -- child_id:	[ 117 ]
+ -- father_id:	[ 115 ]
+ -- length:	509.628484
+ -- l_lane_id:	125
+ -- l_change_avbl:	1
+ -- r_lane_id:	107
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (654.360834, -1616.565622)
+ -- final_point: (637.986366, -1125.837203)
+ -- point number:	65
+Lane 115:
+ -- dir:	1
+ -- child_id:	[ 116 ]
+ -- father_id:	[ 114 ]
+ -- length:	458.426740
+ -- l_lane_id:	124
+ -- l_change_avbl:	1
+ -- r_lane_id:	106
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (392.161696, -1989.689578)
+ -- final_point: (654.360834, -1616.565622)
+ -- point number:	53
+Lane 114:
+ -- dir:	1
+ -- child_id:	[ 115 ]
+ -- father_id:	[ 113 ]
+ -- length:	481.006298
+ -- l_lane_id:	123
+ -- l_change_avbl:	1
+ -- r_lane_id:	105
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (440.534670, -2453.465693)
+ -- final_point: (392.161696, -1989.689578)
+ -- point number:	61
+Lane 113:
+ -- dir:	1
+ -- child_id:	[ 114 ]
+ -- father_id:	[ 112 ]
+ -- length:	523.879242
+ -- l_lane_id:	122
+ -- l_change_avbl:	1
+ -- r_lane_id:	104
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (658.209018, -2927.601847)
+ -- final_point: (440.534670, -2453.465693)
+ -- point number:	39
+Lane 112:
+ -- dir:	1
+ -- child_id:	[ 113 ]
+ -- father_id:	[ 111 ]
+ -- length:	678.293570
+ -- l_lane_id:	121
+ -- l_change_avbl:	1
+ -- r_lane_id:	103
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1086.173276, -3447.244387)
+ -- final_point: (658.209018, -2927.601847)
+ -- point number:	69
+Lane 111:
+ -- dir:	1
+ -- child_id:	[ 112 ]
+ -- father_id:	[ 110 ]
+ -- length:	137.104039
+ -- l_lane_id:	120
+ -- l_change_avbl:	1
+ -- r_lane_id:	102
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1181.606174, -3545.527037)
+ -- final_point: (1086.173276, -3447.244387)
+ -- point number:	13
+Lane 110:
+ -- dir:	1
+ -- child_id:	[ 111 ]
+ -- father_id:	[]
+ -- length:	131.996399
+ -- l_lane_id:	119
+ -- l_change_avbl:	1
+ -- r_lane_id:	101
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1275.341644, -3638.391889)
+ -- final_point: (1181.606174, -3545.527037)
+ -- point number:	9
+Lane 109:
+ -- dir:	1
+ -- child_id:	[ 139 ]
+ -- father_id:	[ 108 ]
+ -- length:	297.896164
+ -- l_lane_id:	118
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (409.780469, -715.419233)
+ -- final_point: (257.315032, -460.123402)
+ -- point number:	25
+Lane 108:
+ -- dir:	1
+ -- child_id:	[ 109 ]
+ -- father_id:	[ 107 ]
+ -- length:	470.141892
+ -- l_lane_id:	117
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (641.096377, -1124.110495)
+ -- final_point: (409.780469, -715.419233)
+ -- point number:	29
+Lane 107:
+ -- dir:	1
+ -- child_id:	[ 108 ]
+ -- father_id:	[ 106 ]
+ -- length:	512.609744
+ -- l_lane_id:	116
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (657.773397, -1617.800377)
+ -- final_point: (641.096377, -1124.110495)
+ -- point number:	65
+Lane 106:
+ -- dir:	1
+ -- child_id:	[ 107 ]
+ -- father_id:	[ 105 ]
+ -- length:	458.127691
+ -- l_lane_id:	115
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (395.751005, -1990.612604)
+ -- final_point: (657.773397, -1617.800377)
+ -- point number:	53
+Lane 29:
+ -- dir:	1
+ -- child_id:	[ 30 ]
+ -- father_id:	[ 28 ]
+ -- length:	54.738811
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	20
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (124.545702, -240.150420)
+ -- final_point: (148.811307, -289.196620)
+ -- point number:	9
+Lane 28:
+ -- dir:	1
+ -- child_id:	[ 29 ]
+ -- father_id:	[]
+ -- length:	272.294917
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	19
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (-16.080927, -7.687370)
+ -- final_point: (124.545702, -240.150420)
+ -- point number:	17
+Lane 27:
+ -- dir:	1
+ -- child_id:	[ 37 ]
+ -- father_id:	[ 26 ]
+ -- length:	473.007717
+ -- l_lane_id:	36
+ -- l_change_avbl:	1
+ -- r_lane_id:	18
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (641.629735, -2941.054146)
+ -- final_point: (957.506442, -3289.052222)
+ -- point number:	47
+Lane 26:
+ -- dir:	1
+ -- child_id:	[ 27 ]
+ -- father_id:	[ 25 ]
+ -- length:	528.597651
+ -- l_lane_id:	35
+ -- l_change_avbl:	1
+ -- r_lane_id:	17
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (420.988142, -2463.260689)
+ -- final_point: (641.629735, -2941.054146)
+ -- point number:	39
+Lane 25:
+ -- dir:	1
+ -- child_id:	[ 26 ]
+ -- father_id:	[ 24 ]
+ -- length:	611.602855
+ -- l_lane_id:	34
+ -- l_change_avbl:	1
+ -- r_lane_id:	16
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (423.841111, -1882.589942)
+ -- final_point: (420.988142, -2463.260689)
+ -- point number:	63
+Lane 151:
+ -- dir:	1
+ -- child_id:	[ 4 ]
+ -- father_id:	[ 150 ]
+ -- length:	110.283321
+ -- l_lane_id:	3
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (135.524413, -295.746098)
+ -- final_point: (187.321624, -393.099648)
+ -- point number:	17
+Lane 24:
+ -- dir:	1
+ -- child_id:	[ 25 ]
+ -- father_id:	[ 23 ]
+ -- length:	661.759063
+ -- l_lane_id:	33
+ -- l_change_avbl:	1
+ -- r_lane_id:	15
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (675.114921, -1301.670540)
+ -- final_point: (423.841111, -1882.589942)
+ -- point number:	73
+Lane 150:
+ -- dir:	1
+ -- child_id:	[ 151 ]
+ -- father_id:	[ 149 ]
+ -- length:	55.490632
+ -- l_lane_id:	2
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (109.737955, -246.681802)
+ -- final_point: (135.524413, -295.746098)
+ -- point number:	15
+Lane 23:
+ -- dir:	1
+ -- child_id:	[ 24 ]
+ -- father_id:	[ 22 ]
+ -- length:	645.229793
+ -- l_lane_id:	32
+ -- l_change_avbl:	1
+ -- r_lane_id:	14
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (387.733615, -727.523640)
+ -- final_point: (675.114921, -1301.670540)
+ -- point number:	55
+Lane 149:
+ -- dir:	1
+ -- child_id:	[ 150 ]
+ -- father_id:	[ 148 ]
+ -- length:	345.840386
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (-107.730956, 16.447251)
+ -- final_point: (109.737955, -246.681802)
+ -- point number:	33
+Lane 22:
+ -- dir:	1
+ -- child_id:	[ 23 ]
+ -- father_id:	[ 21 ]
+ -- length:	389.904140
+ -- l_lane_id:	31
+ -- l_change_avbl:	1
+ -- r_lane_id:	13
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (194.079622, -389.998118)
+ -- final_point: (387.733615, -727.523640)
+ -- point number:	33
+Lane 148:
+ -- dir:	1
+ -- child_id:	[ 149 ]
+ -- father_id:	[ 147 ]
+ -- length:	15.507956
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (-110.440380, 30.272570)
+ -- final_point: (-107.730956, 16.447251)
+ -- point number:	19
+Lane 21:
+ -- dir:	1
+ -- child_id:	[ 22 ]
+ -- father_id:	[ 20 ]
+ -- length:	110.584349
+ -- l_lane_id:	30
+ -- l_change_avbl:	1
+ -- r_lane_id:	12
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (145.346408, -290.772154)
+ -- final_point: (194.079622, -389.998118)
+ -- point number:	17
+Lane 147:
+ -- dir:	1
+ -- child_id:	[ 148 ]
+ -- father_id:	[ 146 ]
+ -- length:	95.595298
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (-44.905981, 99.749068)
+ -- final_point: (-110.440380, 30.272570)
+ -- point number:	19
+Lane 20:
+ -- dir:	1
+ -- child_id:	[ 21 ]
+ -- father_id:	[ 19 ]
+ -- length:	54.738813
+ -- l_lane_id:	29
+ -- l_change_avbl:	1
+ -- r_lane_id:	11
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (121.080820, -241.725944)
+ -- final_point: (145.346408, -290.772154)
+ -- point number:	9
+Lane 146:
+ -- dir:	1
+ -- child_id:	[ 147 ]
+ -- father_id:	[ 145 ]
+ -- length:	26.835916
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (-23.452357, 90.757265)
+ -- final_point: (-44.905981, 99.749068)
+ -- point number:	17
+Lane 19:
+ -- dir:	1
+ -- child_id:	[ 20 ]
+ -- father_id:	[]
+ -- length:	271.611628
+ -- l_lane_id:	28
+ -- l_change_avbl:	1
+ -- r_lane_id:	10
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (-19.079387, -9.767698)
+ -- final_point: (121.080820, -241.725944)
+ -- point number:	17
+Lane 145:
+ -- dir:	1
+ -- child_id:	[ 146 ]
+ -- father_id:	[ 144 ]
+ -- length:	161.417719
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (70.952012, -39.418049)
+ -- final_point: (-23.452357, 90.757265)
+ -- point number:	25
+Lane 18:
+ -- dir:	1
+ -- child_id:	[ 38 ]
+ -- father_id:	[ 17 ]
+ -- length:	472.613879
+ -- l_lane_id:	27
+ -- l_change_avbl:	1
+ -- r_lane_id:	9
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (638.692699, -2943.299048)
+ -- final_point: (954.236166, -3291.034943)
+ -- point number:	47
+Lane 144:
+ -- dir:	1
+ -- child_id:	[ 145 ]
+ -- father_id:	[ 143 ]
+ -- length:	14.938109
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (72.425423, -53.581445)
+ -- final_point: (70.952012, -39.418049)
+ -- point number:	17
+Lane 17:
+ -- dir:	1
+ -- child_id:	[ 18 ]
+ -- father_id:	[ 16 ]
+ -- length:	529.621744
+ -- l_lane_id:	26
+ -- l_change_avbl:	1
+ -- r_lane_id:	8
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (417.659110, -2464.503306)
+ -- final_point: (638.692699, -2943.299048)
+ -- point number:	39
+Lane 143:
+ -- dir:	1
+ -- child_id:	[ 144 ]
+ -- father_id:	[ 142 ]
+ -- length:	219.994833
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (158.734544, -251.905212)
+ -- final_point: (72.425423, -53.581445)
+ -- point number:	59
+Lane 16:
+ -- dir:	1
+ -- child_id:	[ 17 ]
+ -- father_id:	[ 15 ]
+ -- length:	614.781747
+ -- l_lane_id:	25
+ -- l_change_avbl:	1
+ -- r_lane_id:	7
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (420.556658, -1880.768864)
+ -- final_point: (417.659110, -2464.503306)
+ -- point number:	63
+Lane 142:
+ -- dir:	1
+ -- child_id:	[ 143 ]
+ -- father_id:	[ 140  141 ]
+ -- length:	64.639197
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (183.697054, -311.502884)
+ -- final_point: (158.734544, -251.905212)
+ -- point number:	9
+Lane 15:
+ -- dir:	1
+ -- child_id:	[ 16 ]
+ -- father_id:	[ 14 ]
+ -- length:	659.310749
+ -- l_lane_id:	24
+ -- l_change_avbl:	1
+ -- r_lane_id:	6
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (671.786917, -1302.213167)
+ -- final_point: (420.556658, -1880.768864)
+ -- point number:	69
+Lane 141:
+ -- dir:	1
+ -- child_id:	[ 142 ]
+ -- father_id:	[ 139 ]
+ -- length:	75.954709
+ -- l_lane_id:	140
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (217.230345, -379.620506)
+ -- final_point: (183.697054, -311.502884)
+ -- point number:	9
+Lane 14:
+ -- dir:	1
+ -- child_id:	[ 15 ]
+ -- father_id:	[ 13 ]
+ -- length:	644.212660
+ -- l_lane_id:	23
+ -- l_change_avbl:	1
+ -- r_lane_id:	5
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (384.620579, -729.060043)
+ -- final_point: (671.786917, -1302.213167)
+ -- point number:	55
+Lane 128:
+ -- dir:	1
+ -- child_id:	[ 129 ]
+ -- father_id:	[]
+ -- length:	131.003017
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	119
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1268.982826, -3642.896572)
+ -- final_point: (1175.955599, -3550.727819)
+ -- point number:	9
+Lane 1:
+ -- dir:	1
+ -- child_id:	[ 2 ]
+ -- father_id:	[]
+ -- length:	270.610774
+ -- l_lane_id:	10
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (-25.117972, -13.722608)
+ -- final_point: (114.537645, -244.809754)
+ -- point number:	17
+Lane 129:
+ -- dir:	1
+ -- child_id:	[ 130 ]
+ -- father_id:	[ 128 ]
+ -- length:	138.097491
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	120
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1175.955599, -3550.727819)
+ -- final_point: (1079.814509, -3451.748926)
+ -- point number:	13
+Lane 2:
+ -- dir:	1
+ -- child_id:	[ 3 ]
+ -- father_id:	[ 1 ]
+ -- length:	54.738817
+ -- l_lane_id:	11
+ -- l_change_avbl:	1
+ -- r_lane_id:	150
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (114.537645, -244.809754)
+ -- final_point: (138.803202, -293.855982)
+ -- point number:	9
+Lane 130:
+ -- dir:	1
+ -- child_id:	[ 131 ]
+ -- father_id:	[ 129 ]
+ -- length:	678.065195
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	121
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1079.814509, -3451.748926)
+ -- final_point: (652.222472, -2932.102667)
+ -- point number:	69
+Lane 3:
+ -- dir:	1
+ -- child_id:	[ 4 ]
+ -- father_id:	[ 2 ]
+ -- length:	110.505401
+ -- l_lane_id:	12
+ -- l_change_avbl:	1
+ -- r_lane_id:	151
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (138.803202, -293.855982)
+ -- final_point: (187.321624, -393.099648)
+ -- point number:	17
+Lane 131:
+ -- dir:	1
+ -- child_id:	[ 132 ]
+ -- father_id:	[ 130 ]
+ -- length:	526.451642
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	122
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (652.222472, -2932.102667)
+ -- final_point: (433.335281, -2455.632875)
+ -- point number:	39
+Lane 4:
+ -- dir:	1
+ -- child_id:	[ 5 ]
+ -- father_id:	[ 3  151 ]
+ -- length:	389.911508
+ -- l_lane_id:	13
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (187.321624, -393.099648)
+ -- final_point: (381.234105, -730.504062)
+ -- point number:	33
+Lane 132:
+ -- dir:	1
+ -- child_id:	[ 133 ]
+ -- father_id:	[ 131 ]
+ -- length:	485.253970
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	123
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (433.335281, -2455.632875)
+ -- final_point: (384.926997, -1987.630637)
+ -- point number:	45
+Lane 5:
+ -- dir:	1
+ -- child_id:	[ 6 ]
+ -- father_id:	[ 4 ]
+ -- length:	643.344671
+ -- l_lane_id:	14
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (381.234105, -730.504062)
+ -- final_point: (668.222191, -1302.807990)
+ -- point number:	55
+Lane 133:
+ -- dir:	1
+ -- child_id:	[ 134 ]
+ -- father_id:	[ 132 ]
+ -- length:	459.079963
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	124
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (384.926997, -1987.630637)
+ -- final_point: (647.326639, -1613.917198)
+ -- point number:	53
+Lane 6:
+ -- dir:	1
+ -- child_id:	[ 7 ]
+ -- father_id:	[ 5 ]
+ -- length:	657.954466
+ -- l_lane_id:	15
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (668.222191, -1302.807990)
+ -- final_point: (416.934281, -1879.938482)
+ -- point number:	105
+Lane 134:
+ -- dir:	1
+ -- child_id:	[ 135 ]
+ -- father_id:	[ 133 ]
+ -- length:	503.176278
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	125
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (647.326639, -1613.917198)
+ -- final_point: (631.554759, -1129.463589)
+ -- point number:	65
+Lane 7:
+ -- dir:	1
+ -- child_id:	[ 8 ]
+ -- father_id:	[ 6 ]
+ -- length:	616.651926
+ -- l_lane_id:	16
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (416.934281, -1879.938482)
+ -- final_point: (413.978014, -2465.834088)
+ -- point number:	63
+Lane 135:
+ -- dir:	1
+ -- child_id:	[ 136 ]
+ -- father_id:	[ 134 ]
+ -- length:	469.099534
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	126
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (631.554759, -1129.463589)
+ -- final_point: (400.815142, -721.651957)
+ -- point number:	29
+Lane 8:
+ -- dir:	1
+ -- child_id:	[ 9 ]
+ -- father_id:	[ 7 ]
+ -- length:	530.419907
+ -- l_lane_id:	17
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (413.978014, -2465.834088)
+ -- final_point: (635.530045, -2945.276409)
+ -- point number:	39
+Lane 136:
+ -- dir:	1
+ -- child_id:	[ 137 ]
+ -- father_id:	[ 135 ]
+ -- length:	299.574993
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	127
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (400.815142, -721.651957)
+ -- final_point: (250.686565, -463.360406)
+ -- point number:	33
+Lane 9:
+ -- dir:	1
+ -- child_id:	[ 39 ]
+ -- father_id:	[ 8 ]
+ -- length:	472.171418
+ -- l_lane_id:	18
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (635.530045, -2945.276409)
+ -- final_point: (951.052184, -3292.502897)
+ -- point number:	47
+Lane 137:
+ -- dir:	1
+ -- child_id:	[ 140 ]
+ -- father_id:	[ 127  136 ]
+ -- length:	89.997749
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	138
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (250.686565, -463.360406)
+ -- final_point: (213.973010, -381.227632)
+ -- point number:	17
+Lane 10:
+ -- dir:	1
+ -- child_id:	[ 11 ]
+ -- father_id:	[]
+ -- length:	271.059965
+ -- l_lane_id:	19
+ -- l_change_avbl:	1
+ -- r_lane_id:	1
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (-22.134930, -11.697914)
+ -- final_point: (117.876924, -243.083344)
+ -- point number:	17
+Lane 138:
+ -- dir:	1
+ -- child_id:	[ 140 ]
+ -- father_id:	[ 118 ]
+ -- length:	90.093096
+ -- l_lane_id:	137
+ -- l_change_avbl:	1
+ -- r_lane_id:	139
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (254.116706, -461.849340)
+ -- final_point: (213.973010, -381.227632)
+ -- point number:	9
+Lane 11:
+ -- dir:	1
+ -- child_id:	[ 12 ]
+ -- father_id:	[ 10 ]
+ -- length:	54.939586
+ -- l_lane_id:	20
+ -- l_change_avbl:	1
+ -- r_lane_id:	2
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (117.876924, -243.083344)
+ -- final_point: (142.233496, -292.308469)
+ -- point number:	9
+Lane 139:
+ -- dir:	1
+ -- child_id:	[ 141 ]
+ -- father_id:	[ 109 ]
+ -- length:	89.960392
+ -- l_lane_id:	138
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (257.315032, -460.123402)
+ -- final_point: (217.230345, -379.620506)
+ -- point number:	9
+Lane 12:
+ -- dir:	1
+ -- child_id:	[ 13 ]
+ -- father_id:	[ 11 ]
+ -- length:	110.054770
+ -- l_lane_id:	21
+ -- l_change_avbl:	1
+ -- r_lane_id:	3
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (142.233496, -292.308469)
+ -- final_point: (190.575820, -391.136749)
+ -- point number:	17
+Lane 140:
+ -- dir:	1
+ -- child_id:	[ 142 ]
+ -- father_id:	[ 137  138 ]
+ -- length:	76.048182
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	141
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (213.973010, -381.227632)
+ -- final_point: (183.697054, -311.502884)
+ -- point number:	17
+Lane 13:
+ -- dir:	1
+ -- child_id:	[ 14 ]
+ -- father_id:	[ 12 ]
+ -- length:	390.433944
+ -- l_lane_id:	22
+ -- l_change_avbl:	1
+ -- r_lane_id:	4
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (190.575820, -391.136749)
+ -- final_point: (384.620579, -729.060043)
+ -- point number:	33
+Lane 30:
+ -- dir:	1
+ -- child_id:	[ 31 ]
+ -- father_id:	[ 29 ]
+ -- length:	110.525419
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	21
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (148.811307, -289.196620)
+ -- final_point: (197.528797, -388.363286)
+ -- point number:	17
+Lane 31:
+ -- dir:	1
+ -- child_id:	[ 32 ]
+ -- father_id:	[ 30 ]
+ -- length:	389.963038
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	22
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (197.528797, -388.363286)
+ -- final_point: (391.198657, -725.948007)
+ -- point number:	33
+Lane 32:
+ -- dir:	1
+ -- child_id:	[ 33 ]
+ -- father_id:	[ 31 ]
+ -- length:	646.062599
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	23
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (391.198657, -725.948007)
+ -- final_point: (678.709501, -1300.925009)
+ -- point number:	55
+Lane 33:
+ -- dir:	1
+ -- child_id:	[ 34 ]
+ -- father_id:	[ 32 ]
+ -- length:	664.281537
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	24
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (678.709501, -1300.925009)
+ -- final_point: (427.358411, -1884.528256)
+ -- point number:	95
+Lane 34:
+ -- dir:	1
+ -- child_id:	[ 35 ]
+ -- father_id:	[ 33 ]
+ -- length:	608.197912
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	25
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (427.358411, -1884.528256)
+ -- final_point: (424.407570, -2461.882103)
+ -- point number:	63
+Lane 35:
+ -- dir:	1
+ -- child_id:	[ 36 ]
+ -- father_id:	[ 34 ]
+ -- length:	527.669851
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	26
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (424.407570, -2461.882103)
+ -- final_point: (644.504876, -2938.922595)
+ -- point number:	39
+Lane 36:
+ -- dir:	1
+ -- child_id:	[ 37 ]
+ -- father_id:	[ 35 ]
+ -- length:	473.436275
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	27
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (644.504876, -2938.922595)
+ -- final_point: (957.506442, -3289.052222)
+ -- point number:	57
+Lane 37:
+ -- dir:	1
+ -- child_id:	[ 40 ]
+ -- father_id:	[ 27  36 ]
+ -- length:	67.197325
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	38
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (957.506442, -3289.052222)
+ -- final_point: (989.448484, -3348.139293)
+ -- point number:	17
+Lane 38:
+ -- dir:	1
+ -- child_id:	[ 40 ]
+ -- father_id:	[ 18 ]
+ -- length:	67.110773
+ -- l_lane_id:	37
+ -- l_change_avbl:	1
+ -- r_lane_id:	39
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (954.236166, -3291.034943)
+ -- final_point: (989.448484, -3348.139293)
+ -- point number:	9
+Lane 39:
+ -- dir:	1
+ -- child_id:	[ 41 ]
+ -- father_id:	[ 9 ]
+ -- length:	67.345433
+ -- l_lane_id:	38
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (951.052184, -3292.502897)
+ -- final_point: (986.175407, -3349.937499)
+ -- point number:	9
+Lane 40:
+ -- dir:	1
+ -- child_id:	[ 42 ]
+ -- father_id:	[ 37  38 ]
+ -- length:	111.846087
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	41
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (989.448484, -3348.139293)
+ -- final_point: (1046.810422, -3444.109973)
+ -- point number:	17
+Lane 41:
+ -- dir:	1
+ -- child_id:	[ 42 ]
+ -- father_id:	[ 39 ]
+ -- length:	112.102444
+ -- l_lane_id:	40
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (986.175407, -3349.937499)
+ -- final_point: (1046.810422, -3444.109973)
+ -- point number:	13
+Lane 42:
+ -- dir:	1
+ -- child_id:	[ 43 ]
+ -- father_id:	[ 41  42 ]
+ -- length:	65.478226
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1046.810422, -3444.109973)
+ -- final_point: (1085.832730, -3496.634971)
+ -- point number:	9
+Lane 101:
+ -- dir:	1
+ -- child_id:	[ 102 ]
+ -- father_id:	[]
+ -- length:	132.217754
+ -- l_lane_id:	110
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1277.483567, -3635.798318)
+ -- final_point: (1183.633461, -3542.733284)
+ -- point number:	9
+Lane 43:
+ -- dir:	1
+ -- child_id:	[ 44 ]
+ -- father_id:	[ 42 ]
+ -- length:	422.059339
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1085.832730, -3496.634971)
+ -- final_point: (1328.191561, -3838.596014)
+ -- point number:	41
+Lane 102:
+ -- dir:	1
+ -- child_id:	[ 103 ]
+ -- father_id:	[ 101 ]
+ -- length:	135.919823
+ -- l_lane_id:	111
+ -- l_change_avbl:	1
+ -- r_lane_id:	54
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1183.633461, -3542.733284)
+ -- final_point: (1088.852384, -3445.404619)
+ -- point number:	9
+Lane 44:
+ -- dir:	1
+ -- child_id:	[ 45 ]
+ -- father_id:	[ 43 ]
+ -- length:	234.498480
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1328.191561, -3838.596014)
+ -- final_point: (1386.512787, -4065.018791)
+ -- point number:	41
+Lane 103:
+ -- dir:	1
+ -- child_id:	[ 104 ]
+ -- father_id:	[ 54  102 ]
+ -- length:	678.281597
+ -- l_lane_id:	112
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1088.852384, -3445.404619)
+ -- final_point: (661.240840, -2925.499298)
+ -- point number:	69
+Lane 45:
+ -- dir:	1
+ -- child_id:	[ 46 ]
+ -- father_id:	[ 44 ]
+ -- length:	99.787852
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1386.512787, -4065.018791)
+ -- final_point: (1457.719828, -4045.264077)
+ -- point number:	41
+Lane 104:
+ -- dir:	1
+ -- child_id:	[ 105 ]
+ -- father_id:	[ 103 ]
+ -- length:	523.145949
+ -- l_lane_id:	113
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (661.240840, -2925.499298)
+ -- final_point: (443.710361, -2452.185239)
+ -- point number:	39
+Lane 46:
+ -- dir:	1
+ -- child_id:	[ 47  48 ]
+ -- father_id:	[ 45 ]
+ -- length:	151.702597
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1457.719828, -4045.264077)
+ -- final_point: (1446.406247, -3894.343899)
+ -- point number:	17
+Lane 105:
+ -- dir:	1
+ -- child_id:	[ 106 ]
+ -- father_id:	[ 104  202 ]
+ -- length:	478.785120
+ -- l_lane_id:	114
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (443.710361, -2452.185239)
+ -- final_point: (395.751005, -1990.612604)
+ -- point number:	61
+Lane 47:
+ -- dir:	1
+ -- child_id:	[ 49 ]
+ -- father_id:	[ 46 ]
+ -- length:	36.985717
+ -- l_lane_id:	48
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1446.406247, -3894.343899)
+ -- final_point: (1445.556558, -3857.423781)
+ -- point number:	13
+Lane 48:
+ -- dir:	1
+ -- child_id:	[ 50 ]
+ -- father_id:	[ 46 ]
+ -- length:	37.033219
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	47
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1446.406247, -3894.343899)
+ -- final_point: (1441.929455, -3857.626514)
+ -- point number:	17
+Lane 49:
+ -- dir:	1
+ -- child_id:	[ 51 ]
+ -- father_id:	[ 47 ]
+ -- length:	175.896343
+ -- l_lane_id:	50
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1445.556558, -3857.423781)
+ -- final_point: (1362.388540, -3704.638521)
+ -- point number:	23
+Lane 50:
+ -- dir:	1
+ -- child_id:	[ 52 ]
+ -- father_id:	[ 48 ]
+ -- length:	174.067870
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	49
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1441.929455, -3857.626514)
+ -- final_point: (1359.624093, -3706.155483)
+ -- point number:	23
+Lane 51:
+ -- dir:	1
+ -- child_id:	[ 53 ]
+ -- father_id:	[ 49 ]
+ -- length:	62.078117
+ -- l_lane_id:	52
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1362.388540, -3704.638521)
+ -- final_point: (1319.344451, -3660.041746)
+ -- point number:	7
+Lane 52:
+ -- dir:	1
+ -- child_id:	[ 53 ]
+ -- father_id:	[ 50 ]
+ -- length:	61.306092
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	51
+ -- r_change_avbl:	1
+ -- behavior:	s
+ -- start_point: (1359.624093, -3706.155483)
+ -- final_point: (1319.344451, -3660.041746)
+ -- point number:	7
+Lane 53:
+ -- dir:	1
+ -- child_id:	[ 54 ]
+ -- father_id:	[ 51  52 ]
+ -- length:	179.158071
+ -- l_lane_id:	0
+ -- l_change_avbl:	0
+ -- r_lane_id:	0
+ --[WARN] [1778052332.558646825]: Shutdown request received.
+[WARN] [1778052332.558673873]: Reason given for shutdown: [[/onlane_ai_agent_2] Reason: new node registered with same name]
+[OnlaneAi]4 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 4
+ego_tf_name_ = ego_vehicle_vis_4
+[WARN] [1778052332.561352308]: Shutdown request received.
+[WARN] [1778052332.561377635]: Reason given for shutdown: [[/onlane_ai_agent_1] Reason: new node registered with same name]
+Could not create log file: No such file or directory
+COULD NOT CREATE LOGFILE '20260506-152532.255377'!
+Could not create log file: No such file or directory
+COULD NOT CREATE LOGFILE '20260506-152532.255377'!
+Could not create log file: No such file or directory
+COULD NOT CREATE LOGFILE '20260506-152532.255377'!
+E0506 15:25:32.568717 255377 eudm_manager.cc:19] [HMI]HMI enabled with active lane change ON.
+[OnlaneAi]10 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 10
+ego_tf_name_ = ego_vehicle_vis_10
+[WARN] [1778052332.577824850]: Shutdown request received.
+[WARN] [1778052332.577851237]: Reason given for shutdown: [[/onlane_ai_agent_2] Reason: new node registered with same name]
+[WARN] [1778052332.581403659]: Shutdown request received.
+[WARN] [1778052332.581443695]: Reason given for shutdown: [[/onlane_ai_agent_1] Reason: new node registered with same name]
+[WARN] [1778052332.586598560]: Shutdown request received.
+[WARN] [1778052332.586637794]: Reason given for shutdown: [[/onlane_ai_agent_1] Reason: new node registered with same name]
+[WARN] [1778052332.587594595]: Shutdown request received.
+[WARN] [1778052332.587620716]: Reason given for shutdown: [[/onlane_ai_agent_2] Reason: new node registered with same name]
+[WARN] [1778052332.588729411]: Shutdown request received.
+[OnlaneAi]9 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 9
+ego_tf_name_ = ego_vehicle_vis_9
+[OnlaneAi]8 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 8
+ego_tf_name_ = ego_vehicle_vis_8
+[WARN] [1778052332.595392593]: Shutdown request received.
+[WARN] [1778052332.600673221]: Reason given for shutdown: [[/onlane_ai_agent_3] Reason: new node registered with same name]
+[OnlaneAi]7 - aggresive: 5
+
+[ConfigLoader] Loading vehicle set
+GridMapMetaInfo:
+ -- width:100
+ -- height:100
+ -- resolution:0.500000
+ -- w_metric:50.000000
+ -- h_metric:50.000000
+
+surrounding_search_radius: 150.000000
+enable_openloop_prediction: 0
+enable_tracking_noise: 0
+enable_log: 0
+enable_fast_lane_lut: 1
+log_file: 
+[DataRenderer] Initialization finished
+node_id_ = 7
+ego_tf_name_ = ego_vehicle_vis_7
+[WARN] [1778052332.602814812]: Shutdown request received.
+[WARN] [1778052332.602838219]: Reason given for shutdown: [[/onlane_ai_agent_3] Reason: new node registered with same name]
+[WARN] [1778052332.612721373]: Reason given for shutdown: [[/onlane_ai_agent_4] Reason: new node registered with same name]
+[WARN] [1778052332.614141478]: Shutdown request received.
+[WARN] [1778052332.624214031]: Reason given for shutdown: [[/onlane_ai_agent_5] Reason: new node registered with same name]
+[WARN] [1778052332.627867016]: Shutdown request received.
+[WARN] [1778052332.627895881]: Reason given for shutdown: [[/onlane_ai_agent_5] Reason: new node registered with same name]
+[WARN] [1778052332.652161113]: Shutdown request received.
+[WARN] [1778052332.663653699]: Shutdown request received.
+[WARN] [1778052332.665045579]: Reason given for shutdown: [[/onlane_ai_agent_6] Reason: new node registered with same name]
+[WARN] [1778052332.666500254]: Shutdown request received.
+[WARN] [1778052332.666512959]: Reason given for shutdown: [[/onlane_ai_agent_6] Reason: new node registered with same name]
+[WARN] [1778052332.667161302]: Shutdown request received.
+[WARN] [1778052332.667167215]: Reason given for shutdown: [[/onlane_ai_agent_6] Reason: new node registered with same name]
+[WARN] [1778052332.678018945]: Reason given for shutdown: [[/onlane_ai_agent_7] Reason: new node registered with same name]
+[WARN] [1778052332.678413163]: Shutdown request received.
+[WARN] [1778052332.678437973]: Reason given for shutdown: [[/onlane_ai_agent_6] Reason: new node registered with same name]
+[WARN] [1778052332.679321659]: Shutdown request received.
+[WARN] [1778052332.679337396]: Reason given for shutdown: [[/onlane_ai_agent_7] Reason: new node registered with same name]
+[WARN] [1778052332.679445633]: Shutdown request received.
+[WARN] [1778052332.700349164]: Reason given for shutdown: [[/onlane_ai_agent_9] Reason: new node registered with same name]
+[WARN] [1778052332.704897400]: Shutdown request received.
+[WARN] [1778052332.704935295]: Reason given for shutdown: [[/onlane_ai_agent_6] Reason: new node registered with same name]
+[WARN] [1778052332.706100533]: Shutdown request received.
+[WARN] [1778052332.720412765]: Shutdown request received.
+[WARN] [1778052332.721720639]: Reason given for shutdown: [[/onlane_ai_agent_10] Reason: new node registered with same name]
+[WARN] [1778052332.730735395]: Shutdown request received.
+[WARN] [1778052332.730774090]: Reason given for shutdown: [[/onlane_ai_agent_9] Reason: new node registered with same name]
+[WARN] [1778052332.733491100]: Reason given for shutdown: [[/phy_simulator_planning_node] Reason: new node registered with same name]
+[WARN] [1778052332.736983235]: Shutdown request received.
+[WARN] [1778052332.737002192]: Reason given for shutdown: [[/onlane_ai_agent_7] Reason: new node registered with same name]
+[WARN] [1778052332.738466175]: Shutdown request received.
+[WARN] [1778052332.738497638]: Reason given for shutdown: [[/onlane_ai_agent_10] Reason: new node registered with same name]
+[WARN] [1778052332.748575439]: Shutdown request received.
+[WARN] [1778052332.748626415]: Reason given for shutdown: [[/onlane_ai_agent_9] Reason: new node registered with same name]
+[WARN] [1778052332.771801708]: Shutdown request received.
+[WARN] [1778052332.777864453]: Reason given for shutdown: [[/onlane_ai_agent_8] Reason: new node registered with same name]
+ r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1319.344451, -3660.041746)
+ -- final_point: (1187.469473, -3538.858419)
+ -- point number:	9
+Lane 54:
+ -- dir:	1
+ -- child_id:	[ 103 ]
+ -- father_id:	[ 53 ]
+ -- length:	135.973062
+ -- l_lane_id:	102
+ -- l_change_avbl:	1
+ -- r_lane_id:	0
+ -- r_change_avbl:	0
+ -- behavior:	s
+ -- start_point: (1187.469473, -3538.858419)
+ -- final_point: (1088.852384, -3445.404619)
+ -- point number:	13
+
+subscribing to /ctrl/agent_10
+subscribing to /ctrl/agent_9
+subscribing to /ctrl/agent_8
+subscribing to /ctrl/agent_7
+subscribing to /ctrl/agent_6
+subscribing to /ctrl/agent_5
+subscribing to /ctrl/agent_4
+subscribing to /ctrl/agent_3
+subscribing to /ctrl/agent_2
+subscribing to /ctrl/agent_1
+subscribing to /ctrl/agent_0
+[PhySimulation] Initialization finished, waiting for callback
+
+[EudmPlanner] Loading eudm planner config
+
+[EudmPlanner] Loading ssc planner config
+
+SscPlanner Config:
+ -- weight_proximity: 1.000000
+
+SscMap Config:
+ -- map_size: [250, 71, 41]
+ -- map_resolution: [1.000000, 0.200000, 0.200000]
+ -- axis_name: [s, d, t]
+ -- s_back_len: 20.000000
+ -- kMaxLongitudinalVel: 50.000000
+ -- kMinLongitudinalVel: 0.010000
+ -- kMaxLongitudinalAcc: 3.000000
+ -- kMaxLongitudinalDecel: -6.000000
+ -- kMaxLateralVel: 2.500000
+ -- kMaxLateralAcc: 1.250000
+ -- kMaxNumOfGridAlongTime: 2
+ -- inflate_steps: [5, 5, 5, 5, 1, 1]
+[SscPlannerServer]Planner server started.
+... logging to /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/roslaunch-y-255246.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch
+[1mstarted roslaunch server http://y:44577/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /onlane_ai_agent_1/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_1/aggressiveness_level: 5
+ * /onlane_ai_agent_1/autonomous_level: 2
+ * /onlane_ai_agent_1/desired_vel: 13.5
+ * /onlane_ai_agent_1/ego_id: 1
+ * /onlane_ai_agent_10/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_10/aggressiveness_level: 5
+ * /onlane_ai_agent_10/autonomous_level: 2
+ * /onlane_ai_agent_10/desired_vel: 13.5
+ * /onlane_ai_agent_10/ego_id: 10
+ * /onlane_ai_agent_2/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_2/aggressiveness_level: 5
+ * /onlane_ai_agent_2/autonomous_level: 2
+ * /onlane_ai_agent_2/desired_vel: 13.5
+ * /onlane_ai_agent_2/ego_id: 2
+ * /onlane_ai_agent_3/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_3/aggressiveness_level: 5
+ * /onlane_ai_agent_3/autonomous_level: 2
+ * /onlane_ai_agent_3/desired_vel: 13.5
+ * /onlane_ai_agent_3/ego_id: 3
+ * /onlane_ai_agent_4/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_4/aggressiveness_level: 5
+ * /onlane_ai_agent_4/autonomous_level: 2
+ * /onlane_ai_agent_4/desired_vel: 13.5
+ * /onlane_ai_agent_4/ego_id: 4
+ * /onlane_ai_agent_5/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_5/aggressiveness_level: 5
+ * /onlane_ai_agent_5/autonomous_level: 2
+ * /onlane_ai_agent_5/desired_vel: 13.5
+ * /onlane_ai_agent_5/ego_id: 5
+ * /onlane_ai_agent_6/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_6/aggressiveness_level: 5
+ * /onlane_ai_agent_6/autonomous_level: 2
+ * /onlane_ai_agent_6/desired_vel: 13.5
+ * /onlane_ai_agent_6/ego_id: 6
+ * /onlane_ai_agent_7/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_7/aggressiveness_level: 5
+ * /onlane_ai_agent_7/autonomous_level: 2
+ * /onlane_ai_agent_7/desired_vel: 13.5
+ * /onlane_ai_agent_7/ego_id: 7
+ * /onlane_ai_agent_8/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_8/aggressiveness_level: 5
+ * /onlane_ai_agent_8/autonomous_level: 2
+ * /onlane_ai_agent_8/desired_vel: 13.5
+ * /onlane_ai_agent_8/ego_id: 8
+ * /onlane_ai_agent_9/agent_config_path: /home/ying/epsilo...
+ * /onlane_ai_agent_9/aggressiveness_level: 5
+ * /onlane_ai_agent_9/autonomous_level: 2
+ * /onlane_ai_agent_9/desired_vel: 13.5
+ * /onlane_ai_agent_9/ego_id: 9
+ * /phy_simulator_planning_node/lane_net_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/map_path: /home/ying/epsilo...
+ * /phy_simulator_planning_node/vehicle_info_path: /home/ying/epsilo...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /test_ssc_with_eudm_0/agent_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/bp_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/desired_vel: 20.0
+ * /test_ssc_with_eudm_0/ego_id: 0
+ * /test_ssc_with_eudm_0/ssc_config_path: /home/ying/epsilo...
+ * /test_ssc_with_eudm_0/use_sim_state: True
+
+NODES
+  /
+    onlane_ai_agent_1 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_10 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_2 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_3 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_4 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_5 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_6 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_7 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_8 (ai_agent_planner/onlane_ai_agent)
+    onlane_ai_agent_9 (ai_agent_planner/onlane_ai_agent)
+    phy_simulator_planning_node (phy_simulator/phy_simulator_planning_node)
+    test_ssc_with_eudm_0 (planning_integrated/test_ssc_with_eudm)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/ying/epsilon-reproduction/src/EPSILON/app/planning_integrated/launch/repro_stack_eudm.launch http://localhost:11311
+[1mprocess[test_ssc_with_eudm_0-1]: started with pid [255377][0m
+[1mprocess[onlane_ai_agent_1-2]: started with pid [255378][0m
+[1mprocess[onlane_ai_agent_2-3]: started with pid [255380][0m
+[1mprocess[onlane_ai_agent_3-4]: started with pid [255429][0m
+[1mprocess[onlane_ai_agent_4-5]: started with pid [255469][0m
+[1mprocess[onlane_ai_agent_5-6]: started with pid [255613][0m
+[1mprocess[onlane_ai_agent_6-7]: started with pid [255690][0m
+[1mprocess[onlane_ai_agent_7-8]: started with pid [255766][0m
+[1mprocess[onlane_ai_agent_8-9]: started with pid [255795][0m
+[1mprocess[onlane_ai_agent_9-10]: started with pid [255827][0m
+[1mprocess[onlane_ai_agent_10-11]: started with pid [255858][0m
+[1mprocess[phy_simulator_planning_node-12]: started with pid [255890][0m
+[1m[test_ssc_with_eudm_0-1] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/test_ssc_with_eudm_0-1*.log[0m
+[1m[onlane_ai_agent_1-2] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_1-2*.log[0m
+[1m[onlane_ai_agent_2-3] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_2-3*.log[0m
+[1m[onlane_ai_agent_3-4] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_3-4*.log[0m
+[1m[onlane_ai_agent_4-5] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_4-5*.log[0m
+[1m[onlane_ai_agent_5-6] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_5-6*.log[0m
+[1m[onlane_ai_agent_6-7] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_6-7*.log[0m
+[1m[onlane_ai_agent_7-8] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_7-8*.log[0m
+[1m[onlane_ai_agent_9-10] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_9-10*.log[0m
+[1m[phy_simulator_planning_node-12] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/phy_simulator_planning_node-12*.log[0m
+[1m[onlane_ai_agent_8-9] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_8-9*.log[0m
+[1m[onlane_ai_agent_10-11] process has finished cleanly
+log file: /home/ying/epsilon-reproduction/results/tune_rear_guard_tuned_20260506_152531/ros/5c368892-491b-11f1-b92a-4fa9e6672c04/onlane_ai_agent_10-11*.log[0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

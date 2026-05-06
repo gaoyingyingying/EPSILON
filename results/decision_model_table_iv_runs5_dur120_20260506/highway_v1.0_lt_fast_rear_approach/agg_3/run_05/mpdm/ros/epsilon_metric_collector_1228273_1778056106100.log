@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2026-05-06 16:28:26,111: init_node, name[/epsilon_metric_collector_1228273_1778056106100], pid[1228273]
+[xmlrpc][INFO] 2026-05-06 16:28:26,111: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-05-06 16:28:26,112: Started XML-RPC server [http://y:33003/]
+[rospy.init][INFO] 2026-05-06 16:28:26,112: ROS Slave URI: [http://y:33003/]
+[rospy.impl.masterslave][INFO] 2026-05-06 16:28:26,112: _ready: http://y:33003/
+[rospy.registration][INFO] 2026-05-06 16:28:26,112: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-05-06 16:28:26,112: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-05-06 16:28:26,212: registered with master
+[rospy.rosout][INFO] 2026-05-06 16:28:26,212: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-05-06 16:28:26,215: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-05-06 16:28:26,216: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-05-06 16:28:26,218: topic[/arena_info_dynamic] adding connection to [http://y:45025/], count 0
+[rospy.internal][INFO] 2026-05-06 16:28:26,450: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2026-05-06 16:30:25,875: signal_shutdown [signal-15]
+[rospy.internal][INFO] 2026-05-06 16:30:25,877: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-05-06 16:30:25,877: topic[/arena_info_dynamic] removing connection to http://y:45025/
+[rospy.impl.masterslave][INFO] 2026-05-06 16:30:25,877: signal-15
+[rospy.internal][ERROR] 2026-05-06 16:30:25,878: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 739, in receive_once
+    sock.setblocking(1)
+OSError: [Errno 9] Bad file descriptor
+
+[rospy.core][INFO] 2026-05-06 16:30:26,477: signal_shutdown [atexit]

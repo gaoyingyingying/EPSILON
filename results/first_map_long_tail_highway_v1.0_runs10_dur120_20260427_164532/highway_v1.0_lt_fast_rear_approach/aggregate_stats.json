@@ -1,0 +1,130 @@
+{
+  "methods": [
+    "eudm_ai",
+    "eudm_base",
+    "mpdm"
+  ],
+  "metrics": {
+    "average_velocity_mps": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 13.544408877621285,
+        "std": 0.3598038944031779,
+        "variance": 0.1294588424276932
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 13.045017632339238,
+        "std": 0.10025981764973085,
+        "variance": 0.010052031035157281
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 13.291735786581933,
+        "std": 1.0788024605954734,
+        "variance": 1.163814748986848
+      }
+    },
+    "distance_m": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 1620.3073024793514,
+        "std": 42.92385341555535,
+        "variance": 1842.4571920400824
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 1560.6072234734859,
+        "std": 12.143966910696424,
+        "variance": 147.47593232808964
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 1590.2398383494517,
+        "std": 129.09334681604236,
+        "variance": 16665.09219216699
+      }
+    },
+    "frames": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 11964.8,
+        "std": 2.4413111231467406,
+        "variance": 5.959999999999999
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 11965.6,
+        "std": 3.498571136907181,
+        "variance": 12.240000000000004
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 11964.7,
+        "std": 2.1931712199461306,
+        "variance": 4.81
+      }
+    },
+    "lcc_per_km": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      }
+    },
+    "ud_per_km": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 0.0,
+        "std": 0.0,
+        "variance": 0.0
+      }
+    },
+    "unsafe_ratio": {
+      "eudm_ai": {
+        "count": 10,
+        "mean": 0.04460487070018917,
+        "std": 0.031570221392806436,
+        "variance": 0.0009966788787908133
+      },
+      "eudm_base": {
+        "count": 10,
+        "mean": 0.17568056257034023,
+        "std": 0.2755889129887836,
+        "variance": 0.07594924896233933
+      },
+      "mpdm": {
+        "count": 10,
+        "mean": 0.13995140772044143,
+        "std": 0.2943303184817308,
+        "variance": 0.0866303363775571
+      }
+    }
+  },
+  "runs": 10
+}
